@@ -41,12 +41,22 @@
                                     <action selector="hideRedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x3v-wD-GkT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICC-wb-fN8">
+                                <rect key="frame" x="159" y="369" width="56" height="30"/>
+                                <state key="normal" title="Re-arm!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reArmButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AZQ-sL-9V8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="blueBombOutlet" destination="ICy-IN-xn1" id="Yn3-EO-E13"/>
+                        <outlet property="reArmOutlet" destination="ICC-wb-fN8" id="hdB-es-yi5"/>
                         <outlet property="redBombOutlet" destination="HjU-mq-Qoq" id="8sf-v2-Axm"/>
                     </connections>
                 </viewController>
