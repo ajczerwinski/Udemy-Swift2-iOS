@@ -30,4 +30,3 @@ var anotherStringVar = "World"
 var helloWorld = stringVar + anotherStringVar
 
 helloWorld = "\(stringVar) " + "\(anotherStringVar)"
-
