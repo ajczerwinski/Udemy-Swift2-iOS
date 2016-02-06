@@ -12,6 +12,8 @@
 		BF58C4601C653486000543AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF58C45E1C653486000543AA /* Main.storyboard */; };
 		BF58C4621C653486000543AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF58C4611C653486000543AA /* Assets.xcassets */; };
 		BF58C4651C653486000543AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF58C4631C653486000543AA /* LaunchScreen.storyboard */; };
+		BF58C46E1C657766000543AA /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = BF58C46D1C657766000543AA /* AppIcon.appiconset */; };
+		BF58C4701C6577FF000543AA /* The.png in Resources */ = {isa = PBXBuildFile; fileRef = BF58C46F1C6577FF000543AA /* The.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		BF58C4611C653486000543AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF58C4641C653486000543AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF58C4661C653486000543AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF58C46D1C657766000543AA /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
+		BF58C46F1C6577FF000543AA /* The.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = The.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		BF58C4591C653486000543AA /* Multiples */ = {
 			isa = PBXGroup;
 			children = (
+				BF58C46C1C6576DC000543AA /* Images */,
 				BF58C45A1C653486000543AA /* AppDelegate.swift */,
 				BF58C45C1C653486000543AA /* ViewController.swift */,
 				BF58C45E1C653486000543AA /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				BF58C4661C653486000543AA /* Info.plist */,
 			);
 			path = Multiples;
+			sourceTree = "<group>";
+		};
+		BF58C46C1C6576DC000543AA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BF58C46F1C6577FF000543AA /* The.png */,
+				BF58C46D1C657766000543AA /* AppIcon.appiconset */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +136,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF58C46E1C657766000543AA /* AppIcon.appiconset in Resources */,
+				BF58C4701C6577FF000543AA /* The.png in Resources */,
 				BF58C4651C653486000543AA /* LaunchScreen.storyboard in Resources */,
 				BF58C4621C653486000543AA /* Assets.xcassets in Resources */,
 				BF58C4601C653486000543AA /* Main.storyboard in Resources */,
