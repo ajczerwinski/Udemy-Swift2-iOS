@@ -19,6 +19,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PtR-vO-GjA">
+                                <rect key="frame" x="180" y="236" width="800" height="800"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.2196078431372549" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jmt-OD-6fR">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
@@ -29,7 +33,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="593" height="201"/>
                                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque, nulla a condimentum blandit, enim augue tempus justo, non ultrices risus orci sit amet nibh. Nulla ultrices augue sit amet sapien hendrerit, et posuere risus sollicitudin. Praesent tempor aliquet nisl, in ultricies ex auctor sed.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.67843137249999996" green="0.67843137249999996" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -92,10 +96,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="PtR-vO-GjA" secondAttribute="bottom" id="1q3-m7-mhb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PtR-vO-GjA" secondAttribute="trailing" constant="-20" id="EBd-eW-M94"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jmt-OD-6fR" secondAttribute="bottom" id="FHM-F2-fYW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jmt-OD-6fR" secondAttribute="trailing" constant="-20" id="O5J-e6-9y9"/>
                             <constraint firstItem="jmt-OD-6fR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="biP-7s-Z1b"/>
                             <constraint firstItem="jmt-OD-6fR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="fpW-gY-dQO"/>
+                            <constraint firstItem="PtR-vO-GjA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="mdq-3z-3zr"/>
+                            <constraint firstItem="PtR-vO-GjA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="yA4-lH-rUX"/>
                         </constraints>
                     </view>
                 </viewController>
