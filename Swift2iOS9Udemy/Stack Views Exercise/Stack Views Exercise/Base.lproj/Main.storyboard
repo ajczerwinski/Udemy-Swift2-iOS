@@ -9,7 +9,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Stack_Views_Exercise" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -26,11 +25,11 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jmt-OD-6fR">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fi2-jE-Gky">
-                                        <rect key="frame" x="0.0" y="0.0" width="593" height="201"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fi2-jE-Gky">
+                                        <rect key="frame" x="0.0" y="0.0" width="593" height="82"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" horizontalCompressionResistancePriority="760" verticalCompressionResistancePriority="760" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzy-PV-zSU">
-                                                <rect key="frame" x="0.0" y="0.0" width="593" height="201"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" horizontalCompressionResistancePriority="760" verticalCompressionResistancePriority="760" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzy-PV-zSU">
+                                                <rect key="frame" x="0.0" y="0.0" width="593" height="82"/>
                                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque, nulla a condimentum blandit, enim augue tempus justo, non ultrices risus orci sit amet nibh. Nulla ultrices augue sit amet sapien hendrerit, et posuere risus sollicitudin. Praesent tempor aliquet nisl, in ultricies ex auctor sed.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.67843137249999996" green="0.67843137249999996" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -38,25 +37,25 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dge-tf-8Lm">
-                                        <rect key="frame" x="0.0" y="221" width="600" height="159"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dge-tf-8Lm">
+                                        <rect key="frame" x="0.0" y="102" width="600" height="437"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="ZAF-Kv-PRP">
-                                                <rect key="frame" x="0.0" y="0.0" width="600" height="159"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="ZAF-Kv-PRP">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="437"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jr5-8X-9zE">
-                                        <rect key="frame" x="0.0" y="400" width="600" height="159"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jr5-8X-9zE">
+                                        <rect key="frame" x="0.0" y="559" width="600" height="0.0"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="300" verticalHuggingPriority="300" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="lN5-yR-gcn">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="159"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="300" verticalHuggingPriority="300" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" misplaced="YES" image="post" translatesAutoresizingMaskIntoConstraints="NO" id="lN5-yR-gcn">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="0.0"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="300" verticalHuggingPriority="300" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="de3-kG-6dm">
-                                                <rect key="frame" x="200" y="0.0" width="200" height="159"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="300" verticalHuggingPriority="300" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" misplaced="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="de3-kG-6dm">
+                                                <rect key="frame" x="200" y="0.0" width="200" height="0.0"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="300" verticalHuggingPriority="300" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" image="inbox" translatesAutoresizingMaskIntoConstraints="NO" id="v9i-7C-95Z">
-                                                <rect key="frame" x="400" y="0.0" width="200" height="159"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="300" verticalHuggingPriority="300" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" misplaced="YES" image="inbox" translatesAutoresizingMaskIntoConstraints="NO" id="v9i-7C-95Z">
+                                                <rect key="frame" x="400" y="0.0" width="200" height="0.0"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -107,6 +106,7 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="302"/>
         </scene>
