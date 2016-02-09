@@ -91,6 +91,7 @@ class ViewController: UIViewController {
                 outputLbl.text = result
             }
             
+
             currentOperation = op
         } else {
             // This is the first time an operator has been pressed
@@ -108,6 +109,20 @@ class ViewController: UIViewController {
         btnSound.play()
     }
     
+    func resetCalculator() {
+        playSound()
+        runningNumber = ""
+        leftValStr = ""
+        rightValStr = ""
+        currentOperation = Operation.Empty
+        result = ""
+        outputLbl.text = "0"
+        
+    }
+    
+    @IBAction func clearButtonPressed(sender: AnyObject) {
+        resetCalculator()
+    }
     
 
 }
