@@ -12,6 +12,7 @@
 		BF14F9911C6C2B0500A175AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF14F98F1C6C2B0500A175AF /* Main.storyboard */; };
 		BF14F9931C6C2B0500A175AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF14F9921C6C2B0500A175AF /* Assets.xcassets */; };
 		BF14F9961C6C2B0500A175AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF14F9941C6C2B0500A175AF /* LaunchScreen.storyboard */; };
+		BF1AF31B1C6C680C0089212E /* DragImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1AF31A1C6C680C0089212E /* DragImg.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BF14F9921C6C2B0500A175AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF14F9951C6C2B0500A175AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF14F9971C6C2B0500A175AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF1AF31A1C6C680C0089212E /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImg.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				BF14F9921C6C2B0500A175AF /* Assets.xcassets */,
 				BF14F9941C6C2B0500A175AF /* LaunchScreen.storyboard */,
 				BF14F9971C6C2B0500A175AF /* Info.plist */,
+				BF1AF31A1C6C680C0089212E /* DragImg.swift */,
 			);
 			path = "My Little Monster Practice";
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1AF31B1C6C680C0089212E /* DragImg.swift in Sources */,
 				BF14F98E1C6C2B0500A175AF /* ViewController.swift in Sources */,
 				BF14F98C1C6C2B0500A175AF /* AppDelegate.swift in Sources */,
 			);
@@ -286,6 +290,7 @@
 				BF14F99C1C6C2B0500A175AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
