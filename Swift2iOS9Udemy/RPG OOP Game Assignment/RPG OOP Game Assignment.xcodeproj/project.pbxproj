@@ -14,6 +14,9 @@
 		BF14F96C1C6BB71800A175AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF14F96A1C6BB71800A175AF /* LaunchScreen.storyboard */; };
 		BF14F9741C6BEC4A00A175AF /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14F9731C6BEC4A00A175AF /* Character.swift */; };
 		BF14F9761C6BF1D300A175AF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14F9751C6BF1D300A175AF /* Player.swift */; };
+		BF14F97A1C6C173C00A175AF /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF14F9791C6C173C00A175AF /* music.mp3 */; };
+		BF14F97C1C6C1A1C00A175AF /* sword.wav in Resources */ = {isa = PBXBuildFile; fileRef = BF14F97B1C6C1A1C00A175AF /* sword.wav */; };
+		BF14F97E1C6C1BDD00A175AF /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = BF14F97D1C6C1BDD00A175AF /* death.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		BF14F96D1C6BB71800A175AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF14F9731C6BEC4A00A175AF /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		BF14F9751C6BF1D300A175AF /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		BF14F9791C6C173C00A175AF /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		BF14F97B1C6C1A1C00A175AF /* sword.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sword.wav; sourceTree = "<group>"; };
+		BF14F97D1C6C1BDD00A175AF /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				BF14F9611C6BB71800A175AF /* AppDelegate.swift */,
+				BF14F9791C6C173C00A175AF /* music.mp3 */,
+				BF14F97B1C6C1A1C00A175AF /* sword.wav */,
+				BF14F97D1C6C1BDD00A175AF /* death.wav */,
 				BF14F9631C6BB71800A175AF /* ViewController.swift */,
 				BF14F9651C6BB71800A175AF /* Main.storyboard */,
 				BF14F9681C6BB71800A175AF /* Assets.xcassets */,
@@ -128,6 +137,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF14F97C1C6C1A1C00A175AF /* sword.wav in Resources */,
+				BF14F97E1C6C1BDD00A175AF /* death.wav in Resources */,
+				BF14F97A1C6C173C00A175AF /* music.mp3 in Resources */,
 				BF14F96C1C6BB71800A175AF /* LaunchScreen.storyboard in Resources */,
 				BF14F9691C6BB71800A175AF /* Assets.xcassets in Resources */,
 				BF14F9671C6BB71800A175AF /* Main.storyboard in Resources */,
