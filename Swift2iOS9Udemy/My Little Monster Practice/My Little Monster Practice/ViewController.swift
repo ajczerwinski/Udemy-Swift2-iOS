@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import SpriteKit
 
 class ViewController: UIViewController {
 
@@ -18,6 +19,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var penalty1Img: UIImageView!
     @IBOutlet weak var penalty2Img: UIImageView!
     @IBOutlet weak var penalty3Img: UIImageView!
+    @IBOutlet weak var resetButtonOutlet: UIButton!
+    @IBOutlet weak var resetLabelOutlet: UILabel!
+    
+    
     
     let DIM_ALPHA: CGFloat = 0.2
     let OPAQUE: CGFloat = 1.0
@@ -43,6 +48,9 @@ class ViewController: UIViewController {
         penalty1Img.alpha = DIM_ALPHA
         penalty2Img.alpha = DIM_ALPHA
         penalty3Img.alpha = DIM_ALPHA
+        
+        resetButtonOutlet.hidden = true
+        resetLabelOutlet.hidden = true
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "itemDroppedOnCharacter:", name: "onTargetDropped", object: nil)
         
@@ -157,7 +165,35 @@ class ViewController: UIViewController {
         timer.invalidate()
         monsterImg.playDeathAnimation()
         sfxDeath.play()
+        musicPlayer.stop()
+        foodImg.alpha = DIM_ALPHA
+        foodImg.userInteractionEnabled = false
+        heartImg.alpha = DIM_ALPHA
+        heartImg.userInteractionEnabled = false
+        resetButtonOutlet.hidden = false
+        resetLabelOutlet.hidden = false
     }
+    
+    func resetGame() {
+        timer.invalidate()
+        penalty1Img.alpha = DIM_ALPHA
+        penalty2Img.alpha = DIM_ALPHA
+        penalty3Img.alpha = DIM_ALPHA
+        monsterHappy = true
+        self.changeGameState()
+        monsterImg.playIdleAnimation()
+        penalties = 0
+        resetButtonOutlet.hidden = true
+        resetLabelOutlet.hidden = true
+        musicPlayer.play()
+        startTimer()
+        
+    }
+    
+    @IBAction func resetButtonPressed(sender: AnyObject) {
+        resetGame()
+    }
+    
 
 }
 

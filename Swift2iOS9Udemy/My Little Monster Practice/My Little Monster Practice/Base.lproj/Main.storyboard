@@ -66,6 +66,13 @@
                                     <rect key="frame" x="208" y="36" width="180" height="50"/>
                                 </variation>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="qWd-R6-u6z" customClass="MonsterImg" customModule="My_Little_Monster_Practice" customModuleProvider="target">
+                                <rect key="frame" x="5" y="235" width="465" height="318"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="318" id="Oc2-wE-PIE"/>
+                                    <constraint firstAttribute="width" constant="465" id="zsK-eR-bgQ"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Sjz-QK-6m0">
                                 <rect key="frame" x="158" y="143" width="290" height="98"/>
                                 <subviews>
@@ -92,23 +99,43 @@
                                     </mask>
                                 </variation>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="qWd-R6-u6z" customClass="MonsterImg" customModule="My_Little_Monster_Practice" customModuleProvider="target">
-                                <rect key="frame" x="5" y="235" width="465" height="318"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ty-5A-p4X">
+                                <rect key="frame" x="107" y="231" width="468" height="137"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="318" id="Oc2-wE-PIE"/>
-                                    <constraint firstAttribute="width" constant="465" id="zsK-eR-bgQ"/>
+                                    <constraint firstAttribute="height" constant="120" id="dUs-8c-lEM"/>
+                                    <constraint firstAttribute="width" constant="120" id="vLS-VK-OCn"/>
                                 </constraints>
-                            </imageView>
+                                <state key="normal" image="print">
+                                    <color key="titleColor" red="1" green="0.93725490196078431" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="57C-8n-I5u"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Play Again!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0u-lr-6l5">
+                                <rect key="frame" x="282" y="289" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8nw-WL-KDb"/>
+                                    <constraint firstAttribute="height" constant="45" id="mZZ-19-KtV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.93725490199999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Sjz-QK-6m0" firstAttribute="top" secondItem="M6k-Ph-KzU" secondAttribute="bottom" constant="15" id="26Y-fg-ZEk"/>
                             <constraint firstItem="FgZ-0n-LAA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5cw-H9-NDL"/>
                             <constraint firstItem="Sjz-QK-6m0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="5ro-a7-3Mv"/>
+                            <constraint firstItem="2ty-5A-p4X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9rY-Vx-Ofh"/>
+                            <constraint firstItem="F0u-lr-6l5" firstAttribute="centerY" secondItem="2ty-5A-p4X" secondAttribute="centerY" id="Fgk-3m-3tg"/>
                             <constraint firstItem="Sjz-QK-6m0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fxz-hV-xlx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FgZ-0n-LAA" secondAttribute="bottom" id="GeO-Vz-2To"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qWd-R6-u6z" secondAttribute="bottom" constant="47" id="H1c-h3-6wk"/>
+                            <constraint firstItem="2ty-5A-p4X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M9D-yG-FHv"/>
                             <constraint firstItem="Sjz-QK-6m0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YBC-5P-fob"/>
+                            <constraint firstItem="F0u-lr-6l5" firstAttribute="centerX" secondItem="2ty-5A-p4X" secondAttribute="centerX" id="cH5-Uc-PSD"/>
                             <constraint firstItem="w0n-5X-Wiy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="f7j-fk-7ES"/>
                             <constraint firstAttribute="trailing" secondItem="w0n-5X-Wiy" secondAttribute="trailing" id="fDm-mb-lqX"/>
                             <constraint firstItem="M6k-Ph-KzU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fso-Iz-chI"/>
@@ -172,6 +199,8 @@
                         <outlet property="penalty1Img" destination="VWN-Mi-N2b" id="7lr-OK-Ac0"/>
                         <outlet property="penalty2Img" destination="Gwr-JS-lhg" id="TDR-rz-MM4"/>
                         <outlet property="penalty3Img" destination="D86-xJ-jYW" id="t6N-5V-ZUu"/>
+                        <outlet property="resetButtonOutlet" destination="2ty-5A-p4X" id="o21-hB-ADu"/>
+                        <outlet property="resetLabelOutlet" destination="F0u-lr-6l5" id="3dV-Yr-VNG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -186,6 +215,7 @@
         <image name="heart" width="95" height="98"/>
         <image name="idle1" width="889" height="615"/>
         <image name="livespanel" width="468" height="137"/>
+        <image name="print" width="550" height="83"/>
         <image name="skull" width="95" height="98"/>
     </resources>
 </document>
