@@ -12,6 +12,8 @@
 		BF14F9671C6BB71800A175AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF14F9651C6BB71800A175AF /* Main.storyboard */; };
 		BF14F9691C6BB71800A175AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF14F9681C6BB71800A175AF /* Assets.xcassets */; };
 		BF14F96C1C6BB71800A175AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF14F96A1C6BB71800A175AF /* LaunchScreen.storyboard */; };
+		BF14F9741C6BEC4A00A175AF /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14F9731C6BEC4A00A175AF /* Character.swift */; };
+		BF14F9761C6BF1D300A175AF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14F9751C6BF1D300A175AF /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		BF14F9681C6BB71800A175AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF14F96B1C6BB71800A175AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF14F96D1C6BB71800A175AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF14F9731C6BEC4A00A175AF /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		BF14F9751C6BF1D300A175AF /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				BF14F9681C6BB71800A175AF /* Assets.xcassets */,
 				BF14F96A1C6BB71800A175AF /* LaunchScreen.storyboard */,
 				BF14F96D1C6BB71800A175AF /* Info.plist */,
+				BF14F9731C6BEC4A00A175AF /* Character.swift */,
+				BF14F9751C6BF1D300A175AF /* Player.swift */,
 			);
 			path = "RPG OOP Game Assignment";
 			sourceTree = "<group>";
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF14F9761C6BF1D300A175AF /* Player.swift in Sources */,
+				BF14F9741C6BEC4A00A175AF /* Character.swift in Sources */,
 				BF14F9641C6BB71800A175AF /* ViewController.swift in Sources */,
 				BF14F9621C6BB71800A175AF /* AppDelegate.swift in Sources */,
 			);
