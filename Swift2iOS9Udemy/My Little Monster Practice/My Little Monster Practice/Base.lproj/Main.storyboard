@@ -83,14 +83,21 @@
                                     <constraint firstAttribute="height" constant="465" id="Kpa-kG-Shp"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Sjz-QK-6m0">
-                                <rect key="frame" x="158" y="143" width="290" height="98"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Sjz-QK-6m0">
+                                <rect key="frame" x="158" y="143" width="345" height="80"/>
                                 <subviews>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="Uia-tv-a3Z" customClass="DragImg" customModule="My_Little_Monster_Practice" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="80"/>
                                     </imageView>
-                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="FTG-Qg-nkO" customClass="DragImg" customModule="My_Little_Monster_Practice" customModuleProvider="target">
-                                        <rect key="frame" x="195" y="0.0" width="95" height="98"/>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="torch" translatesAutoresizingMaskIntoConstraints="NO" id="Xmf-EJ-ALB" customClass="DragImg" customModule="My_Little_Monster_Practice" customModuleProvider="target">
+                                        <rect key="frame" x="125" y="0.0" width="95" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Cnf-dx-EYs"/>
+                                            <constraint firstAttribute="width" constant="95" id="Rvf-0W-ZQZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="FTG-Qg-nkO" customClass="DragImg" customModule="My_Little_Monster_Practice" customModuleProvider="target">
+                                        <rect key="frame" x="250" y="0.0" width="95" height="80"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -272,6 +279,7 @@
                         <outlet property="livesPanelImage" destination="M6k-Ph-KzU" id="EaW-6u-N9b"/>
                         <outlet property="monsterImg" destination="qWd-R6-u6z" id="Upv-H0-PQA"/>
                         <outlet property="monsterImg2" destination="mLp-z9-9xy" id="pMl-Na-UR8"/>
+                        <outlet property="obedienceImg" destination="Xmf-EJ-ALB" id="qvl-Nj-m34"/>
                         <outlet property="penalty1Img" destination="VWN-Mi-N2b" id="7lr-OK-Ac0"/>
                         <outlet property="penalty2Img" destination="Gwr-JS-lhg" id="TDR-rz-MM4"/>
                         <outlet property="penalty3Img" destination="D86-xJ-jYW" id="t6N-5V-ZUu"/>
@@ -295,5 +303,6 @@
         <image name="livespanel" width="468" height="137"/>
         <image name="print" width="550" height="83"/>
         <image name="skull" width="95" height="98"/>
+        <image name="torch" width="643" height="393"/>
     </resources>
 </document>

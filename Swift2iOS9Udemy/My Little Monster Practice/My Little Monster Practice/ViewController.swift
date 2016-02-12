@@ -28,6 +28,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var penalty1Img: UIImageView!
     @IBOutlet weak var penalty2Img: UIImageView!
     @IBOutlet weak var penalty3Img: UIImageView!
+    @IBOutlet weak var obedienceImg: DragImg!
     @IBOutlet weak var resetButtonOutlet: UIButton!
     @IBOutlet weak var resetLabelOutlet: UILabel!
     
@@ -49,6 +50,7 @@ class ViewController: UIViewController {
     var sfxHeart: AVAudioPlayer!
     var sfxDeath: AVAudioPlayer!
     var sfxSkull: AVAudioPlayer!
+    var sfxObedience: AVAudioPlayer!
     
     
     override func viewDidLoad() {
@@ -74,6 +76,8 @@ class ViewController: UIViewController {
             
             try sfxSkull = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("skull", ofType: "wav")!))
             
+            try sfxObedience = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("obedience", ofType: "mp3")!))
+            
             musicPlayer.prepareToPlay()
             
             
@@ -81,6 +85,7 @@ class ViewController: UIViewController {
             sfxHeart.prepareToPlay()
             sfxDeath.prepareToPlay()
             sfxSkull.prepareToPlay()
+            sfxObedience.prepareToPlay()
             
         } catch let err as NSError {
             print(err.debugDescription)
@@ -91,6 +96,7 @@ class ViewController: UIViewController {
         if monsterSelected == 1 {
             foodImg.dropTarget = monsterImg
             heartImg.dropTarget = monsterImg
+            obedienceImg.dropTarget = monsterImg
             
             caveBackgroundImage.hidden = false
             caveGroundImage.hidden = false
@@ -101,6 +107,7 @@ class ViewController: UIViewController {
         } else {
             foodImg.dropTarget = monsterImg2
             heartImg.dropTarget = monsterImg2
+            obedienceImg.dropTarget = monsterImg2
             monsterImg2.hidden = false
         }
         
@@ -114,6 +121,7 @@ class ViewController: UIViewController {
         
         heartImg.hidden = false
         foodImg.hidden = false
+        obedienceImg.hidden = false
         
         penalty1Img.hidden = false
         penalty2Img.hidden = false
@@ -132,6 +140,7 @@ class ViewController: UIViewController {
         
         heartImg.hidden = true
         foodImg.hidden = true
+        obedienceImg.hidden = true
         
         penalty1Img.hidden = true
         penalty2Img.hidden = true
@@ -154,11 +163,15 @@ class ViewController: UIViewController {
         foodImg.userInteractionEnabled = false
         heartImg.alpha = DIM_ALPHA
         heartImg.userInteractionEnabled = false
+        obedienceImg.alpha = DIM_ALPHA
+        obedienceImg.userInteractionEnabled = false
         
         if currentItem == 0 {
             sfxHeart.play()
-        } else {
+        } else if currentItem == 1 {
             sfxBite.play()
+        } else {
+            sfxObedience.play()
         }
     }
 
@@ -200,20 +213,35 @@ class ViewController: UIViewController {
             }
         }
         
-        let rand = arc4random_uniform(2)
+        let rand = arc4random_uniform(3)
         
         if rand == 0 {
             foodImg.alpha = DIM_ALPHA
             foodImg.userInteractionEnabled = false
             
+            obedienceImg.alpha = DIM_ALPHA
+            obedienceImg.userInteractionEnabled = false
+            
             heartImg.alpha = OPAQUE
             heartImg.userInteractionEnabled = true
-        } else {
+        } else if rand == 1 {
             heartImg.alpha = DIM_ALPHA
             heartImg.userInteractionEnabled = false
             
+            obedienceImg.alpha = DIM_ALPHA
+            obedienceImg.userInteractionEnabled = false
+            
             foodImg.alpha = OPAQUE
             foodImg.userInteractionEnabled = true
+        } else {
+            foodImg.alpha = DIM_ALPHA
+            foodImg.userInteractionEnabled = false
+            
+            obedienceImg.alpha = OPAQUE
+            obedienceImg.userInteractionEnabled = true
+            
+            heartImg.alpha = DIM_ALPHA
+            heartImg.userInteractionEnabled = false
         }
         
         currentItem = rand
@@ -234,17 +262,25 @@ class ViewController: UIViewController {
         foodImg.userInteractionEnabled = false
         heartImg.alpha = DIM_ALPHA
         heartImg.userInteractionEnabled = false
+        obedienceImg.alpha = DIM_ALPHA
+        obedienceImg.userInteractionEnabled = false
         resetButtonOutlet.hidden = false
         resetLabelOutlet.hidden = false
     }
     
     func resetGame() {
+        if monsterSelected == 1 {
+            monsterImg.playIdleAnimation()
+        } else {
+            monsterImg2.playIdleAnimation()
+        }
         timer.invalidate()
         penalty1Img.alpha = DIM_ALPHA
         penalty2Img.alpha = DIM_ALPHA
         penalty3Img.alpha = DIM_ALPHA
         monsterHappy = true
         self.changeGameState()
+        
         monsterImg.playIdleAnimation()
         penalties = 0
         resetButtonOutlet.hidden = true
