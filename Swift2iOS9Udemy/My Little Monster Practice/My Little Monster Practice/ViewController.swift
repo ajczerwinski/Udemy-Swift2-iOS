@@ -11,8 +11,17 @@ import AVFoundation
 import SpriteKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var introBackgroundImage: UIImageView!
 
+    @IBOutlet weak var caveBackgroundImage: UIImageView!
+    
+    @IBOutlet weak var caveGroundImage: UIImageView!
+    
+    @IBOutlet weak var livesPanelImage: UIImageView!
     @IBOutlet weak var monsterImg: MonsterImg!
+    
+    @IBOutlet weak var monsterImg2: MonsterImg2!
+    
     @IBOutlet weak var foodImg: DragImg!
     @IBOutlet weak var heartImg: DragImg!
     
@@ -22,6 +31,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var resetButtonOutlet: UIButton!
     @IBOutlet weak var resetLabelOutlet: UILabel!
     
+    @IBOutlet weak var introChooseMonsterOutlet: UIStackView!
     
     
     let DIM_ALPHA: CGFloat = 0.2
@@ -31,6 +41,7 @@ class ViewController: UIViewController {
     var penalties = 0
     var timer: NSTimer!
     var monsterHappy = false
+    var monsterSelected = 0
     var currentItem: UInt32 = 0
     
     var musicPlayer: AVAudioPlayer!
@@ -42,15 +53,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        foodImg.dropTarget = monsterImg
-        heartImg.dropTarget = monsterImg
         
-        penalty1Img.alpha = DIM_ALPHA
-        penalty2Img.alpha = DIM_ALPHA
-        penalty3Img.alpha = DIM_ALPHA
-        
-        resetButtonOutlet.hidden = true
-        resetLabelOutlet.hidden = true
+        setGameIntroUI()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "itemDroppedOnCharacter:", name: "onTargetDropped", object: nil)
         
@@ -71,7 +75,7 @@ class ViewController: UIViewController {
             try sfxSkull = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("skull", ofType: "wav")!))
             
             musicPlayer.prepareToPlay()
-            musicPlayer.play()
+            
             
             sfxBite.prepareToPlay()
             sfxHeart.prepareToPlay()
@@ -81,10 +85,66 @@ class ViewController: UIViewController {
         } catch let err as NSError {
             print(err.debugDescription)
         }
-        
-        startTimer()
-        
     }
+    
+    func playGame() {
+        if monsterSelected == 1 {
+            foodImg.dropTarget = monsterImg
+            heartImg.dropTarget = monsterImg
+            
+            caveBackgroundImage.hidden = false
+            caveGroundImage.hidden = false
+            
+            monsterImg.hidden = false
+            
+            
+        } else {
+            foodImg.dropTarget = monsterImg2
+            heartImg.dropTarget = monsterImg2
+            monsterImg2.hidden = false
+        }
+        
+        penalty1Img.alpha = DIM_ALPHA
+        penalty2Img.alpha = DIM_ALPHA
+        penalty3Img.alpha = DIM_ALPHA
+        
+        introChooseMonsterOutlet.hidden = true
+        introBackgroundImage.hidden = true
+        livesPanelImage.hidden = false
+        
+        heartImg.hidden = false
+        foodImg.hidden = false
+        
+        penalty1Img.hidden = false
+        penalty2Img.hidden = false
+        penalty3Img.hidden = false
+        
+        musicPlayer.play()
+        startTimer()
+    }
+    
+    func setGameIntroUI() {
+        introChooseMonsterOutlet.hidden = false
+        introBackgroundImage.hidden = false
+        
+        monsterImg.hidden = true
+        monsterImg2.hidden = true
+        
+        heartImg.hidden = true
+        foodImg.hidden = true
+        
+        penalty1Img.hidden = true
+        penalty2Img.hidden = true
+        penalty3Img.hidden = true
+        
+        caveBackgroundImage.hidden = true
+        caveGroundImage.hidden = true
+        livesPanelImage.hidden = true
+        
+        resetButtonOutlet.hidden = true
+        resetLabelOutlet.hidden = true
+    }
+    
     
     func itemDroppedOnCharacter(notif: AnyObject) {
         monsterHappy = true
@@ -162,8 +222,12 @@ class ViewController: UIViewController {
     }
     
     func gameOver() {
+        if monsterSelected == 1 {
+            monsterImg.playDeathAnimation()
+        } else {
+            monsterImg2.playDeathAnimation()
+        }
         timer.invalidate()
-        monsterImg.playDeathAnimation()
         sfxDeath.play()
         musicPlayer.stop()
         foodImg.alpha = DIM_ALPHA
@@ -194,6 +258,11 @@ class ViewController: UIViewController {
         resetGame()
     }
     
+    @IBAction func chooseMonsterButtonPressed(sender: AnyObject) {
+        monsterSelected = sender.tag
+        print(monsterSelected)
+        playGame()
+    }
 
 }
 
