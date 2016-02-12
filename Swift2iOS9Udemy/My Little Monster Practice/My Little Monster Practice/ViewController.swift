@@ -13,6 +13,7 @@ import SpriteKit
 class ViewController: UIViewController {
     @IBOutlet weak var introBackgroundImage: UIImageView!
 
+    @IBOutlet weak var monster2PlatformImage: UIStackView!
     @IBOutlet weak var caveBackgroundImage: UIImageView!
     
     @IBOutlet weak var caveGroundImage: UIImageView!
@@ -147,6 +148,7 @@ class ViewController: UIViewController {
         penalty3Img.hidden = true
         
         caveBackgroundImage.hidden = true
+        monster2PlatformImage.hidden = true
         caveGroundImage.hidden = true
         livesPanelImage.hidden = true
         

@@ -18,7 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_background" translatesAutoresizingMaskIntoConstraints="NO" id="5si-6B-AP7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="marssky" translatesAutoresizingMaskIntoConstraints="NO" id="AYO-jH-m4H">
+                                <rect key="frame" x="-2" y="-1" width="602" height="601"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_background" translatesAutoresizingMaskIntoConstraints="NO" id="5si-6B-AP7">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="FgZ-0n-LAA">
@@ -89,14 +92,14 @@
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="Uia-tv-a3Z" customClass="DragImg" customModule="My_Little_Monster_Practice" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="95" height="80"/>
                                     </imageView>
-                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="torch" translatesAutoresizingMaskIntoConstraints="NO" id="Xmf-EJ-ALB" customClass="DragImg" customModule="My_Little_Monster_Practice" customModuleProvider="target">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="torch" translatesAutoresizingMaskIntoConstraints="NO" id="Xmf-EJ-ALB" customClass="DragImg" customModule="My_Little_Monster_Practice" customModuleProvider="target">
                                         <rect key="frame" x="125" y="0.0" width="95" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="Cnf-dx-EYs"/>
                                             <constraint firstAttribute="width" constant="95" id="Rvf-0W-ZQZ"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="FTG-Qg-nkO" customClass="DragImg" customModule="My_Little_Monster_Practice" customModuleProvider="target">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="FTG-Qg-nkO" customClass="DragImg" customModule="My_Little_Monster_Practice" customModuleProvider="target">
                                         <rect key="frame" x="250" y="0.0" width="95" height="80"/>
                                     </imageView>
                                 </subviews>
@@ -191,23 +194,42 @@
                                     <constraint firstItem="L6U-QS-NIP" firstAttribute="centerX" secondItem="5QZ-Kp-E3s" secondAttribute="centerX" id="BwH-Ih-fjV"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" misplaced="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="BG2-uq-hAj">
+                                <rect key="frame" x="-74" y="496" width="600" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tile32" translatesAutoresizingMaskIntoConstraints="NO" id="r8N-aX-3li">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tile33" translatesAutoresizingMaskIntoConstraints="NO" id="EAm-2P-F9x">
+                                        <rect key="frame" x="300" y="0.0" width="300" height="200"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="11H-gy-ftL"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="BG2-uq-hAj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1q5-Vt-aP4"/>
                             <constraint firstItem="Sjz-QK-6m0" firstAttribute="top" secondItem="M6k-Ph-KzU" secondAttribute="bottom" constant="15" id="26Y-fg-ZEk"/>
                             <constraint firstItem="FgZ-0n-LAA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5cw-H9-NDL"/>
                             <constraint firstItem="Sjz-QK-6m0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="5ro-a7-3Mv"/>
                             <constraint firstItem="5QZ-Kp-E3s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Vg-n6-qlG"/>
+                            <constraint firstAttribute="trailing" secondItem="BG2-uq-hAj" secondAttribute="trailing" id="9C5-Mo-IuI"/>
                             <constraint firstItem="2ty-5A-p4X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9rY-Vx-Ofh"/>
                             <constraint firstItem="5si-6B-AP7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EBD-iw-nzk"/>
+                            <constraint firstItem="AYO-jH-m4H" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FEq-I5-uAp"/>
                             <constraint firstItem="F0u-lr-6l5" firstAttribute="centerY" secondItem="2ty-5A-p4X" secondAttribute="centerY" id="Fgk-3m-3tg"/>
                             <constraint firstItem="Sjz-QK-6m0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fxz-hV-xlx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FgZ-0n-LAA" secondAttribute="bottom" id="GeO-Vz-2To"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qWd-R6-u6z" secondAttribute="bottom" constant="47" id="H1c-h3-6wk"/>
                             <constraint firstAttribute="trailing" secondItem="5si-6B-AP7" secondAttribute="trailing" id="HAe-e1-ybC"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mLp-z9-9xy" secondAttribute="bottom" constant="50" id="Hzd-x1-iLz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mLp-z9-9xy" secondAttribute="bottom" constant="67" id="Hzd-x1-iLz"/>
                             <constraint firstItem="2ty-5A-p4X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M9D-yG-FHv"/>
+                            <constraint firstItem="AYO-jH-m4H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="W7z-Iu-TGS"/>
                             <constraint firstItem="Sjz-QK-6m0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YBC-5P-fob"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AYO-jH-m4H" secondAttribute="bottom" id="aEr-z9-eRW"/>
                             <constraint firstItem="F0u-lr-6l5" firstAttribute="centerX" secondItem="2ty-5A-p4X" secondAttribute="centerX" id="cH5-Uc-PSD"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5si-6B-AP7" secondAttribute="bottom" id="eXR-Ms-lCH"/>
                             <constraint firstItem="w0n-5X-Wiy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="f7j-fk-7ES"/>
@@ -218,6 +240,7 @@
                             <constraint firstItem="M6k-Ph-KzU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iy7-zV-Cu9"/>
                             <constraint firstItem="mLp-z9-9xy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="lOT-lM-6bu"/>
                             <constraint firstAttribute="trailing" secondItem="FgZ-0n-LAA" secondAttribute="trailing" id="m1d-5n-vEY"/>
+                            <constraint firstAttribute="trailing" secondItem="AYO-jH-m4H" secondAttribute="trailing" id="n53-q8-kQm"/>
                             <constraint firstItem="Sjz-QK-6m0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="67" id="o7g-VX-dbp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Sjz-QK-6m0" secondAttribute="trailing" constant="-100" id="oCD-cv-I79"/>
                             <constraint firstItem="Sjz-QK-6m0" firstAttribute="top" secondItem="M6k-Ph-KzU" secondAttribute="bottom" constant="20" id="oYo-4E-nOH"/>
@@ -227,6 +250,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="w0n-5X-Wiy" secondAttribute="bottom" id="s25-QF-CPx"/>
                             <constraint firstItem="qWd-R6-u6z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-15" id="slZ-ag-J2Z"/>
                             <constraint firstItem="5si-6B-AP7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="u6v-69-3lz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BG2-uq-hAj" secondAttribute="bottom" id="xvA-4N-gWG"/>
                             <constraint firstItem="FgZ-0n-LAA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yWW-9C-sDw"/>
                             <constraint firstItem="Sjz-QK-6m0" firstAttribute="top" secondItem="M6k-Ph-KzU" secondAttribute="bottom" constant="16" id="zec-aT-YYr"/>
                         </constraints>
@@ -277,6 +301,7 @@
                         <outlet property="introBackgroundImage" destination="5si-6B-AP7" id="7u9-xz-0ug"/>
                         <outlet property="introChooseMonsterOutlet" destination="5QZ-Kp-E3s" id="cUG-Ld-G6x"/>
                         <outlet property="livesPanelImage" destination="M6k-Ph-KzU" id="EaW-6u-N9b"/>
+                        <outlet property="monster2PlatformImage" destination="BG2-uq-hAj" id="T2e-cx-lhR"/>
                         <outlet property="monsterImg" destination="qWd-R6-u6z" id="Upv-H0-PQA"/>
                         <outlet property="monsterImg2" destination="mLp-z9-9xy" id="pMl-Na-UR8"/>
                         <outlet property="obedienceImg" destination="Xmf-EJ-ALB" id="qvl-Nj-m34"/>
@@ -301,8 +326,11 @@
         <image name="idle1" width="889" height="615"/>
         <image name="intro_background" width="174" height="131"/>
         <image name="livespanel" width="468" height="137"/>
+        <image name="marssky" width="1920" height="1200"/>
         <image name="print" width="550" height="83"/>
         <image name="skull" width="95" height="98"/>
+        <image name="tile32" width="164" height="100"/>
+        <image name="tile33" width="164" height="100"/>
         <image name="torch" width="643" height="393"/>
     </resources>
 </document>
