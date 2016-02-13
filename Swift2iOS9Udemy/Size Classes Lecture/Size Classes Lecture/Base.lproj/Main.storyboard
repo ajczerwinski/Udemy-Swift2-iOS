@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Size_Classes_Lecture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="dqK-Sp-hJe">
+                                <rect key="frame" x="180" y="90" width="240" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="3Qu-0Q-qFN"/>
+                                    <constraint firstAttribute="height" constant="179" id="u6c-Mh-whI"/>
+                                    <constraint firstAttribute="height" constant="218" id="x2n-UL-Cfk"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3Qu-0Q-qFN"/>
+                                        <exclude reference="u6c-Mh-whI"/>
+                                        <exclude reference="x2n-UL-Cfk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="175" height="179"/>
+                                    <mask key="constraints">
+                                        <include reference="3Qu-0Q-qFN"/>
+                                        <include reference="u6c-Mh-whI"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="20" y="90" width="560" height="218"/>
+                                    <mask key="constraints">
+                                        <include reference="x2n-UL-Cfk"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rZ-6F-p3N">
+                                <rect key="frame" x="180" y="339" width="240" height="188"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque egestas ante, sed scelerisque lorem vehicula eu. Nulla tristique arcu feugiat nibh interdum, eget tristique tortor fermentum. Duis rhoncus euismod est, id consectetur dui consectetur eu. Donec justo mauris, fringilla nec libero consequat, euismod feugiat lectus. Morbi justo dui, feugiat a magna a, condimentum ornare urna. Sed sit amet dui orci. Proin fringilla vitae libero a porttitor. </string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.21960784310000001" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="183" y="0.0" width="405" height="329"/>
+                                </variation>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="20" y="327" width="560" height="221"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0rZ-6F-p3N" firstAttribute="top" secondItem="dqK-Sp-hJe" secondAttribute="bottom" constant="19" id="9NV-sB-ZwD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0rZ-6F-p3N" secondAttribute="trailing" constant="20" id="9dd-AJ-jHi"/>
+                            <constraint firstItem="dqK-Sp-hJe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="AOo-pI-gba"/>
+                            <constraint firstItem="dqK-Sp-hJe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FnD-gG-uzR"/>
+                            <constraint firstItem="0rZ-6F-p3N" firstAttribute="leading" secondItem="dqK-Sp-hJe" secondAttribute="trailing" constant="50" id="QbW-8P-qGz"/>
+                            <constraint firstItem="dqK-Sp-hJe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="QgE-W8-eyl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0rZ-6F-p3N" secondAttribute="bottom" constant="71" id="Qux-wh-7qp"/>
+                            <constraint firstItem="0rZ-6F-p3N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ylw-N1-UBb"/>
+                            <constraint firstItem="dqK-Sp-hJe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="8" id="cse-7h-WQ3"/>
+                            <constraint firstItem="0rZ-6F-p3N" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="8" id="dcC-8u-7d7"/>
+                            <constraint firstItem="dqK-Sp-hJe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wB3-GE-jqU"/>
+                            <constraint firstItem="0rZ-6F-p3N" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wbW-0h-LWE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AOo-pI-gba"/>
+                                <exclude reference="FnD-gG-uzR"/>
+                                <exclude reference="QgE-W8-eyl"/>
+                                <exclude reference="cse-7h-WQ3"/>
+                                <exclude reference="wB3-GE-jqU"/>
+                                <exclude reference="9NV-sB-ZwD"/>
+                                <exclude reference="9dd-AJ-jHi"/>
+                                <exclude reference="QbW-8P-qGz"/>
+                                <exclude reference="Ylw-N1-UBb"/>
+                                <exclude reference="dcC-8u-7d7"/>
+                                <exclude reference="wbW-0h-LWE"/>
+                                <exclude reference="Qux-wh-7qp"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="FnD-gG-uzR"/>
+                                <include reference="cse-7h-WQ3"/>
+                                <include reference="9dd-AJ-jHi"/>
+                                <include reference="QbW-8P-qGz"/>
+                                <include reference="dcC-8u-7d7"/>
+                                <include reference="Qux-wh-7qp"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="AOo-pI-gba"/>
+                                <include reference="QgE-W8-eyl"/>
+                                <include reference="wB3-GE-jqU"/>
+                                <include reference="9NV-sB-ZwD"/>
+                                <include reference="Ylw-N1-UBb"/>
+                                <include reference="wbW-0h-LWE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rock" width="1853" height="1341"/>
+    </resources>
+</document>
