@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BlueVC" customModule="No_Storyboard_Lecture" customModuleProvider="target">
             <connections>
+                <outlet property="printLbl" destination="dI2-GY-gym" id="H8v-Gq-i9l"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +15,23 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dI2-GY-gym">
+                    <rect key="frame" x="279" y="139" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="175" id="cNh-0b-VIc"/>
+                        <constraint firstAttribute="height" constant="49" id="jyS-7z-F04"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="0.16862745100000001" green="0.52156862749999999" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="dI2-GY-gym" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="QKv-v3-EIo"/>
+                <constraint firstItem="dI2-GY-gym" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vrZ-2C-iVu"/>
+            </constraints>
         </view>
     </objects>
 </document>
