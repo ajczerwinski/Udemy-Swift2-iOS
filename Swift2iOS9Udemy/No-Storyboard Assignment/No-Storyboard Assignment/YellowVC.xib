@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YellowVC" customModule="No_Storyboard_Assignment" customModuleProvider="target">
             <connections>
+                <outlet property="printLbl" destination="By8-QY-FGk" id="bvN-Bu-oFL"/>
                 <outlet property="view" destination="FIj-VF-Afh" id="JUC-Sl-g06"/>
             </connections>
         </placeholder>
@@ -26,11 +27,23 @@
                         <action selector="loadBlueView:" destination="-1" eventType="touchUpInside" id="VX8-Vh-RCn"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="By8-QY-FGk">
+                    <rect key="frame" x="313" y="269" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="FfT-JS-oGz"/>
+                        <constraint firstAttribute="width" constant="175" id="h1Z-iA-a5M"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="By8-QY-FGk" firstAttribute="centerX" secondItem="FIj-VF-Afh" secondAttribute="centerX" id="aoE-Ul-oBm"/>
                 <constraint firstItem="HfB-pl-QIz" firstAttribute="centerX" secondItem="FIj-VF-Afh" secondAttribute="centerX" id="itK-7Z-y5c"/>
-                <constraint firstItem="HfB-pl-QIz" firstAttribute="centerY" secondItem="FIj-VF-Afh" secondAttribute="centerY" id="uvM-Ge-Tud"/>
+                <constraint firstItem="By8-QY-FGk" firstAttribute="centerY" secondItem="FIj-VF-Afh" secondAttribute="centerY" id="pzd-Ll-bNb"/>
+                <constraint firstItem="HfB-pl-QIz" firstAttribute="centerY" secondItem="FIj-VF-Afh" secondAttribute="centerY" constant="-180" id="uvM-Ge-Tud"/>
             </constraints>
             <point key="canvasLocation" x="277" y="108"/>
         </view>

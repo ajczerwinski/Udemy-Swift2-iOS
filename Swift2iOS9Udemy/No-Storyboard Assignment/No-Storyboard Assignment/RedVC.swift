@@ -12,6 +12,8 @@ class RedVC: UIViewController {
     
     @IBOutlet weak var printLbl: UILabel!
     
+    var blueVC: BlueVC!
+    
     var printTxt = ""
     
     convenience init(printMe: String) {
@@ -42,4 +44,10 @@ class RedVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func loadBlueView(sender: AnyObject) {
+        blueVC = BlueVC(printMe: "Welcome back to the Blue View!")
+        self.presentViewController(blueVC, animated: true, completion: nil)
+    }
+    
 }

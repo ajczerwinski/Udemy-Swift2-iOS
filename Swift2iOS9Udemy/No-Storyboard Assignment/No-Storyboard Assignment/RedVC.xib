@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5S-vr-jkI">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5S-vr-jkI">
                     <rect key="frame" x="279" y="212" width="42" height="21"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="175" id="EEc-mc-eZr"/>
@@ -26,10 +26,25 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1b-bD-pNC">
+                    <rect key="frame" x="277" y="72" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="IGC-9O-I4j"/>
+                        <constraint firstAttribute="height" constant="50" id="gkd-M4-khQ"/>
+                    </constraints>
+                    <state key="normal" title="Back to Blue">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loadBlueView:" destination="-1" eventType="touchUpInside" id="Ylg-HS-Mgo"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.87450980389999999" green="0.1960784314" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="y1b-bD-pNC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3b3-OL-IVE"/>
                 <constraint firstItem="B5S-vr-jkI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4dI-Gx-Gff"/>
+                <constraint firstItem="y1b-bD-pNC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="72" id="8bD-SY-dDh"/>
                 <constraint firstItem="B5S-vr-jkI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ud1-Tr-FFe"/>
             </constraints>
         </view>

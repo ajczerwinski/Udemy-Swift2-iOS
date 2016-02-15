@@ -12,6 +12,7 @@ class BlueVC: UIViewController {
     
     @IBOutlet weak var printLbl: UILabel!
     
+    var yellowVC: YellowVC!
     var redVC: RedVC!
     
     var printTxt = ""
@@ -48,6 +49,11 @@ class BlueVC: UIViewController {
     @IBAction func loadRedView(sender: AnyObject) {
         redVC = RedVC(printMe: "Welcome to the Red View!")
         self.presentViewController(redVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func loadYellowView(sender: AnyObject) {
+        yellowVC = YellowVC(printMe: "Welcome back to the Yellow View!")
+        self.presentViewController(yellowVC, animated: true, completion: nil)
     }
     
 }
