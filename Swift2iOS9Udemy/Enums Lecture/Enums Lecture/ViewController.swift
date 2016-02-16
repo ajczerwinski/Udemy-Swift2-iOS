@@ -25,8 +25,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var car1 = Cars.BMW
-        var car2 = Cars.SUBARU
+        let car1 = Cars.BMW
+        let car2 = Cars.SUBARU
         
         if car1.rawValue == car2.rawValue {
             
