@@ -128,8 +128,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="600" misplaced="YES" image="yucca2" translatesAutoresizingMaskIntoConstraints="NO" id="xQz-Md-glr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="400" verticalHuggingPriority="800" verticalCompressionResistancePriority="600" misplaced="YES" image="yucca2" translatesAutoresizingMaskIntoConstraints="NO" id="xQz-Md-glr">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="OWP-Xf-YMo"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OWP-Xf-YMo"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
+                                    <mask key="constraints">
+                                        <include reference="OWP-Xf-YMo"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ABOUT YUCCA VALLEY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kQ-8e-YLh">
                                 <rect key="frame" x="163" y="28" width="195" height="21"/>
@@ -146,7 +160,7 @@
                                     <action selector="backPressed:" destination="hc6-er-fuE" eventType="touchUpInside" id="O1d-kY-fMB"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="60e-OU-XEe">
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="800" misplaced="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="60e-OU-XEe">
                                 <rect key="frame" x="20" y="165" width="560" height="261"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="C63-LU-pW2">
@@ -157,14 +171,23 @@
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="21"/>
+                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20,700" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGn-MK-mSZ">
                                                 <rect key="frame" x="0.0" y="21" width="52" height="20"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="21" width="52" height="20"/>
+                                                </variation>
                                             </label>
                                         </subviews>
+                                        <variation key="heightClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="110" height="41"/>
+                                        </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YrJ-yK-dfR">
                                         <rect key="frame" x="0.0" y="51" width="560" height="210"/>
@@ -177,21 +200,30 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sZ-48-4zt">
                                                 <rect key="frame" x="0.0" y="31" width="560" height="179"/>
-                                                <mutableString key="text">Norman J. Essig was a key player in the late 1950s in working toward establishing Yucca Valley as a place for entertainment celebrities to come and live in privacy. He personally acquired hundreds of acres of land during this time and owned and ran Glenn Realty. He helped to put in the main roads that are running throughout the town off of Hwy 62. He was personal friends with Jimmy Van Heusen and gave him prime real estate in Yucca Valley to build his house which can still be seen atop the highest hill in the center of the town. He is survived by his two daughters Jean Essig and Marie Hodge and seven grandchildren.</mutableString>
+                                                <string key="text">Norman J. Essig was a key player in the late 1950s in working toward establishing Yucca Valley as a place for entertainment celebrities to come and live in privacy. He personally acquired hundreds of acres of land during this time and owned and ran Glenn Realty. He helped to put in the main roads that are running throughout the town off of Hwy 62. He was personal friends with Jimmy Van Heusen and gave him prime real estate in Yucca Valley to build his house which can still be seen atop the highest hill in the center of the town. He is survived by his two daughters Jean Essig and Marie Hodge and seven grandchildren.</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="0.0" y="31" width="560" height="148"/>
+                                                </variation>
                                             </label>
                                         </subviews>
+                                        <variation key="heightClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="51" width="560" height="179"/>
+                                        </variation>
                                     </stackView>
                                 </subviews>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="119" width="560" height="230"/>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="p8A-IK-h44" firstAttribute="top" secondItem="60e-OU-XEe" secondAttribute="bottom" constant="20" id="AVo-Mb-I7v"/>
                             <constraint firstItem="60e-OU-XEe" firstAttribute="leading" secondItem="DBZ-Dm-nI6" secondAttribute="leadingMargin" id="MRB-yv-zYv"/>
-                            <constraint firstItem="60e-OU-XEe" firstAttribute="top" secondItem="xQz-Md-glr" secondAttribute="bottom" constant="40" id="eII-XE-taK"/>
+                            <constraint firstItem="60e-OU-XEe" firstAttribute="top" secondItem="xQz-Md-glr" secondAttribute="bottom" constant="50" id="eII-XE-taK"/>
                             <constraint firstItem="xQz-Md-glr" firstAttribute="top" secondItem="DBZ-Dm-nI6" secondAttribute="top" id="m1h-D7-hiX"/>
                             <constraint firstAttribute="trailing" secondItem="xQz-Md-glr" secondAttribute="trailing" id="mff-LR-lKE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="60e-OU-XEe" secondAttribute="trailing" id="zE6-V3-FIM"/>

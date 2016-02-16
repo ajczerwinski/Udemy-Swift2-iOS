@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_Favorite_Places___Thompson_Falls" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dam" translatesAutoresizingMaskIntoConstraints="NO" id="0KE-2i-pCG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wNw-zX-3Qs">
+                                <rect key="frame" x="9" y="84" width="235" height="167"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pV1-Dm-0fK">
+                                        <rect key="frame" x="0.0" y="0.0" width="235" height="42"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RIVER AND MOUNTAINS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEX-jU-kDN">
+                                                <rect key="frame" x="0.0" y="0.0" width="235" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEET THE BIG SKY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6i-kS-gIq">
+                                                <rect key="frame" x="0.0" y="21" width="235" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="eEX-jU-kDN" firstAttribute="leading" secondItem="pV1-Dm-0fK" secondAttribute="leading" id="fJw-UU-3Pp"/>
+                                            <constraint firstItem="eEX-jU-kDN" firstAttribute="top" secondItem="pV1-Dm-0fK" secondAttribute="top" id="wIT-Z8-DLf"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="llQ-Qx-qdi">
+                                        <rect key="frame" x="0.0" y="47" width="235" height="120"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THOMPSON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esW-Tl-cOJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="235" height="48"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FALLS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03x-ZN-Xgw">
+                                                <rect key="frame" x="0.0" y="48" width="235" height="72"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="60"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="03x-ZN-Xgw" firstAttribute="leading" secondItem="llQ-Qx-qdi" secondAttribute="leading" id="BWI-Le-CRk"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pV1-Dm-0fK" firstAttribute="leading" secondItem="wNw-zX-3Qs" secondAttribute="leading" id="tXA-1x-00Z"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nwy-c9-cHY">
+                                <rect key="frame" x="9" y="399" width="300" height="104"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass_img" translatesAutoresizingMaskIntoConstraints="NO" id="wrT-IX-xR2">
+                                        <rect key="frame" x="0.0" y="54" width="100" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="9zV-Vh-nam"/>
+                                            <constraint firstAttribute="height" constant="50" id="Msc-BX-Wy5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONTANA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vP-Ef-Jmm">
+                                        <rect key="frame" x="110" y="68" width="190" height="36"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" red="0.082352941176470587" green="0.16862745098039217" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="ZHF-RW-RjB"/>
+                                    <constraint firstAttribute="height" constant="104" id="uL3-e8-Jy7"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="bottom" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="XVd-3m-GTq">
+                                <rect key="frame" x="398" y="488" width="182" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jw8-rq-gTO">
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="33"/>
+                                        <color key="backgroundColor" red="0.21960784310000001" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="About Thompson Falls">
+                                            <color key="titleColor" red="1" green="0.93725490199999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pg-ke-4Ci">
+                                        <rect key="frame" x="124" y="37" width="58" height="33"/>
+                                        <color key="backgroundColor" red="0.21960784310000001" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Photos">
+                                            <color key="titleColor" red="1" green="0.93725490199999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0KE-2i-pCG" secondAttribute="trailing" id="0tz-rJ-6Gi"/>
+                            <constraint firstItem="XVd-3m-GTq" firstAttribute="leading" secondItem="wNw-zX-3Qs" secondAttribute="trailing" constant="8" symbolic="YES" id="7SH-VM-AQs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nwy-c9-cHY" secondAttribute="bottom" constant="35" id="Bzn-Tf-baj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XVd-3m-GTq" secondAttribute="trailing" constant="-5" id="DmY-lV-y9b"/>
+                            <constraint firstItem="wNw-zX-3Qs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="EoC-NT-ftT"/>
+                            <constraint firstItem="nwy-c9-cHY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-5" id="JjB-pH-V7C"/>
+                            <constraint firstItem="wNw-zX-3Qs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-10" id="ctU-r3-LSl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0KE-2i-pCG" secondAttribute="bottom" id="dWl-7E-szb"/>
+                            <constraint firstItem="0KE-2i-pCG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="flH-Ua-phD"/>
+                            <constraint firstItem="0KE-2i-pCG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lT9-o2-gWi"/>
+                            <constraint firstItem="XVd-3m-GTq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="rat-JB-bhl"/>
+                            <constraint firstItem="XVd-3m-GTq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="stp-3c-mFb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XVd-3m-GTq" secondAttribute="bottom" constant="20" id="u3A-xG-Icx"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="u3A-xG-Icx"/>
+                                <exclude reference="7SH-VM-AQs"/>
+                                <exclude reference="rat-JB-bhl"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="aboutButtonUI" destination="jw8-rq-gTO" id="d7q-oi-1Jm"/>
+                        <outlet property="photosButtonUI" destination="5pg-ke-4Ci" id="U3i-kB-Ckp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="302"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="compass_img" width="161" height="161"/>
+        <image name="dam" width="954" height="375"/>
+    </resources>
+</document>
