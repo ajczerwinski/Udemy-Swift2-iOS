@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Enums_Lecture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CfJ-Fb-b6S">
+                                <rect key="frame" x="225" y="0.0" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="bF7-vf-DMq"/>
+                                    <constraint firstAttribute="width" constant="165" id="uf9-TM-e5c"/>
+                                </constraints>
+                                <state key="normal" image="bwm"/>
+                                <connections>
+                                    <action selector="onButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yuT-2q-Roo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrj-Wm-Dce">
+                                <rect key="frame" x="225" y="152" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="6rg-Yo-wee"/>
+                                    <constraint firstAttribute="height" constant="95" id="Szp-1B-TnB"/>
+                                </constraints>
+                                <state key="normal" image="honda"/>
+                                <connections>
+                                    <action selector="onButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iPN-mt-Im1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEi-Lw-SwJ">
+                                <rect key="frame" x="225" y="305" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="QBV-vE-39G"/>
+                                    <constraint firstAttribute="height" constant="95" id="j0w-LI-x2F"/>
+                                </constraints>
+                                <state key="normal" image="tesla"/>
+                                <connections>
+                                    <action selector="onButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kUF-zo-bJi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfl-AV-rGZ">
+                                <rect key="frame" x="225" y="457" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="FEQ-j9-vc6"/>
+                                    <constraint firstAttribute="height" constant="95" id="qIQ-LU-FVw"/>
+                                </constraints>
+                                <state key="normal" image="subaru"/>
+                                <connections>
+                                    <action selector="onButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y1X-GW-Dn9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NN-Rh-kmy">
+                                <rect key="frame" x="279" y="615" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="LrN-pi-Bsb"/>
+                                    <constraint firstAttribute="height" constant="50" id="oty-l7-G7m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sfl-AV-rGZ" firstAttribute="top" secondItem="cEi-Lw-SwJ" secondAttribute="bottom" constant="8" id="KOW-D7-YPD"/>
+                            <constraint firstItem="Rrj-Wm-Dce" firstAttribute="top" secondItem="CfJ-Fb-b6S" secondAttribute="bottom" constant="8" id="PcS-ms-4jG"/>
+                            <constraint firstItem="Sfl-AV-rGZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VRJ-Pz-vo7"/>
+                            <constraint firstItem="Rrj-Wm-Dce" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ws2-6j-6BC"/>
+                            <constraint firstItem="cEi-Lw-SwJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yxf-1T-ANp"/>
+                            <constraint firstItem="CfJ-Fb-b6S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aWm-Gd-E8k"/>
+                            <constraint firstItem="cEi-Lw-SwJ" firstAttribute="top" secondItem="Rrj-Wm-Dce" secondAttribute="bottom" constant="8" id="r0s-13-khK"/>
+                            <constraint firstItem="CfJ-Fb-b6S" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="8" id="rcM-TA-eV9"/>
+                            <constraint firstItem="3NN-Rh-kmy" firstAttribute="top" secondItem="Sfl-AV-rGZ" secondAttribute="bottom" constant="8" id="tLl-jA-vq1"/>
+                            <constraint firstItem="3NN-Rh-kmy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xz6-n7-Zuv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="theLabel" destination="3NN-Rh-kmy" id="bry-Um-BYt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="230"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bwm" width="884" height="497"/>
+        <image name="honda" width="640" height="480"/>
+        <image name="subaru" width="1024" height="768"/>
+        <image name="tesla" width="2647" height="1600"/>
+    </resources>
+</document>
