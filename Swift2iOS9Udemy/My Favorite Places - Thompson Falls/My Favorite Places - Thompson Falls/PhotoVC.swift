@@ -1,5 +1,5 @@
 //
-//  AboutVC.swift
+//  PhotoVC.swift
 //  My Favorite Places - Thompson Falls
 //
 //  Created by Allen Czerwinski on 2/15/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AboutVC: UIViewController {
+class PhotoVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +20,12 @@ class AboutVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     @IBAction func backPressed(sender: AnyObject) {
+        
         dismissViewControllerAnimated(true, completion: nil)
+        
     }
+    
 
 }
