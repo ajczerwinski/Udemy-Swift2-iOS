@@ -102,6 +102,9 @@
                                         <state key="normal" title="About Thompson Falls">
                                             <color key="titleColor" red="1" green="0.93725490199999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="yOS-JH-drJ" kind="show" id="nBn-qP-WVm"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pg-ke-4Ci">
                                         <rect key="frame" x="124" y="37" width="58" height="33"/>
@@ -147,9 +150,120 @@
             </objects>
             <point key="canvasLocation" x="280" y="302"/>
         </scene>
+        <!--AboutVC-->
+        <scene sceneID="uy0-6C-A3L">
+            <objects>
+                <viewController id="yOS-JH-drJ" customClass="AboutVC" customModule="My_Favorite_Places___Thompson_Falls" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kq1-n0-weu"/>
+                        <viewControllerLayoutGuide type="bottom" id="dOe-yx-JjV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="HdJ-FJ-8aP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="downtown2" translatesAutoresizingMaskIntoConstraints="NO" id="ojX-yI-gFU">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="347"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p8v-n7-i14">
+                                <rect key="frame" x="20" y="369" width="400" height="10919"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="MVk-Dk-XjR">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="10919"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Population" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhZ-fK-Nnh">
+                                                <rect key="frame" x="0.0" y="0.0" width="88" height="10882"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1,313" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMq-kG-XmD">
+                                                <rect key="frame" x="0.0" y="10882" width="33" height="16"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPg-kx-m9C">
+                                                <rect key="frame" x="0.0" y="10898" width="58" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZV1-KU-1MN">
+                                                <rect key="frame" x="0.0" y="10919" width="200" height="0.0"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="hhZ-jO-7m9"/>
+                                                    <constraint firstAttribute="width" constant="300" id="z2W-s3-MfA"/>
+                                                </constraints>
+                                                <mutableString key="text">Thompson Falls was named after British explorer, geographer and fur trader David Thompson, who founded a North West Company fur trading post called Saleesh House in 1809. The community is located next to natural waterfalls on the Clark Fork river. The arrival of the railroad in 1881 brought the first real activity to the area. Two years later, when the gold rush hit nearby Cœur d'Alene, the town grew to accommodate the men going over the Murray Trail to the mines. In 1885 John Russell bought 40 acres (160,000 m2) and plotted the town site.</mutableString>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="hhZ-jO-7m9"/>
+                                                        <exclude reference="z2W-s3-MfA"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="UjB-uv-009"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="4u7-N4-cs8">
+                                        <rect key="frame" x="200" y="0.0" width="200" height="10919"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oju-HJ-Agy">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ST7-fi-ETk">
+                                                <rect key="frame" x="0.0" y="21" width="200" height="10861"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="MeF-0K-d2O"/>
+                                                </constraints>
+                                                <string key="text">Nestled in the valley of the Lower Clark Fork River, Thompson Falls sits just above the Thompson Falls Dam, a historic hydroelectric dam built at the turn of the 20th century.</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Things to do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFl-JA-E7q">
+                                                <rect key="frame" x="0.0" y="10882" width="102" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opportunities for fishing, camping, hiking, and wildlife viewing abound all throughout the area." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiq-ar-hJm">
+                                                <rect key="frame" x="0.0" y="10903" width="200" height="16"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="342" id="prM-Qy-HEp"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="4u7-N4-cs8" secondAttribute="trailing" id="hTd-IH-KwN"/>
+                                    <constraint firstAttribute="width" constant="400" id="pQC-Xn-cD8"/>
+                                    <constraint firstAttribute="bottom" secondItem="4u7-N4-cs8" secondAttribute="bottom" id="wxf-R7-law"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dOe-yx-JjV" firstAttribute="top" secondItem="p8v-n7-i14" secondAttribute="bottom" id="3kz-Db-3Sn"/>
+                            <constraint firstItem="p8v-n7-i14" firstAttribute="leading" secondItem="HdJ-FJ-8aP" secondAttribute="leadingMargin" id="HwG-1q-DDS"/>
+                            <constraint firstItem="ojX-yI-gFU" firstAttribute="top" secondItem="HdJ-FJ-8aP" secondAttribute="topMargin" id="PX4-RU-91Y"/>
+                            <constraint firstItem="ojX-yI-gFU" firstAttribute="leading" secondItem="HdJ-FJ-8aP" secondAttribute="leadingMargin" constant="-20" id="iAM-nW-x9I"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4YN-Ce-Xwu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="-43"/>
+        </scene>
     </scenes>
     <resources>
         <image name="compass_img" width="161" height="161"/>
         <image name="dam" width="954" height="375"/>
+        <image name="downtown2" width="600" height="332"/>
     </resources>
 </document>
