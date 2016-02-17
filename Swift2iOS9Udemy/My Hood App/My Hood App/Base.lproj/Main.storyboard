@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_Hood_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yVI-RZ-LNO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoH-5I-kPr">
+                                        <rect key="frame" x="551" y="16" width="41" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="D78-iY-jtE"/>
+                                            <constraint firstAttribute="width" constant="41" id="xdX-Pa-95i"/>
+                                        </constraints>
+                                        <state key="normal" image="camera"/>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bannerlogo" translatesAutoresizingMaskIntoConstraints="NO" id="aLT-gZ-nRM">
+                                        <rect key="frame" x="222" y="13" width="156" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="157" id="LL8-dc-oLP"/>
+                                            <constraint firstAttribute="height" constant="37" id="wkt-PQ-uSG"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1803921568627451" green="0.52941176470588236" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zoH-5I-kPr" secondAttribute="trailing" constant="8" id="4Ve-Mc-e2Z"/>
+                                    <constraint firstItem="aLT-gZ-nRM" firstAttribute="centerX" secondItem="yVI-RZ-LNO" secondAttribute="centerX" id="WCm-xR-eHv"/>
+                                    <constraint firstAttribute="bottom" secondItem="zoH-5I-kPr" secondAttribute="bottom" constant="8" id="czp-kY-lA3"/>
+                                    <constraint firstAttribute="height" constant="64" id="hgZ-7X-o2H"/>
+                                    <constraint firstAttribute="bottom" secondItem="aLT-gZ-nRM" secondAttribute="bottom" constant="8" id="tr5-Z4-oRv"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="87" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KW0-Vi-eAg">
+                                <rect key="frame" x="26" y="97" width="554" height="461"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="87" id="E8Q-GD-HtT" customClass="PostCell" customModule="My_Hood_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="554" height="87"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="E8Q-GD-HtT" id="xPg-8U-Ihh">
+                                            <rect key="frame" x="0.0" y="0.0" width="554" height="87"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="dAQ-cN-Tml">
+                                                    <rect key="frame" x="8" y="8" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="7hS-OM-cwC"/>
+                                                        <constraint firstAttribute="height" constant="70" id="mLo-ZH-C8i"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Music man needs to go!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KqF-GN-haJ">
+                                                    <rect key="frame" x="86" y="8" width="460" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="BGP-gP-jX9"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Hey this neighbor is such a jerk. He blasts his Korn music way tooo loud and I'm thinking of calling the cops or something" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ai7-6E-mxg">
+                                                    <rect key="frame" x="86" y="30" width="460" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="46" id="Afg-1z-iW1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ai7-6E-mxg" firstAttribute="top" secondItem="xPg-8U-Ihh" secondAttribute="topMargin" constant="3" id="Nek-w3-Wyo"/>
+                                                <constraint firstItem="KqF-GN-haJ" firstAttribute="trailing" secondItem="xPg-8U-Ihh" secondAttribute="trailingMargin" id="UUy-S2-m1t"/>
+                                                <constraint firstItem="dAQ-cN-Tml" firstAttribute="bottom" secondItem="xPg-8U-Ihh" secondAttribute="bottomMargin" id="WXe-pg-gcO"/>
+                                                <constraint firstItem="ai7-6E-mxg" firstAttribute="trailing" secondItem="xPg-8U-Ihh" secondAttribute="trailingMargin" id="dRy-uE-USo"/>
+                                                <constraint firstItem="KqF-GN-haJ" firstAttribute="top" secondItem="xPg-8U-Ihh" secondAttribute="topMargin" id="egg-Fl-17x"/>
+                                                <constraint firstItem="dAQ-cN-Tml" firstAttribute="top" secondItem="xPg-8U-Ihh" secondAttribute="topMargin" id="h0u-FX-c49"/>
+                                                <constraint firstItem="dAQ-cN-Tml" firstAttribute="leading" secondItem="xPg-8U-Ihh" secondAttribute="leadingMargin" id="nJ6-pA-hAY"/>
+                                                <constraint firstItem="ai7-6E-mxg" firstAttribute="leading" secondItem="dAQ-cN-Tml" secondAttribute="trailing" constant="8" id="oxK-Dg-m0i"/>
+                                                <constraint firstItem="KqF-GN-haJ" firstAttribute="leading" secondItem="dAQ-cN-Tml" secondAttribute="trailing" constant="8" id="yHT-9b-9O5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descLbl" destination="ai7-6E-mxg" id="7Pv-B0-p14"/>
+                                            <outlet property="postImg" destination="dAQ-cN-Tml" id="CxI-0u-VVr"/>
+                                            <outlet property="titleLbl" destination="KqF-GN-haJ" id="nWl-1u-cs8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yVI-RZ-LNO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7az-gr-h71"/>
+                            <constraint firstAttribute="trailing" secondItem="yVI-RZ-LNO" secondAttribute="trailing" id="BAg-7y-heH"/>
+                            <constraint firstItem="yVI-RZ-LNO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GEn-re-xVb"/>
+                            <constraint firstItem="KW0-Vi-eAg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Zuz-KS-oYO"/>
+                            <constraint firstItem="KW0-Vi-eAg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qVt-cI-neo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KW0-Vi-eAg" secondAttribute="bottom" constant="20" id="v02-Cj-6mn"/>
+                            <constraint firstItem="KW0-Vi-eAg" firstAttribute="top" secondItem="yVI-RZ-LNO" secondAttribute="bottom" constant="20" id="wdK-Hq-0YP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="KW0-Vi-eAg" id="V9o-pu-xyL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230" y="314"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bannerlogo" width="518" height="194"/>
+        <image name="barrel-water-bridge" width="550" height="440"/>
+        <image name="camera" width="100" height="77"/>
+    </resources>
+</document>
