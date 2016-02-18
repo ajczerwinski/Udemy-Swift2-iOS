@@ -16,6 +16,7 @@
 		BF203A251C757B6D005BCC29 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF203A231C757B6D005BCC29 /* Recipe+CoreDataProperties.swift */; };
 		BF203A261C757B6D005BCC29 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF203A241C757B6D005BCC29 /* Recipe.swift */; };
 		BF203A281C757D20005BCC29 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF203A271C757D20005BCC29 /* RecipeCell.swift */; };
+		BF203A2A1C764E17005BCC29 /* CreateRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF203A291C764E17005BCC29 /* CreateRecipeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BF203A231C757B6D005BCC29 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BF203A241C757B6D005BCC29 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
 		BF203A271C757D20005BCC29 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		BF203A291C764E17005BCC29 /* CreateRecipeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRecipeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				BF203A0D1C756C42005BCC29 /* ViewController.swift */,
+				BF203A291C764E17005BCC29 /* CreateRecipeVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				BF203A251C757B6D005BCC29 /* Recipe+CoreDataProperties.swift in Sources */,
 				BF203A0C1C756C42005BCC29 /* AppDelegate.swift in Sources */,
 				BF203A281C757D20005BCC29 /* RecipeCell.swift in Sources */,
+				BF203A2A1C764E17005BCC29 /* CreateRecipeVC.swift in Sources */,
 				BF203A141C756C42005BCC29 /* Recipez_App.xcdatamodeld in Sources */,
 				BF203A261C757B6D005BCC29 /* Recipe.swift in Sources */,
 			);
