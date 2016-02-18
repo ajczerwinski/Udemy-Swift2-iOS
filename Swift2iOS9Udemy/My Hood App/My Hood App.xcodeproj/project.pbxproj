@@ -14,6 +14,7 @@
 		BF2039EA1C7526ED005BCC29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2039E81C7526ED005BCC29 /* LaunchScreen.storyboard */; };
 		BF2039F51C75275A005BCC29 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2039F41C75275A005BCC29 /* Post.swift */; };
 		BF2039F81C753383005BCC29 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2039F71C753383005BCC29 /* PostCell.swift */; };
+		BF2039FB1C7541F4005BCC29 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2039FA1C7541F4005BCC29 /* AddPostVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BF2039EB1C7526ED005BCC29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2039F41C75275A005BCC29 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		BF2039F71C753383005BCC29 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		BF2039FA1C7541F4005BCC29 /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +62,9 @@
 			children = (
 				BF2039F11C7526F5005BCC29 /* Model */,
 				BF2039F61C753343005BCC29 /* View */,
+				BF2039F91C754185005BCC29 /* Controller */,
 				BF2039DF1C7526ED005BCC29 /* AppDelegate.swift */,
-				BF2039E11C7526ED005BCC29 /* ViewController.swift */,
-				BF2039E31C7526ED005BCC29 /* Main.storyboard */,
 				BF2039E61C7526ED005BCC29 /* Assets.xcassets */,
-				BF2039E81C7526ED005BCC29 /* LaunchScreen.storyboard */,
 				BF2039EB1C7526ED005BCC29 /* Info.plist */,
 			);
 			path = "My Hood App";
@@ -81,9 +81,20 @@
 		BF2039F61C753343005BCC29 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BF2039E31C7526ED005BCC29 /* Main.storyboard */,
+				BF2039E81C7526ED005BCC29 /* LaunchScreen.storyboard */,
 				BF2039F71C753383005BCC29 /* PostCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		BF2039F91C754185005BCC29 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF2039E11C7526ED005BCC29 /* ViewController.swift */,
+				BF2039FA1C7541F4005BCC29 /* AddPostVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +170,7 @@
 			files = (
 				BF2039F51C75275A005BCC29 /* Post.swift in Sources */,
 				BF2039E21C7526ED005BCC29 /* ViewController.swift in Sources */,
+				BF2039FB1C7541F4005BCC29 /* AddPostVC.swift in Sources */,
 				BF2039E01C7526ED005BCC29 /* AppDelegate.swift in Sources */,
 				BF2039F81C753383005BCC29 /* PostCell.swift in Sources */,
 			);
