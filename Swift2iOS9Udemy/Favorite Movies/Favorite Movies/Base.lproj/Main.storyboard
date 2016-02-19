@@ -331,6 +331,13 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1200"/>
+                    <connections>
+                        <outlet property="imdbPlot" destination="cDU-YK-Qwj" id="sHg-2J-VNs"/>
+                        <outlet property="imdbURL" destination="BOr-2J-Exm" id="wy4-vn-pzx"/>
+                        <outlet property="movieDesc" destination="jsh-aq-qx7" id="8zM-Q7-tiw"/>
+                        <outlet property="movieImg" destination="4Hc-x0-OXA" id="9aB-L9-CCZ"/>
+                        <outlet property="movieTitle" destination="yMh-Oy-99l" id="zR5-5h-s7P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2S2-8P-DW4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
