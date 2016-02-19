@@ -28,6 +28,8 @@ class MovieCell: UITableViewCell {
         movieDesc.text = movie.movieDescription
         imdbImg.image = UIImage(named: "imdb")
         movieImg.image = movie.getMovieImg()
+        movieImg.layer.cornerRadius = 8.0
+        movieImg.clipsToBounds = true
     }
 
     @IBAction func imdbLinkPressed(sender: AnyObject) {

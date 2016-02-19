@@ -57,9 +57,25 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
     }
-
     
-
-
+    func tableView(tableView: UITableView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+        var movie: Movie!
+        
+        movie = movies[indexPath.row]
+        
+        print(movie.plot)
+        
+        performSegueWithIdentifier("DetailsVC", sender: movie)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "DetailsVC" {
+            if let movieDetailsVC = segue.destinationViewController as? DetailsVC {
+                if let movie = sender as? Movie {
+                    movieDetailsVC.movie = movie
+                }
+            }
+        }
+    }
 }
 

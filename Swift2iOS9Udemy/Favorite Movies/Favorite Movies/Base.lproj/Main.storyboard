@@ -65,7 +65,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlc-KT-Ybr">
                                                     <rect key="frame" x="8" y="4" width="493" height="95"/>
                                                     <connections>
-                                                        <segue destination="A94-J5-bv4" kind="show" id="Wtf-0W-sWL"/>
+                                                        <segue destination="A94-J5-bv4" kind="show" identifier="DetailsVC" id="Wtf-0W-sWL"/>
                                                     </connections>
                                                 </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="imdb" translatesAutoresizingMaskIntoConstraints="NO" id="UFZ-Lj-AUY">

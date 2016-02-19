@@ -10,20 +10,24 @@ import UIKit
 
 class DetailsVC: UIViewController {
     
+    var movie: Movie!
+    
     @IBOutlet weak var movieImg: UIImageView!
     @IBOutlet weak var movieTitle: UILabel!
     @IBOutlet weak var movieDesc: UILabel!
     @IBOutlet weak var imdbURL: UILabel!
     @IBOutlet weak var imdbPlot: UILabel!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         
     }
     
     override func viewWillAppear(animated: Bool) {
         func configureCell(movie: Movie) {
+            print("hi")
             movieTitle.text = movie.title
             movieDesc.text = movie.movieDescription
             movieImg.image = movie.getMovieImg()
@@ -31,5 +35,7 @@ class DetailsVC: UIViewController {
             imdbPlot.text = movie.plot
         }
     }
+    
+    
     
 }
