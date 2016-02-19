@@ -28,11 +28,11 @@ class DetailsVC: UIViewController {
     override func viewWillAppear(animated: Bool) {
         func configureCell(movie: Movie) {
             print("hi")
-            movieTitle.text = movie.title
-            movieDesc.text = movie.movieDescription
+            movieTitle.text = movie.title!
+            movieDesc.text = movie.movieDescription!
             movieImg.image = movie.getMovieImg()
-            imdbURL.text = movie.link
-            imdbPlot.text = movie.plot
+            imdbURL.text = movie.link!
+            imdbPlot.text = movie.plot!
         }
     }
     

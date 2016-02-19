@@ -58,15 +58,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return movies.count
     }
     
-    func tableView(tableView: UITableView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var movie: Movie!
         
         movie = movies[indexPath.row]
-        
-        print(movie.plot)
-        
+        print(movie.plot!)
         performSegueWithIdentifier("DetailsVC", sender: movie)
     }
+    
+//    func tableView(tableView: UITableView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+//        var movie: Movie!
+//        
+//        movie = movies[indexPath.row]
+//        
+//        print(movie.plot)
+//        
+//        performSegueWithIdentifier("DetailsVC", sender: movie)
+//    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "DetailsVC" {
