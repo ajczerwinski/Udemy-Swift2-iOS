@@ -22,13 +22,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="A5d-xR-iEr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="100" id="A5d-xR-iEr" customClass="MovieCell" customModule="Favorite_Movies" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A5d-xR-iEr" id="cuZ-Sj-xiq">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4s-jh-3nY">
+                                                    <rect key="frame" x="512" y="13" width="88" height="78"/>
+                                                    <connections>
+                                                        <action selector="imdbLinkPressed:" destination="A5d-xR-iEr" eventType="touchUpInside" id="gRD-yr-6gu"/>
+                                                    </connections>
+                                                </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="big_lebowski" translatesAutoresizingMaskIntoConstraints="NO" id="CNj-JS-5lA">
                                                     <rect key="frame" x="8" y="5" width="90" height="90"/>
                                                     <constraints>
@@ -56,6 +62,12 @@
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlc-KT-Ybr">
+                                                    <rect key="frame" x="8" y="4" width="493" height="95"/>
+                                                    <connections>
+                                                        <segue destination="A94-J5-bv4" kind="show" id="Wtf-0W-sWL"/>
+                                                    </connections>
+                                                </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="imdb" translatesAutoresizingMaskIntoConstraints="NO" id="UFZ-Lj-AUY">
                                                     <rect key="frame" x="512" y="8" width="90" height="90"/>
                                                     <constraints>
@@ -63,28 +75,30 @@
                                                         <constraint firstAttribute="width" constant="90" id="pHi-xA-P4u"/>
                                                     </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlc-KT-Ybr">
-                                                    <rect key="frame" x="8" y="4" width="493" height="95"/>
-                                                    <connections>
-                                                        <segue destination="A94-J5-bv4" kind="show" id="Wtf-0W-sWL"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="dlc-KT-Ybr" firstAttribute="width" secondItem="cuZ-Sj-xiq" secondAttribute="width" id="05w-W4-9Zl"/>
+                                                <constraint firstItem="X4s-jh-3nY" firstAttribute="centerX" secondItem="UFZ-Lj-AUY" secondAttribute="centerX" id="0Az-lN-ecN"/>
                                                 <constraint firstItem="UFZ-Lj-AUY" firstAttribute="leading" secondItem="Uci-ul-quU" secondAttribute="trailing" constant="10" id="3ro-d6-QgO"/>
                                                 <constraint firstAttribute="trailing" secondItem="UFZ-Lj-AUY" secondAttribute="trailing" constant="4" id="4E2-sJ-8gX"/>
                                                 <constraint firstItem="Uci-ul-quU" firstAttribute="top" secondItem="cuZ-Sj-xiq" secondAttribute="topMargin" constant="2" id="9zq-0J-56m"/>
+                                                <constraint firstItem="dlc-KT-Ybr" firstAttribute="height" secondItem="cuZ-Sj-xiq" secondAttribute="height" id="Aba-tG-0Ib"/>
+                                                <constraint firstItem="dlc-KT-Ybr" firstAttribute="centerY" secondItem="cuZ-Sj-xiq" secondAttribute="centerY" id="B7x-Eg-0zQ"/>
                                                 <constraint firstItem="UFZ-Lj-AUY" firstAttribute="centerY" secondItem="cuZ-Sj-xiq" secondAttribute="centerY" id="JXL-ya-cJC"/>
                                                 <constraint firstItem="4QW-ek-ytw" firstAttribute="leading" secondItem="CNj-JS-5lA" secondAttribute="trailing" constant="8" id="KpM-8w-SBb"/>
+                                                <constraint firstItem="dlc-KT-Ybr" firstAttribute="centerX" secondItem="cuZ-Sj-xiq" secondAttribute="centerX" id="NYv-Ur-tkN"/>
                                                 <constraint firstItem="4QW-ek-ytw" firstAttribute="top" secondItem="Uci-ul-quU" secondAttribute="bottom" constant="2" id="UJL-jd-RXB"/>
                                                 <constraint firstAttribute="bottom" secondItem="CNj-JS-5lA" secondAttribute="bottom" constant="2" id="UYe-Kh-fr2"/>
+                                                <constraint firstItem="X4s-jh-3nY" firstAttribute="width" secondItem="UFZ-Lj-AUY" secondAttribute="width" id="VhM-Sn-xai"/>
                                                 <constraint firstItem="CNj-JS-5lA" firstAttribute="centerY" secondItem="cuZ-Sj-xiq" secondAttribute="centerY" id="Y8C-wE-ag3"/>
                                                 <constraint firstItem="4QW-ek-ytw" firstAttribute="top" secondItem="Uci-ul-quU" secondAttribute="bottom" constant="2" id="buS-c5-7Dc"/>
                                                 <constraint firstItem="4QW-ek-ytw" firstAttribute="bottom" secondItem="cuZ-Sj-xiq" secondAttribute="bottomMargin" constant="2" id="eLG-aN-YyT"/>
                                                 <constraint firstItem="CNj-JS-5lA" firstAttribute="leading" secondItem="cuZ-Sj-xiq" secondAttribute="leading" constant="8" id="g9r-EA-e8S"/>
                                                 <constraint firstItem="Uci-ul-quU" firstAttribute="leading" secondItem="CNj-JS-5lA" secondAttribute="trailing" constant="8" id="hsh-Xy-y0c"/>
                                                 <constraint firstItem="UFZ-Lj-AUY" firstAttribute="leading" secondItem="4QW-ek-ytw" secondAttribute="trailing" constant="10" id="ib7-yU-8zB"/>
+                                                <constraint firstItem="X4s-jh-3nY" firstAttribute="centerY" secondItem="UFZ-Lj-AUY" secondAttribute="centerY" id="jhu-6D-YMu"/>
                                                 <constraint firstItem="CNj-JS-5lA" firstAttribute="leading" secondItem="cuZ-Sj-xiq" secondAttribute="leading" constant="8" id="juT-P1-NaC"/>
+                                                <constraint firstItem="X4s-jh-3nY" firstAttribute="height" secondItem="UFZ-Lj-AUY" secondAttribute="height" id="kki-ed-90N"/>
                                                 <constraint firstItem="CNj-JS-5lA" firstAttribute="top" secondItem="cuZ-Sj-xiq" secondAttribute="top" constant="2" id="x7e-aU-EL4"/>
                                             </constraints>
                                             <variation key="default">
@@ -97,6 +111,12 @@
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imdbImg" destination="UFZ-Lj-AUY" id="8w0-WA-pDv"/>
+                                            <outlet property="movieDesc" destination="4QW-ek-ytw" id="YzU-uU-R8w"/>
+                                            <outlet property="movieImg" destination="CNj-JS-5lA" id="gUk-Gu-ze8"/>
+                                            <outlet property="movieTitle" destination="Uci-ul-quU" id="z7p-VI-cGP"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -116,6 +136,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Mb4-MD-pF0" id="gRR-HU-1DS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,6 +190,9 @@
                                     <color key="titleColor" red="0.08235294118" green="0.16862745100000001" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.08235294118" green="0.16862745100000001" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addImage:" destination="EJX-Ep-hrj" eventType="touchUpInside" id="byE-oQ-TmB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnS-hF-oMF">
                                 <rect key="frame" x="256" y="495" width="88" height="46"/>
@@ -175,6 +201,9 @@
                                     <constraint firstAttribute="width" constant="88" id="kb1-v9-HNr"/>
                                 </constraints>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="createMovie:" destination="EJX-Ep-hrj" eventType="touchUpInside" id="NnJ-J1-1uy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -201,6 +230,13 @@
                             <constraint firstItem="hnS-hF-oMF" firstAttribute="top" secondItem="tAX-04-Nkz" secondAttribute="bottom" constant="36" id="sBB-eu-p7E"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imdbPlot" destination="w8F-vW-yX0" id="53e-lh-nof"/>
+                        <outlet property="imdbURL" destination="oYi-7y-3pz" id="cNx-JS-yOW"/>
+                        <outlet property="movieDesc" destination="e1d-2A-LxM" id="Ean-xA-fbI"/>
+                        <outlet property="movieImg" destination="3wo-cl-chM" id="hpT-TW-tFa"/>
+                        <outlet property="movieTitle" destination="7Eh-VW-dzV" id="wiD-gf-hBJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ijv-AU-vgt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
