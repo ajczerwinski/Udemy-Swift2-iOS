@@ -13,6 +13,7 @@
 		BFAD715E1C77D97B00D3BDD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFAD715C1C77D97B00D3BDD2 /* Main.storyboard */; };
 		BFAD71601C77D97B00D3BDD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFAD715F1C77D97B00D3BDD2 /* Assets.xcassets */; };
 		BFAD71631C77D97B00D3BDD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFAD71611C77D97B00D3BDD2 /* LaunchScreen.storyboard */; };
+		BFAD716B1C78016600D3BDD2 /* BootcampAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAD716A1C78016600D3BDD2 /* BootcampAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BFAD715F1C77D97B00D3BDD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFAD71621C77D97B00D3BDD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFAD71641C77D97B00D3BDD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFAD716A1C78016600D3BDD2 /* BootcampAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BootcampAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				BFAD715F1C77D97B00D3BDD2 /* Assets.xcassets */,
 				BFAD71611C77D97B00D3BDD2 /* LaunchScreen.storyboard */,
 				BFAD71641C77D97B00D3BDD2 /* Info.plist */,
+				BFAD716A1C78016600D3BDD2 /* BootcampAnnotation.swift */,
 			);
 			path = DevBootcamps;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				BFAD715B1C77D97B00D3BDD2 /* LocationVC.swift in Sources */,
 				BFAD71571C77D97B00D3BDD2 /* AppDelegate.swift in Sources */,
 				BFAD71591C77D97B00D3BDD2 /* FirstViewController.swift in Sources */,
+				BFAD716B1C78016600D3BDD2 /* BootcampAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
