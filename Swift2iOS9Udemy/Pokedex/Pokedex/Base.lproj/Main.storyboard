@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="pokemon.ttf">
+            <string>PokemonSolidNormal</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -20,9 +25,36 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeS-7v-diS">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiZ-u6-ix1">
+                                        <rect key="frame" x="234" y="8" width="132" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="NbK-3Q-D2T"/>
+                                            <constraint firstAttribute="height" constant="39" id="UTb-9y-kiO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mts-Ek-EEr">
+                                        <rect key="frame" x="560" y="12" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="N5o-5f-KQM"/>
+                                            <constraint firstAttribute="height" constant="32" id="c4y-zo-Vl1"/>
+                                        </constraints>
+                                        <state key="normal" image="music1"/>
+                                        <connections>
+                                            <action selector="musicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eqt-EH-anl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.21176470589999999" green="0.79215686269999996" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Mts-Ek-EEr" secondAttribute="trailing" constant="8" id="5Pm-cV-JeG"/>
+                                    <constraint firstItem="iiZ-u6-ix1" firstAttribute="centerY" secondItem="xeS-7v-diS" secondAttribute="centerY" id="CxP-uv-1cg"/>
                                     <constraint firstAttribute="height" constant="55" id="Mp1-99-gyX"/>
+                                    <constraint firstItem="Mts-Ek-EEr" firstAttribute="top" secondItem="xeS-7v-diS" secondAttribute="top" constant="12" id="aQb-2B-ik9"/>
+                                    <constraint firstItem="iiZ-u6-ix1" firstAttribute="centerX" secondItem="xeS-7v-diS" secondAttribute="centerX" id="cMF-qA-CID"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="4cV-1y-Gyz">
@@ -112,9 +144,53 @@
             </objects>
             <point key="canvasLocation" x="273" y="145"/>
         </scene>
+        <!--Root View Controller-->
+        <scene sceneID="uki-1e-uBA">
+            <objects>
+                <tableViewController id="acg-h6-1Pv" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Lpg-z2-5ic">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dWo-gy-9P0">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dWo-gy-9P0" id="eMl-ib-F9F">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="acg-h6-1Pv" id="DMu-qc-Xax"/>
+                            <outlet property="delegate" destination="acg-h6-1Pv" id="gr6-78-xOM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="0w6-pv-nfQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QEh-ca-b2a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xfP-Yh-tHL">
+            <objects>
+                <navigationController id="bfJ-Ud-znp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fao-RD-4YK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="acg-h6-1Pv" kind="relationship" relationship="rootViewController" id="Wbf-oj-sfx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5G-8E-jQv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="297" width="120" height="120"/>
         <image name="bg" width="1920" height="1200"/>
+        <image name="music1" width="256" height="256"/>
     </resources>
 </document>
