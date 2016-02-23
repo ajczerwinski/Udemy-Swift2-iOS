@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9H-tY-vSy">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Thompson Falls, MT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="vC8-as-5SQ">
+                                        <rect key="frame" x="76" y="19" width="450" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="179" id="EH4-5R-NSH"/>
+                                            <constraint firstAttribute="height" constant="42" id="pI2-ot-XK6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="EH4-5R-NSH"/>
+                                                <exclude reference="pI2-ot-XK6"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.76470588240000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="vC8-as-5SQ" firstAttribute="centerX" secondItem="A9H-tY-vSy" secondAttribute="centerX" id="AGZ-gr-etH"/>
+                                    <constraint firstAttribute="height" constant="80" id="FNQ-mU-lkb"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="vC8-as-5SQ" secondAttribute="bottom" constant="11" id="MFH-AW-w51"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="vC8-as-5SQ" secondAttribute="trailing" constant="202" id="Yf4-PX-8XN"/>
+                                    <constraint firstItem="vC8-as-5SQ" firstAttribute="top" secondItem="A9H-tY-vSy" secondAttribute="topMargin" constant="11" id="cvg-un-ogj"/>
+                                    <constraint firstItem="vC8-as-5SQ" firstAttribute="centerX" secondItem="A9H-tY-vSy" secondAttribute="centerX" id="eZt-db-wJj"/>
+                                    <constraint firstItem="vC8-as-5SQ" firstAttribute="centerY" secondItem="A9H-tY-vSy" secondAttribute="centerY" id="gZO-Oy-dzU"/>
+                                    <constraint firstItem="vC8-as-5SQ" firstAttribute="leading" secondItem="A9H-tY-vSy" secondAttribute="leadingMargin" constant="203" id="qHe-1R-wwn"/>
+                                    <constraint firstItem="vC8-as-5SQ" firstAttribute="centerY" secondItem="A9H-tY-vSy" secondAttribute="centerY" id="yGT-mD-Wpd"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MFH-AW-w51"/>
+                                        <exclude reference="Yf4-PX-8XN"/>
+                                        <exclude reference="cvg-un-ogj"/>
+                                        <exclude reference="eZt-db-wJj"/>
+                                        <exclude reference="gZO-Oy-dzU"/>
+                                        <exclude reference="qHe-1R-wwn"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="thompson" translatesAutoresizingMaskIntoConstraints="NO" id="jJr-UY-QTB">
+                                <rect key="frame" x="0.0" y="81" width="600" height="519"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="dqj-dS-MXO">
+                                <rect key="frame" x="56" y="112" width="104" height="85"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cloudy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNa-MQ-gCF">
+                                <rect key="frame" x="177" y="112" width="200" height="44"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xte-aZ-oDk">
+                                <rect key="frame" x="177" y="156" width="200" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jJr-UY-QTB" secondAttribute="bottom" id="0zz-eo-7iL"/>
+                            <constraint firstItem="jJr-UY-QTB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4pw-vH-OM4"/>
+                            <constraint firstItem="jJr-UY-QTB" firstAttribute="top" secondItem="A9H-tY-vSy" secondAttribute="bottom" id="X8K-Dh-gWx"/>
+                            <constraint firstItem="jJr-UY-QTB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XsB-xb-gZA"/>
+                            <constraint firstAttribute="trailing" secondItem="jJr-UY-QTB" secondAttribute="trailing" id="foC-GB-Y3T"/>
+                            <constraint firstItem="A9H-tY-vSy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="l8p-Se-lA3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jJr-UY-QTB" secondAttribute="bottom" id="lpk-8Q-jUF"/>
+                            <constraint firstItem="A9H-tY-vSy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oAR-mw-OYR"/>
+                            <constraint firstAttribute="trailing" secondItem="A9H-tY-vSy" secondAttribute="trailing" id="u9P-QO-yC2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4pw-vH-OM4"/>
+                                <exclude reference="0zz-eo-7iL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="jJr-UY-QTB" id="U8p-yX-SK1"/>
+                        <outlet property="conditionsUI" destination="gNa-MQ-gCF" id="n1g-jL-eoI"/>
+                        <outlet property="headerView" destination="A9H-tY-vSy" id="r7Q-ja-waM"/>
+                        <outlet property="temperatureUI" destination="Xte-aZ-oDk" id="5X7-vg-IOV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="302"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud" width="512" height="512"/>
+        <image name="thompson" width="1140" height="481"/>
+    </resources>
+</document>
