@@ -32,6 +32,7 @@ class Weather {
         case SW
         case W
         case NW
+        case NA
     }
     
     var conditions: String {
@@ -153,6 +154,61 @@ class Weather {
                     self._day = dayFormatter.stringFromDate(date)
                     self._date = dateFormatter.stringFromDate(date)
                     self._time = timeFormatter.stringFromDate(date)
+                }
+                
+                if let sunRiseSet = dict["sys"] as? Dictionary<String, AnyObject> where sunRiseSet.count > 0 {
+                    if let sunrise = sunRiseSet["sunrise"] as? Double {
+                        let date = NSDate(timeIntervalSince1970: sunrise)
+                        let timeFormatter = NSDateFormatter()
+                        timeFormatter.dateFormat = "h:mma"
+                        self._sunrise = timeFormatter.stringFromDate(date)
+                    }
+                    
+                    if let sunset = sunRiseSet["sunset"] as? Double {
+                        let date = NSDate(timeIntervalSince1970: sunset)
+                        let timeFormatter = NSDateFormatter()
+                        timeFormatter.dateFormat = "h:mma"
+                        self._sunset = timeFormatter.stringFromDate(date)
+                    }
+                }
+                
+                if let isItHumid = dict["main"] as? Dictionary<String, AnyObject> where isItHumid.count > 0 {
+                    if let humidity = isItHumid["humidity"] as? Double {
+                        let formattedHumidity = NSString(format: "%0.f", humidity)
+                        self._humidity = formattedHumidity as String
+                    }
+                }
+                
+                if let windInfo = dict["wind"] as? Dictionary<String, AnyObject> where windInfo.count > 0 {
+                    if let wind = windInfo["speed"] as? Double {
+                        let formattedWindSpeed = NSString(format: "%0.f", wind)
+                        self._windSpeed = formattedWindSpeed as String
+                    }
+                    
+                    if let direction = windInfo["deg"] as? Double {
+                        switch(direction) {
+                        case 337.5...360:
+                            self._windDirection = WindDirection.N
+                        case 0..<22.5:
+                            self._windDirection = WindDirection.N
+                        case 22.5..<67.5:
+                            self._windDirection = WindDirection.NE
+                        case 67.5..<112.5:
+                            self._windDirection = WindDirection.E
+                        case 112.5..<157.5:
+                            self._windDirection = WindDirection.SE
+                        case 157.5..<202.5:
+                            self._windDirection = WindDirection.S
+                        case 202.5..<247.5:
+                            self._windDirection = WindDirection.SW
+                        case 247.5..<292.5:
+                            self._windDirection = WindDirection.W
+                        case 292..<337.5:
+                            self._windDirection = WindDirection.NW
+                        default:
+                            self._windDirection = WindDirection.NA
+                        }
+                    }
                 }
                 
             }

@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var dateLbl: UILabel!
     @IBOutlet weak var sunriseLbl: UILabel!
     @IBOutlet weak var sunsetLbl: UILabel!
-    @IBOutlet weak var windSpeetLbl: UILabel!
+    @IBOutlet weak var windSpeedLbl: UILabel!
     @IBOutlet weak var windDirectionLbl: UILabel!
     @IBOutlet weak var humidityLbl: UILabel!
 
@@ -58,7 +58,13 @@ class ViewController: UIViewController {
             
         }
         temperatureUI.text = "\(weather.temperature)°F"
-        dateLbl.text = "\(weather.time) \(weather.day) \(weather.date)"
+        dateLbl.text = "last updated \(weather.time) \(weather.day) \(weather.date)"
+        sunriseLbl.text = weather.sunrise
+        sunsetLbl.text = weather.sunset
+//        print(weather.humidity)
+        humidityLbl.text = "Relative Humidity: \(weather.humidity)%"
+        windSpeedLbl.text = "\(weather.windSpeed) MPH"
+        windDirectionLbl.text = "\(weather.windDirection)"
         
     }
 
