@@ -11,7 +11,7 @@ import Alamofire
 
 class Weather {
     private var _conditions: String!
-    private var _temperature: Double!
+    private var _temperature: String!
     private var _weatherURL: String!
     
     var conditions: String {
@@ -21,9 +21,9 @@ class Weather {
         return _conditions
     }
     
-    var temperature: Double {
+    var temperature: String {
         if _temperature == nil {
-            _temperature = 0.0
+            _temperature = ""
         }
         return _temperature
     }
@@ -55,8 +55,13 @@ class Weather {
                 }
                 
                 if let main = dict["main"] as? Dictionary<String, AnyObject> where main.count > 0 {
-                    if let temperature = main["temp"] {
-                        self._temperature = temperature as! Double
+                    if let temperature = main["temp"] as? Double {
+                        let temp = 1.8 * (temperature - 273) + 32
+                        
+                        let formattedTemp = NSString(format: "%.0f", temp)
+//                        let tempFormatted = NSString(format: "%.0f", "\(temp)") as String
+                        self._temperature = formattedTemp as String
+                        
                     }
                     print(self._temperature)
                 }

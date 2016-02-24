@@ -11,10 +11,12 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var background: UIImageView!
+    @IBOutlet weak var weatherIcon: UIImageView!
     
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var conditionsUI: UILabel!
     @IBOutlet weak var temperatureUI: UILabel!
+    @IBOutlet weak var dateLbl: UILabel!
     
     var weather: Weather!
 
@@ -32,7 +34,24 @@ class ViewController: UIViewController {
     func updateUI() {
         
         conditionsUI.text = weather.conditions
-        temperatureUI.text = "\(weather.temperature)"
+        switch weather.conditions {
+            case "Rain":
+                weatherIcon.image = UIImage(named: "rain")
+            case "Thunderstorm":
+                weatherIcon.image = UIImage(named: "thunderstorm")
+            case "Drizzle":
+                weatherIcon.image = UIImage(named: "rain")
+            case "Snow":
+                weatherIcon.image = UIImage(named: "snow")
+            case "Atmosphere":
+                weatherIcon.image = UIImage(named: "cloud")
+            case "Clear":
+                weatherIcon.image = UIImage(named: "clear")
+            default:
+                weatherIcon.image = UIImage(named: "cloud")
+            
+        }
+        temperatureUI.text = "\(weather.temperature)°F"
         
     }
 
