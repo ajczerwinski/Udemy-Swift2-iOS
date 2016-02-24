@@ -217,6 +217,20 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="tjM-xV-lPI"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfv-jz-M1j">
+                                <rect key="frame" x="500" y="103" width="80" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="IYh-TL-1OM"/>
+                                    <constraint firstAttribute="height" constant="44" id="wkV-4z-1hm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Refresh">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aP5-JD-SIe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -225,10 +239,12 @@
                             <constraint firstItem="eWT-6b-VRp" firstAttribute="top" secondItem="rOc-86-csl" secondAttribute="bottom" constant="28" id="BRo-o8-zce"/>
                             <constraint firstItem="fhF-1Z-rBy" firstAttribute="top" secondItem="Xte-aZ-oDk" secondAttribute="bottom" constant="36" id="HXF-Ed-PPA"/>
                             <constraint firstItem="gNa-MQ-gCF" firstAttribute="top" secondItem="A9H-tY-vSy" secondAttribute="bottom" constant="23" id="Ixh-Ss-EZP"/>
+                            <constraint firstItem="wfv-jz-M1j" firstAttribute="top" secondItem="A9H-tY-vSy" secondAttribute="bottom" constant="23" id="JRx-cp-q11"/>
                             <constraint firstItem="Xte-aZ-oDk" firstAttribute="leading" secondItem="dqj-dS-MXO" secondAttribute="trailing" constant="20" id="LaC-E7-laH"/>
                             <constraint firstItem="dqj-dS-MXO" firstAttribute="top" secondItem="A9H-tY-vSy" secondAttribute="bottom" constant="23" id="NQd-tL-sXy"/>
                             <constraint firstItem="jJr-UY-QTB" firstAttribute="top" secondItem="A9H-tY-vSy" secondAttribute="bottom" id="X8K-Dh-gWx"/>
                             <constraint firstItem="jJr-UY-QTB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XsB-xb-gZA"/>
+                            <constraint firstItem="wfv-jz-M1j" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ylx-YH-Qrm"/>
                             <constraint firstItem="rOc-86-csl" firstAttribute="top" secondItem="fhF-1Z-rBy" secondAttribute="bottom" constant="50" id="bzk-sg-vEQ"/>
                             <constraint firstItem="Xte-aZ-oDk" firstAttribute="top" secondItem="gNa-MQ-gCF" secondAttribute="bottom" id="cPF-Dq-6aa"/>
                             <constraint firstAttribute="trailing" secondItem="jJr-UY-QTB" secondAttribute="trailing" id="foC-GB-Y3T"/>

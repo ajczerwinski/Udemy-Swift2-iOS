@@ -67,6 +67,11 @@ class ViewController: UIViewController {
         windDirectionLbl.text = "\(weather.windDirection)"
         
     }
+    @IBAction func refreshButtonPressed(sender: AnyObject) {
+        weather.downloadWeatherDetails { () -> () in
+            self.updateUI()
+        }
+    }
 
 }
 
