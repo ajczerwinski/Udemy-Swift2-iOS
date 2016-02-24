@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var windSpeedLbl: UILabel!
     @IBOutlet weak var windDirectionLbl: UILabel!
     @IBOutlet weak var humidityLbl: UILabel!
+    @IBOutlet weak var refreshButtonUI: UIButton!
 
     
     var weather: Weather!
@@ -35,6 +36,7 @@ class ViewController: UIViewController {
         weather.downloadWeatherDetails { () -> () in
             self.updateUI()
         }
+        refreshButtonUI.hidden = true
     }
     
     func updateUI() {

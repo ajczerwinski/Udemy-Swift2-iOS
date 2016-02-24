@@ -271,6 +271,7 @@
                         <outlet property="dateLbl" destination="fhF-1Z-rBy" id="3oD-IQ-bcZ"/>
                         <outlet property="headerView" destination="A9H-tY-vSy" id="r7Q-ja-waM"/>
                         <outlet property="humidityLbl" destination="J56-1t-Qpp" id="KSc-gN-m7k"/>
+                        <outlet property="refreshButtonUI" destination="wfv-jz-M1j" id="BRp-z6-QD6"/>
                         <outlet property="sunriseLbl" destination="wbN-r6-VAf" id="Kqr-3J-Rfb"/>
                         <outlet property="sunsetLbl" destination="egt-yk-1C1" id="rqm-up-5Cz"/>
                         <outlet property="temperatureUI" destination="Xte-aZ-oDk" id="5X7-vg-IOV"/>
