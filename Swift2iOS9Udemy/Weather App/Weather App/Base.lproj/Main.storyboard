@@ -90,11 +90,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Date/Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhF-1Z-rBy">
-                                <rect key="frame" x="194" y="224" width="213" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Date/Time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="fhF-1Z-rBy">
+                                <rect key="frame" x="194" y="224" width="213" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="213" id="t6l-sC-Hty"/>
-                                    <constraint firstAttribute="height" constant="51" id="wKl-PE-aQR"/>
+                                    <constraint firstAttribute="height" constant="80" id="wKl-PE-aQR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -194,14 +194,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="XQu-yV-980">
                                         <rect key="frame" x="200" y="0.0" width="100" height="120"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chanceOfRain" translatesAutoresizingMaskIntoConstraints="NO" id="6YP-qJ-TJv">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="humidity" translatesAutoresizingMaskIntoConstraints="NO" id="6YP-qJ-TJv">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="3ii-l6-eam"/>
                                                     <constraint firstAttribute="height" constant="60" id="6b0-cM-cHN"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="% of Rain" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J56-1t-Qpp">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J56-1t-Qpp">
                                                 <rect key="frame" x="0.0" y="85" width="100" height="35"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -254,8 +254,13 @@
                         <outlet property="conditionsUI" destination="gNa-MQ-gCF" id="n1g-jL-eoI"/>
                         <outlet property="dateLbl" destination="fhF-1Z-rBy" id="3oD-IQ-bcZ"/>
                         <outlet property="headerView" destination="A9H-tY-vSy" id="r7Q-ja-waM"/>
+                        <outlet property="humidityLbl" destination="J56-1t-Qpp" id="KSc-gN-m7k"/>
+                        <outlet property="sunriseLbl" destination="wbN-r6-VAf" id="Kqr-3J-Rfb"/>
+                        <outlet property="sunsetLbl" destination="egt-yk-1C1" id="rqm-up-5Cz"/>
                         <outlet property="temperatureUI" destination="Xte-aZ-oDk" id="5X7-vg-IOV"/>
                         <outlet property="weatherIcon" destination="dqj-dS-MXO" id="gLe-om-e1R"/>
+                        <outlet property="windDirectionLbl" destination="0EU-Mz-OG0" id="XbX-tT-QCg"/>
+                        <outlet property="windSpeetLbl" destination="Rb7-iL-xWl" id="8QQ-Uo-iPr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -264,8 +269,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chanceOfRain" width="512" height="512"/>
         <image name="cloud" width="512" height="512"/>
+        <image name="humidity" width="512" height="512"/>
         <image name="sunrise" width="200" height="200"/>
         <image name="sunset" width="200" height="200"/>
         <image name="thompson" width="1140" height="481"/>

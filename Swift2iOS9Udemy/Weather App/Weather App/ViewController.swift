@@ -17,6 +17,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var conditionsUI: UILabel!
     @IBOutlet weak var temperatureUI: UILabel!
     @IBOutlet weak var dateLbl: UILabel!
+    @IBOutlet weak var sunriseLbl: UILabel!
+    @IBOutlet weak var sunsetLbl: UILabel!
+    @IBOutlet weak var windSpeetLbl: UILabel!
+    @IBOutlet weak var windDirectionLbl: UILabel!
+    @IBOutlet weak var humidityLbl: UILabel!
+
     
     var weather: Weather!
 
@@ -52,6 +58,7 @@ class ViewController: UIViewController {
             
         }
         temperatureUI.text = "\(weather.temperature)°F"
+        dateLbl.text = "\(weather.time) \(weather.day) \(weather.date)"
         
     }
 

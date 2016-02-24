@@ -12,7 +12,27 @@ import Alamofire
 class Weather {
     private var _conditions: String!
     private var _temperature: String!
+    private var _day: String!
+    private var _date: String!
+    private var _time: String!
+    private var _sunrise: String!
+    private var _sunset: String!
+    private var _humidity: String!
+    private var _windSpeed: String!
+    private var _windDirection: WindDirection!
+    
     private var _weatherURL: String!
+    
+    enum WindDirection {
+        case N
+        case NE
+        case E
+        case SE
+        case S
+        case SW
+        case W
+        case NW
+    }
     
     var conditions: String {
         if _conditions == nil {
@@ -28,9 +48,66 @@ class Weather {
         return _temperature
     }
     
+    var day: String {
+        if _day == nil {
+            _day = ""
+        }
+        return _day
+    }
+    
+    var date: String {
+        if _date == nil {
+            _date = ""
+        }
+        return _date
+    }
+    
+    var time: String {
+        if _time == nil {
+            _time = ""
+        }
+        return _time
+    }
+    
+    var sunrise: String {
+        if _sunrise == nil {
+            _sunrise = ""
+        }
+        return _sunrise
+    }
+    
+    var sunset: String {
+        if _sunset == nil {
+            _sunset = ""
+        }
+        return _sunset
+    }
+    
+    var humidity: String {
+        if _humidity == nil {
+            _humidity = ""
+        }
+        return _humidity
+    }
+    
+    var windSpeed: String {
+        if _windSpeed == nil {
+            _windSpeed = ""
+        }
+        return _windSpeed
+    }
+    
+    var windDirection: WindDirection {
+        get {
+            return _windDirection
+        }
+    }
+    
     init() {
         self._weatherURL = URL_BASE
     }
+    
+    
 //    init(conditions: String, temperature: Int) {
 //        self._conditions = conditions
 //        self._temperature = temperature
@@ -59,24 +136,35 @@ class Weather {
                         let temp = 1.8 * (temperature - 273) + 32
                         
                         let formattedTemp = NSString(format: "%.0f", temp)
-//                        let tempFormatted = NSString(format: "%.0f", "\(temp)") as String
                         self._temperature = formattedTemp as String
                         
                     }
                     print(self._temperature)
                 }
-                completed()
                 
-//                if let conditions = dict["weather"]![0]["main"] as? String {
-//                    self._conditions = conditions
-//                }
-//                if let temperature = dict["main"]!["temp"] as? String {
-//                    self._temperature = temperature
-//                }
-//                
-//                print(self._temperature)
-//                print(self._conditions)
+                if let dateToday = dict["dt"] as? Double {
+                    let date = NSDate(timeIntervalSince1970: dateToday)
+                    let dayFormatter = NSDateFormatter()
+                    let dateFormatter = NSDateFormatter()
+                    let timeFormatter = NSDateFormatter()
+                    dayFormatter.dateFormat = "EEEE"
+                    dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
+                    timeFormatter.dateFormat = "h:mm a"
+                    self._day = dayFormatter.stringFromDate(date)
+                    self._date = dateFormatter.stringFromDate(date)
+                    self._time = timeFormatter.stringFromDate(date)
+                }
+                
             }
+            
+            
+            
+            
+            
+            
+            
+            
+            completed()
         }
     }
     
