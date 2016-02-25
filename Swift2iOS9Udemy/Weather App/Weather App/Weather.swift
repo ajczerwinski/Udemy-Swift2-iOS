@@ -108,7 +108,6 @@ class Weather {
         self._weatherURL = URL_BASE
     }
     
-    
 //    init(conditions: String, temperature: Int) {
 //        self._conditions = conditions
 //        self._temperature = temperature
@@ -120,7 +119,6 @@ class Weather {
         let url = NSURL(string: _weatherURL)!
         Alamofire.request(.GET, url).responseJSON { response in
             let result = response.result
-//            print(result.value!)
             
             if let dict = result.value as? Dictionary<String, AnyObject> {
                 
@@ -212,7 +210,6 @@ class Weather {
                 }
                 
             }
-            
             
             
             
