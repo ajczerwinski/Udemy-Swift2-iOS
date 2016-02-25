@@ -1,0 +1,6 @@
+framework module Pods_Udemy_App_Showcase {
+  umbrella header "Pods-Udemy App Showcase-umbrella.h"
+
+  export *
+  module * { export * }
+}
