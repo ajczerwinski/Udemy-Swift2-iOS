@@ -28,6 +28,8 @@
 		BFFC3DA71C7EDFE600A11209 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFC3DA61C7EDFE600A11209 /* FBSDKCoreKit.framework */; };
 		BFFC3DA91C7EE88600A11209 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFC3DA81C7EE88600A11209 /* Bolts.framework */; };
 		BFFC3DAC1C7F87CC00A11209 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFC3DAB1C7F87CC00A11209 /* DataService.swift */; };
+		BFFC3DAE1C7FBD2700A11209 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFC3DAD1C7FBD2700A11209 /* FeedVC.swift */; };
+		BFFC3DB01C7FBDE400A11209 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFC3DAF1C7FBDE400A11209 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		BFFC3DA61C7EDFE600A11209 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		BFFC3DA81C7EE88600A11209 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		BFFC3DAB1C7F87CC00A11209 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		BFFC3DAD1C7FBD2700A11209 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		BFFC3DAF1C7FBDE400A11209 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +118,6 @@
 				BFFC3D891C7E69DF00A11209 /* View */,
 				BFFC3D881C7E69D900A11209 /* Controller */,
 				BFFC3D761C7E69AC00A11209 /* AppDelegate.swift */,
-				BFFC3D781C7E69AC00A11209 /* ViewController.swift */,
 				BFFC3D7A1C7E69AD00A11209 /* Main.storyboard */,
 				BFFC3D7D1C7E69AD00A11209 /* Assets.xcassets */,
 				BFFC3D7F1C7E69AD00A11209 /* LaunchScreen.storyboard */,
@@ -126,6 +129,8 @@
 		BFFC3D881C7E69D900A11209 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BFFC3D781C7E69AC00A11209 /* ViewController.swift */,
+				BFFC3DAD1C7FBD2700A11209 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				BFFC3D941C7E70B600A11209 /* MaterialView.swift */,
 				BFFC3D991C7E93C100A11209 /* MaterialButton.swift */,
 				BFFC3D9B1C7E96C200A11209 /* MaterialTextField.swift */,
+				BFFC3DAF1C7FBDE400A11209 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -325,6 +331,8 @@
 				BFFC3DAC1C7F87CC00A11209 /* DataService.swift in Sources */,
 				BFFC3D951C7E70B600A11209 /* MaterialView.swift in Sources */,
 				BFFC3D791C7E69AC00A11209 /* ViewController.swift in Sources */,
+				BFFC3DAE1C7FBD2700A11209 /* FeedVC.swift in Sources */,
+				BFFC3DB01C7FBDE400A11209 /* PostCell.swift in Sources */,
 				BFFC3D771C7E69AC00A11209 /* AppDelegate.swift in Sources */,
 				BFFC3D981C7E70EC00A11209 /* Constants.swift in Sources */,
 				BFFC3D9A1C7E93C100A11209 /* MaterialButton.swift in Sources */,
