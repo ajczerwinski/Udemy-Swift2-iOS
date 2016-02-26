@@ -45,6 +45,10 @@ class ViewController: UIViewController {
                         print("Login failed. \(error)")
                     } else {
                         print("Logged In!\(authData)")
+                        
+                        let user = ["provider": authData.provider!]
+                        DataService.ds.createFirebaseUser(authData.uid, user: user)
+                        
                         NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
                         self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                     }
@@ -64,13 +68,19 @@ class ViewController: UIViewController {
                     
                     if error.code == STATUS_ACCOUNT_NONEXIST {
                         DataService.ds.REF_BASE.createUser(email, password: pwd, withValueCompletionBlock: { error, result in
+                            
                             if error != nil {
                                 self.showErrorAlert("Could not create account", msg: "Problem creating account. Please try again")
                             } else {
                                 NSUserDefaults.standardUserDefaults().setValue([KEY_UID], forKey: KEY_UID)
                                 
-                                DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: nil)
-                                    self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
+                                DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: { err, authData in
+                                
+                                    let user = ["provider": authData.provider!, "blah":"email test"]
+                                    DataService.ds.createFirebaseUser(authData.uid, user: user)
+                                })
+                            
+                                self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                             }
                         })
                     } else {
