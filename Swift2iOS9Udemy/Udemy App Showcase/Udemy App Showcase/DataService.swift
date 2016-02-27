@@ -1,4 +1,4 @@
-//
+ //
 //  DataService.swift
 //  Udemy App Showcase
 //
@@ -29,6 +29,13 @@ class DataService {
     
     var REF_USERS: Firebase {
         return _REF_USERS
+    }
+    
+    var REF_USER_CURRENT: Firebase {
+        let uid = NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) as! String
+        print(uid)
+        let user = Firebase(url: "\(URL_BASE)").childByAppendingPath("users").childByAppendingPath(uid)
+        return user!
     }
     
     func createFirebaseUser(uid: String, user: Dictionary<String, String>) {

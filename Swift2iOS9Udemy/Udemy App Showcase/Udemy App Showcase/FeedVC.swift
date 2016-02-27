@@ -21,7 +21,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     var imageSelected = false
     var imagePicker: UIImagePickerController!
     
-    static var imageCache = NSCache()
+    static let imageCache = NSCache()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,24 +29,32 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.estimatedRowHeight = 363
+        tableView.estimatedRowHeight = 407
+        imageSelectorImage.layer.cornerRadius = 2.0
+        imageSelectorImage.clipsToBounds = true
+        
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         
+        initObservers()
+        
+    }
+    
+    func initObservers() {
+    
         DataService.ds.REF_POSTS.observeEventType(.Value, withBlock: { snapshot in
             
-            print(snapshot.value)
-            
-            self.posts = []
+//            print(snapshot.value)
             
             if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
-                
+                self.posts = []
                 for snap in snapshots {
                     
-                    print("SNAP: \(snap)")
+//                    print("SNAP: \(snap)")
                     
                     if let postDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
+                        
                         let post = Post(postKey: key, dictionary: postDict)
                         self.posts.append(post)
                     }
@@ -66,16 +74,16 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return posts.count
+        return self.posts.count
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let post = posts[indexPath.row]
-        
         if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell {
             
             cell.request?.cancel()
+            
+            let post = posts[indexPath.row]
             
             var img: UIImage?
             
@@ -120,7 +128,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
         if let txt = postField.text where txt != "" {
             
-            if let img = imageSelectorImage.image where imageSelected == true {
+            if let img = imageSelectorImage.image /*where imageSelected == true*/ {
                 
                 let urlStr = "https://post.imageshack.us/upload_api.php"
                 let url = NSURL(string: urlStr)!
