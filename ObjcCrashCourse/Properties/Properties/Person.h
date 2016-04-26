@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface Person : NSObject
+{
+    BOOL isInsecure;
+}
 
 @property (nonatomic,strong) NSString *firstName;
 @property (nonatomic,strong) NSString *lastName;
