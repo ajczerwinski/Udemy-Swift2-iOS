@@ -9,7 +9,22 @@
 #import "XYZPerson.h"
 
 @implementation XYZPerson
-- (void)sayHello {
-    NSLog(@"Hello, World!");
+- (void)sayHello:(NSString *)greeting {
+    NSLog(@"%@", greeting);
 }
+
+-(void)whereFrom {
+    NSLog(@"Where are you from?");
+}
+-(void)introduceSelf {
+    NSLog(@"I am from Montana");
+}
+-(void)sayGoodbye {
+    NSLog(@"Well...goodbye");
+}
+
++(id)person {
+    return [[self alloc]init];
+}
+
 @end

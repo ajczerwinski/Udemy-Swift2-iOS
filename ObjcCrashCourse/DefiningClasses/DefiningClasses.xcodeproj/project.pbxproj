@@ -14,6 +14,7 @@
 		BFFFD28D1CD51C2D00C88768 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFFFD28C1CD51C2D00C88768 /* Assets.xcassets */; };
 		BFFFD2901CD51C2D00C88768 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFFFD28E1CD51C2D00C88768 /* LaunchScreen.storyboard */; };
 		BFFFD29C1CD51CB900C88768 /* XYZPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFFD29B1CD51CB900C88768 /* XYZPerson.m */; };
+		BFFFD29F1CD56CDE00C88768 /* XYZShoutingPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFFD29E1CD56CDE00C88768 /* XYZShoutingPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		BFFFD2911CD51C2D00C88768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFFFD29A1CD51CB900C88768 /* XYZPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZPerson.h; sourceTree = "<group>"; };
 		BFFFD29B1CD51CB900C88768 /* XYZPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZPerson.m; sourceTree = "<group>"; };
+		BFFFD29D1CD56CDE00C88768 /* XYZShoutingPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZShoutingPerson.h; sourceTree = "<group>"; };
+		BFFFD29E1CD56CDE00C88768 /* XYZShoutingPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZShoutingPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				BFFFD2801CD51C2D00C88768 /* Supporting Files */,
 				BFFFD29A1CD51CB900C88768 /* XYZPerson.h */,
 				BFFFD29B1CD51CB900C88768 /* XYZPerson.m */,
+				BFFFD29D1CD56CDE00C88768 /* XYZShoutingPerson.h */,
+				BFFFD29E1CD56CDE00C88768 /* XYZShoutingPerson.m */,
 			);
 			path = DefiningClasses;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFFFD29C1CD51CB900C88768 /* XYZPerson.m in Sources */,
+				BFFFD29F1CD56CDE00C88768 /* XYZShoutingPerson.m in Sources */,
 				BFFFD2881CD51C2D00C88768 /* ViewController.m in Sources */,
 				BFFFD2851CD51C2D00C88768 /* AppDelegate.m in Sources */,
 				BFFFD2821CD51C2D00C88768 /* main.m in Sources */,
@@ -308,6 +314,7 @@
 				BFFFD2961CD51C2D00C88768 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

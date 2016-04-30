@@ -12,6 +12,9 @@
 @property (copy) NSString *firstName;
 @property (copy) NSString *lastName;
 @property NSDate *dateOfBirth;
--(void)sayHello;
+-(void)sayHello:(NSString *)greeting;
+-(void)whereFrom;
+-(void)introduceSelf;
+-(void)sayGoodbye;
 +(id)person;
 @end
