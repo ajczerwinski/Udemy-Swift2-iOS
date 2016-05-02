@@ -16,6 +16,7 @@
 		BFFFD3171CD729F600C88768 /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFFD3161CD729F600C88768 /* DataService.m */; };
 		BFFFD31A1CD7302700C88768 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFFD3191CD7302700C88768 /* Post.m */; };
 		BFFFD3231CD7349400C88768 /* AddPostVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFFD3221CD7349400C88768 /* AddPostVC.m */; };
+		BFFFD3261CD7FAE300C88768 /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFFD3251CD7FAE300C88768 /* PostCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		BFFFD3191CD7302700C88768 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		BFFFD3211CD7349400C88768 /* AddPostVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPostVC.h; sourceTree = "<group>"; };
 		BFFFD3221CD7349400C88768 /* AddPostVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPostVC.m; sourceTree = "<group>"; };
+		BFFFD3241CD7FAE300C88768 /* PostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
+		BFFFD3251CD7FAE300C88768 /* PostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +70,16 @@
 		BFFFD2FD1CD728E000C88768 /* InMyHoodObjC */ = {
 			isa = PBXGroup;
 			children = (
+				BFFFD3211CD7349400C88768 /* AddPostVC.h */,
+				BFFFD3221CD7349400C88768 /* AddPostVC.m */,
 				BFFFD3011CD728E100C88768 /* AppDelegate.h */,
 				BFFFD3021CD728E100C88768 /* AppDelegate.m */,
+				BFFFD3151CD729F600C88768 /* DataService.h */,
+				BFFFD3161CD729F600C88768 /* DataService.m */,
+				BFFFD3181CD7302700C88768 /* Post.h */,
+				BFFFD3191CD7302700C88768 /* Post.m */,
+				BFFFD3241CD7FAE300C88768 /* PostCell.h */,
+				BFFFD3251CD7FAE300C88768 /* PostCell.m */,
 				BFFFD3041CD728E100C88768 /* ViewController.h */,
 				BFFFD3051CD728E100C88768 /* ViewController.m */,
 				BFFFD3071CD728E100C88768 /* Main.storyboard */,
@@ -76,12 +87,6 @@
 				BFFFD30C1CD728E100C88768 /* LaunchScreen.storyboard */,
 				BFFFD30F1CD728E100C88768 /* Info.plist */,
 				BFFFD2FE1CD728E100C88768 /* Supporting Files */,
-				BFFFD3151CD729F600C88768 /* DataService.h */,
-				BFFFD3161CD729F600C88768 /* DataService.m */,
-				BFFFD3181CD7302700C88768 /* Post.h */,
-				BFFFD3191CD7302700C88768 /* Post.m */,
-				BFFFD3211CD7349400C88768 /* AddPostVC.h */,
-				BFFFD3221CD7349400C88768 /* AddPostVC.m */,
 			);
 			path = InMyHoodObjC;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 				BFFFD3061CD728E100C88768 /* ViewController.m in Sources */,
 				BFFFD3231CD7349400C88768 /* AddPostVC.m in Sources */,
 				BFFFD3031CD728E100C88768 /* AppDelegate.m in Sources */,
+				BFFFD3261CD7FAE300C88768 /* PostCell.m in Sources */,
 				BFFFD3001CD728E100C88768 /* main.m in Sources */,
 				BFFFD3171CD729F600C88768 /* DataService.m in Sources */,
 			);
