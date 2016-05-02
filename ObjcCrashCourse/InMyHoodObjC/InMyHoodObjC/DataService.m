@@ -36,6 +36,8 @@
     return self;
 }
 
+NSString *const KEY_POSTS = @"posts";
+
 -(NSString *)saveImageAndCreatePath:(UIImage *)image {
     
     NSData *imgData = UIImagePNGRepresentation(image);

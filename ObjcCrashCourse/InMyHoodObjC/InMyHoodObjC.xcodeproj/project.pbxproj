@@ -14,6 +14,8 @@
 		BFFFD30B1CD728E100C88768 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFFFD30A1CD728E100C88768 /* Assets.xcassets */; };
 		BFFFD30E1CD728E100C88768 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFFFD30C1CD728E100C88768 /* LaunchScreen.storyboard */; };
 		BFFFD3171CD729F600C88768 /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFFD3161CD729F600C88768 /* DataService.m */; };
+		BFFFD31A1CD7302700C88768 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFFD3191CD7302700C88768 /* Post.m */; };
+		BFFFD3231CD7349400C88768 /* AddPostVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFFD3221CD7349400C88768 /* AddPostVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		BFFFD30F1CD728E100C88768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFFFD3151CD729F600C88768 /* DataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataService.h; sourceTree = "<group>"; };
 		BFFFD3161CD729F600C88768 /* DataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataService.m; sourceTree = "<group>"; };
+		BFFFD3181CD7302700C88768 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		BFFFD3191CD7302700C88768 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		BFFFD3211CD7349400C88768 /* AddPostVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPostVC.h; sourceTree = "<group>"; };
+		BFFFD3221CD7349400C88768 /* AddPostVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPostVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,10 @@
 				BFFFD2FE1CD728E100C88768 /* Supporting Files */,
 				BFFFD3151CD729F600C88768 /* DataService.h */,
 				BFFFD3161CD729F600C88768 /* DataService.m */,
+				BFFFD3181CD7302700C88768 /* Post.h */,
+				BFFFD3191CD7302700C88768 /* Post.m */,
+				BFFFD3211CD7349400C88768 /* AddPostVC.h */,
+				BFFFD3221CD7349400C88768 /* AddPostVC.m */,
 			);
 			path = InMyHoodObjC;
 			sourceTree = "<group>";
@@ -154,7 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFFFD31A1CD7302700C88768 /* Post.m in Sources */,
 				BFFFD3061CD728E100C88768 /* ViewController.m in Sources */,
+				BFFFD3231CD7349400C88768 /* AddPostVC.m in Sources */,
 				BFFFD3031CD728E100C88768 /* AppDelegate.m in Sources */,
 				BFFFD3001CD728E100C88768 /* main.m in Sources */,
 				BFFFD3171CD729F600C88768 /* DataService.m in Sources */,
