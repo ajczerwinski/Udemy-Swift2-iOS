@@ -99,6 +99,12 @@ class Weather {
     }
     
     var windDirection: WindDirection {
+////        get {
+////            return _windDirection
+////        }
+//        if _windDirection == nil {
+//            _windDirection = WindDirection.NA
+//        }
         get {
             return _windDirection
         }
