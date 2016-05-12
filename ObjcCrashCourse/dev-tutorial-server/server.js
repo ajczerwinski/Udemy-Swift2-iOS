@@ -26,6 +26,20 @@ var tutorials = [
 		description: "Learn how to install Android Studio and then go through this tutorial to build your very first Android app.",
 		thumbnail: "https://s3-us-west-2.amazonaws.com/devslopesvideo/androidwhite-learn.png",
 		iframe: '<iframe width="560" height="315" src="https://www.youtube.com/embed/jpRBucuml2M" frameborder="0" allowfullscreen></iframe>'
+	},
+	{
+		id: 3,
+		title: "How to build an Apple TV App Tutorial for tvOS",
+		description: "In this app we download popular movies from an IMDB service and implement scrolling and navigation on the Apple TV",
+		thumbnail: "https://s3-us-west-2.amazonaws.com/devslopesvideo/tv-test.png",
+		iframe: '<iframe width="560" height="315" src=https://www.youtube.com/embed/XmLdEcq-QNI" frameborder="0" allowfullscreen></iframe>'
+	},
+	{
+		id: 4,
+		title: "Photoshop Tutorial For Beginners How To Create a Log",
+		description: "Learn how to make a professional logo in Photoshop without any design experience. This is a Photoshop tutorial for beginners that will give you all the basics",
+		thumbnail: "https://s3-us-west-2.amazonaws.com/devslopesvideo/logo.png",
+		iframe: '<iframe width="560" height="315" src=https://www.youtube.com/embed/CrKnswpftp4" frameborder="0" allowfullscreen></iframe>'
 	}
 ];
 
