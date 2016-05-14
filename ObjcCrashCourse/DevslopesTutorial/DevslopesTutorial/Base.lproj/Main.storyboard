@@ -127,11 +127,90 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="q5C-fT-E2E" id="BYy-TS-Hga"/>
+                        <segue destination="md2-DQ-MC3" kind="presentation" identifier="videoVC" id="043-y5-Pqd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="280" y="137"/>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="Tby-LF-nBe">
+            <objects>
+                <viewController id="md2-DQ-MC3" customClass="VideoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YPg-NM-99b"/>
+                        <viewControllerLayoutGuide type="bottom" id="VXZ-73-MGo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BaI-T6-RsU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTC-hc-ue2">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="274"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="274" id="hhj-Db-SFg"/>
+                                </constraints>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Android Studio Tutorial For Beginners Android Studio Tutorial For Beginners" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTl-UB-Zoz">
+                                <rect key="frame" x="20" y="289" width="560" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="dCZ-zi-6EQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Learn how to install Android Studio and then go through this tutorial to build your very first app" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2O-wj-0Vn">
+                                <rect key="frame" x="-141" y="356" width="721" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="OIe-tI-S4b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hW1-HU-Q03">
+                                <rect key="frame" x="20" y="520" width="560" height="60"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="96g-eq-tIU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="DONE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="md2-DQ-MC3" eventType="touchUpInside" id="TZY-AI-DSt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hW1-HU-Q03" firstAttribute="trailing" secondItem="BaI-T6-RsU" secondAttribute="trailingMargin" id="2WF-Jn-8MQ"/>
+                            <constraint firstItem="VXZ-73-MGo" firstAttribute="top" secondItem="hW1-HU-Q03" secondAttribute="bottom" constant="20" id="67q-Ou-wf6"/>
+                            <constraint firstItem="y2O-wj-0Vn" firstAttribute="top" secondItem="yTl-UB-Zoz" secondAttribute="bottom" constant="15" id="HSF-kx-cBL"/>
+                            <constraint firstItem="y2O-wj-0Vn" firstAttribute="leading" secondItem="BaI-T6-RsU" secondAttribute="leadingMargin" id="HdK-rD-Bzs"/>
+                            <constraint firstItem="gTC-hc-ue2" firstAttribute="top" secondItem="BaI-T6-RsU" secondAttribute="top" id="KA4-5g-mNn"/>
+                            <constraint firstItem="y2O-wj-0Vn" firstAttribute="trailing" secondItem="BaI-T6-RsU" secondAttribute="trailingMargin" id="Unc-HM-mwf"/>
+                            <constraint firstItem="hW1-HU-Q03" firstAttribute="leading" secondItem="BaI-T6-RsU" secondAttribute="leadingMargin" id="Zq1-19-KKb"/>
+                            <constraint firstItem="yTl-UB-Zoz" firstAttribute="leading" secondItem="BaI-T6-RsU" secondAttribute="leadingMargin" id="euE-kX-777"/>
+                            <constraint firstItem="gTC-hc-ue2" firstAttribute="leading" secondItem="BaI-T6-RsU" secondAttribute="leading" id="kVN-9g-zky"/>
+                            <constraint firstItem="yTl-UB-Zoz" firstAttribute="top" secondItem="gTC-hc-ue2" secondAttribute="bottom" constant="15" id="l9v-ar-5eq"/>
+                            <constraint firstItem="yTl-UB-Zoz" firstAttribute="trailing" secondItem="BaI-T6-RsU" secondAttribute="trailingMargin" id="rID-X7-w9N"/>
+                            <constraint firstAttribute="trailing" secondItem="gTC-hc-ue2" secondAttribute="trailing" id="xkK-5e-fth"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descLbl" destination="y2O-wj-0Vn" id="bwc-5e-ZDi"/>
+                        <outlet property="titleLbl" destination="yTl-UB-Zoz" id="v2t-fb-maQ"/>
+                        <outlet property="webView" destination="gTC-hc-ue2" id="OFv-tx-TOv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z0d-be-YET" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="137"/>
         </scene>
     </scenes>
 </document>
