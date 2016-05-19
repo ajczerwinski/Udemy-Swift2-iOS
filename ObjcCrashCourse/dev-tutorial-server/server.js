@@ -50,6 +50,16 @@ var comments = [
 	}
 ];
 
+// app.put('/comments', function(req, res) {
+// 	var someOBJ = req.body;
+
+// 	var theId = someOBJ.uniqueId;
+
+// 	// talk to the database, find the record by the id
+// 	// then you replace the existing record with req.body
+// 	res.send("Successfully updated");
+// })
+
 app.post('/comments', function(req, res) {
 	var comment = req.body;
 	if (comment) {

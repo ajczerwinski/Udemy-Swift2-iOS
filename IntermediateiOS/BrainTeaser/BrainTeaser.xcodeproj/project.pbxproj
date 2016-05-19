@@ -13,6 +13,7 @@
 		BF6C977A1CEA7A4900FB43D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6C97781CEA7A4900FB43D6 /* Main.storyboard */; };
 		BF6C977C1CEA7A4900FB43D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6C977B1CEA7A4900FB43D6 /* Assets.xcassets */; };
 		BF6C977F1CEA7A4900FB43D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6C977D1CEA7A4900FB43D6 /* LaunchScreen.storyboard */; };
+		BFCE40181CEE57BC004F8185 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE40171CEE57BC004F8185 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		BF6C977B1CEA7A4900FB43D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF6C977E1CEA7A4900FB43D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF6C97801CEA7A4900FB43D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFCE40171CEE57BC004F8185 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C66BB7F35135A333FDE80F6E /* Pods-BrainTeaser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser.debug.xcconfig"; sourceTree = "<group>"; };
 		F8906036927D760E67E03137 /* Pods-BrainTeaser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,8 +81,9 @@
 		BF6C97731CEA7A4800FB43D6 /* BrainTeaser */ = {
 			isa = PBXGroup;
 			children = (
+				BFCE40161CEE5782004F8185 /* Controller */,
+				BFCE40151CEE5774004F8185 /* View */,
 				BF6C97741CEA7A4800FB43D6 /* AppDelegate.swift */,
-				BF6C97761CEA7A4800FB43D6 /* LoginVC.swift */,
 				BF6C97781CEA7A4900FB43D6 /* Main.storyboard */,
 				BF6C977B1CEA7A4900FB43D6 /* Assets.xcassets */,
 				BF6C977D1CEA7A4900FB43D6 /* LaunchScreen.storyboard */,
@@ -88,6 +91,22 @@
 				BF5185461CEA8132009F0C04 /* BrainTeaser-Bridging-Header.h */,
 			);
 			path = BrainTeaser;
+			sourceTree = "<group>";
+		};
+		BFCE40151CEE5774004F8185 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE40171CEE57BC004F8185 /* CustomTextField.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BFCE40161CEE5782004F8185 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF6C97761CEA7A4800FB43D6 /* LoginVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +233,7 @@
 			files = (
 				BF6C97771CEA7A4800FB43D6 /* LoginVC.swift in Sources */,
 				BF6C97751CEA7A4800FB43D6 /* AppDelegate.swift in Sources */,
+				BFCE40181CEE57BC004F8185 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
