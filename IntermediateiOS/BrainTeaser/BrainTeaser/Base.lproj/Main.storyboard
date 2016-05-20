@@ -24,24 +24,35 @@
                                     <constraint firstAttribute="height" constant="185" id="cge-aA-439"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oqu-F0-Oke" customClass="CustomTextField" customModule="BrainTeaser" customModuleProvider="target">
-                                <rect key="frame" x="174" y="248" width="253" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oqu-F0-Oke" customClass="CustomTextField" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="174" y="248" width="253" height="40"/>
                                 <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="fd0-1g-ram"/>
+                                    <constraint firstAttribute="height" constant="40" id="fd0-1g-ram"/>
                                     <constraint firstAttribute="width" constant="253" id="jzY-0S-sbN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c2z-fn-gsO">
-                                <rect key="frame" x="174" y="318" width="253" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c2z-fn-gsO" customClass="CustomTextField" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="174" y="313" width="253" height="40"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="253" id="5WR-Hg-btT"/>
-                                    <constraint firstAttribute="height" constant="35" id="ij3-II-YHu"/>
+                                    <constraint firstAttribute="height" constant="40" id="ij3-II-YHu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkI-Rr-occ">
                                 <rect key="frame" x="227" y="388" width="147" height="42"/>
@@ -58,7 +69,7 @@
                             <constraint firstItem="CEA-WA-Jbh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0om-Lh-6cd"/>
                             <constraint firstItem="c2z-fn-gsO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Df-ux-MOQ"/>
                             <constraint firstItem="Oqu-F0-Oke" firstAttribute="top" secondItem="CEA-WA-Jbh" secondAttribute="bottom" constant="35" id="711-sm-b2A"/>
-                            <constraint firstItem="c2z-fn-gsO" firstAttribute="top" secondItem="Oqu-F0-Oke" secondAttribute="bottom" constant="35" id="EMB-no-FPa"/>
+                            <constraint firstItem="c2z-fn-gsO" firstAttribute="top" secondItem="Oqu-F0-Oke" secondAttribute="bottom" constant="25" id="EMB-no-FPa"/>
                             <constraint firstItem="xkI-Rr-occ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WKg-qx-f8B"/>
                             <constraint firstItem="CEA-WA-Jbh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="c8l-Th-bW9"/>
                             <constraint firstItem="Oqu-F0-Oke" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eyH-cJ-Nme"/>
