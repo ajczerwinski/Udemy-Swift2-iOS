@@ -75,12 +75,25 @@
                             <constraint firstItem="CEA-WA-Jbh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0om-Lh-6cd"/>
                             <constraint firstItem="c2z-fn-gsO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Df-ux-MOQ"/>
                             <constraint firstItem="Oqu-F0-Oke" firstAttribute="top" secondItem="CEA-WA-Jbh" secondAttribute="bottom" constant="35" id="711-sm-b2A"/>
+                            <constraint firstItem="c2z-fn-gsO" firstAttribute="centerX" secondItem="Oqu-F0-Oke" secondAttribute="centerX" id="9a0-LN-ti2"/>
                             <constraint firstItem="c2z-fn-gsO" firstAttribute="top" secondItem="Oqu-F0-Oke" secondAttribute="bottom" constant="25" id="EMB-no-FPa"/>
                             <constraint firstItem="xkI-Rr-occ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WKg-qx-f8B"/>
                             <constraint firstItem="CEA-WA-Jbh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="c8l-Th-bW9"/>
                             <constraint firstItem="Oqu-F0-Oke" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eyH-cJ-Nme"/>
+                            <constraint firstItem="xkI-Rr-occ" firstAttribute="centerX" secondItem="c2z-fn-gsO" secondAttribute="centerX" id="pKH-Dp-QvB"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6Df-ux-MOQ"/>
+                                <exclude reference="WKg-qx-f8B"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="emailConstraint" destination="eyH-cJ-Nme" id="VsP-a9-kO4"/>
+                        <outlet property="loginConstraint" destination="WKg-qx-f8B" id="cTQ-0T-s19"/>
+                        <outlet property="passwordConstraint" destination="6Df-ux-MOQ" id="XJR-kI-9Jt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
