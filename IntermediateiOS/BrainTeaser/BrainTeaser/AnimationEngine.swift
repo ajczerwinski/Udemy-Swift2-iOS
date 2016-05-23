@@ -23,6 +23,7 @@ class AnimationEngine {
         return CGPointMake(CGRectGetMidX(UIScreen.mainScreen().bounds), CGRectGetMidY(UIScreen.mainScreen().bounds))
     }
     
+    let ANIM_DELAY: Int = 1
     var originalConstants = [CGFloat]()
     var constraints: [NSLayoutConstraint]!
     
@@ -37,21 +38,29 @@ class AnimationEngine {
         
     }
     
-    func animateOnScreen() {
+    func animateOnScreen(delay: Int) {
         
-        var index = 0
-        repeat {
-            let moveAnim = POPSpringAnimation(propertyNamed: kPOPLayoutConstraintConstant)
-            moveAnim.toValue = self.originalConstants[index]
-            moveAnim.springBounciness = 12
-            moveAnim.springSpeed = 12
-            
-            let con = self.constraints[index]
-            con.pop_addAnimation(moveAnim, forKey: "moveOnScreen")
-            
-            index++
-            
-        } while (index < self.constraints.count)
+        let time = dispatch_time(DISPATCH_TIME_NOW, Int64(Double(delay) * Double(NSEC_PER_SEC)))
+        
+        dispatch_after(time, dispatch_get_main_queue()) {
+            var index = 0
+            repeat {
+                let moveAnim = POPSpringAnimation(propertyNamed: kPOPLayoutConstraintConstant)
+                moveAnim.toValue = self.originalConstants[index]
+                moveAnim.springBounciness = 12
+                moveAnim.springSpeed = 12
+                
+                if (index > 0) {
+                    moveAnim.dynamicsFriction += 100 + CGFloat(index)
+                }
+                
+                let con = self.constraints[index]
+                con.pop_addAnimation(moveAnim, forKey: "moveOnScreen")
+                
+                index++
+                
+            } while (index < self.constraints.count)
+        }
     }
     
 }
