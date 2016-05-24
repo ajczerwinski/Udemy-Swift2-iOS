@@ -10,6 +10,7 @@
 		BC4DA4DD54D8F4AF79147F77 /* Pods_BrainTeaser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379799F2E854DF6ECC5BB906 /* Pods_BrainTeaser.framework */; };
 		BF1153831CEFBCF70091AA2E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1153821CEFBCF70091AA2E /* CustomButton.swift */; };
 		BF1153861CF1920B0091AA2E /* AnimationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1153851CF1920B0091AA2E /* AnimationEngine.swift */; };
+		BF11538A1CF409D00091AA2E /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1153891CF409D00091AA2E /* GameVC.swift */; };
 		BF6C97751CEA7A4800FB43D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6C97741CEA7A4800FB43D6 /* AppDelegate.swift */; };
 		BF6C97771CEA7A4800FB43D6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6C97761CEA7A4800FB43D6 /* LoginVC.swift */; };
 		BF6C977A1CEA7A4900FB43D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6C97781CEA7A4900FB43D6 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		379799F2E854DF6ECC5BB906 /* Pods_BrainTeaser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainTeaser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1153821CEFBCF70091AA2E /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		BF1153851CF1920B0091AA2E /* AnimationEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationEngine.swift; sourceTree = "<group>"; };
+		BF1153891CF409D00091AA2E /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		BF5185461CEA8132009F0C04 /* BrainTeaser-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrainTeaser-Bridging-Header.h"; sourceTree = "<group>"; };
 		BF6C97711CEA7A4600FB43D6 /* BrainTeaser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainTeaser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6C97741CEA7A4800FB43D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				BF6C97761CEA7A4800FB43D6 /* LoginVC.swift */,
+				BF1153891CF409D00091AA2E /* GameVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				BF6C97771CEA7A4800FB43D6 /* LoginVC.swift in Sources */,
 				BF6C97751CEA7A4800FB43D6 /* AppDelegate.swift in Sources */,
 				BF1153861CF1920B0091AA2E /* AnimationEngine.swift in Sources */,
+				BF11538A1CF409D00091AA2E /* GameVC.swift in Sources */,
 				BFCE40181CEE57BC004F8185 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
