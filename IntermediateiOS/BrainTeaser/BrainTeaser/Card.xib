@@ -7,10 +7,30 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Card" customModule="BrainTeaser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue_ball" translatesAutoresizingMaskIntoConstraints="NO" id="HZE-TG-5W2">
+                    <rect key="frame" x="25" y="25" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="vBu-MY-wl9"/>
+                        <constraint firstAttribute="width" constant="200" id="wrK-zs-9Ko"/>
+                    </constraints>
+                </imageView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="HZE-TG-5W2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="RMM-8y-RgB"/>
+                <constraint firstItem="HZE-TG-5W2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="byr-hX-XVW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="shapeImage" destination="HZE-TG-5W2" id="gIt-lK-9Hz"/>
+            </connections>
         </view>
     </objects>
+    <resources>
+        <image name="blue_ball" width="320" height="320"/>
+    </resources>
 </document>
