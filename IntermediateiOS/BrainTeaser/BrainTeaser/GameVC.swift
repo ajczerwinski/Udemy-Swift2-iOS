@@ -26,4 +26,28 @@ class GameVC: UIViewController {
 
     }
 
+    @IBAction func yesPressed(sender: UIButton) {
+        if sender.titleLabel?.text == "YES" {
+            checkAnswer()
+        } else {
+            titleLbl.text = "Does this card match the previous?"
+        }
+        
+        showNextCard()
+        
+    }
+    
+    @IBAction func noPressed(sender: AnyObject) {
+        checkAnswer()
+        showNextCard()
+    }
+    
+    func checkAnswer() {
+        
+    }
+    
+    func showNextCard() {
+        
+    }
+    
 }
