@@ -25,6 +25,11 @@
                 <constraint firstItem="HZE-TG-5W2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="byr-hX-XVW"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="shapeImage" destination="HZE-TG-5W2" id="gIt-lK-9Hz"/>
             </connections>

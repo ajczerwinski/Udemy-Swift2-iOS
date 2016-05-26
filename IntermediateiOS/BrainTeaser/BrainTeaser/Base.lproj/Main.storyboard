@@ -158,7 +158,7 @@
                                 </variation>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember this image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toM-yx-fmk">
-                                <rect key="frame" x="20" y="63" width="280" height="21"/>
+                                <rect key="frame" x="20" y="90" width="280" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="0e6-qt-bBq"/>
                                     <constraint firstAttribute="width" constant="280" id="asQ-lQ-4fc"/>
@@ -174,7 +174,7 @@
                             <constraint firstItem="jx6-kh-Sg2" firstAttribute="leading" secondItem="f26-kC-Pkt" secondAttribute="leadingMargin" id="SiC-hc-iOJ"/>
                             <constraint firstItem="toM-yx-fmk" firstAttribute="centerX" secondItem="f26-kC-Pkt" secondAttribute="centerX" id="Srz-n2-lja"/>
                             <constraint firstItem="wHM-8G-l2C" firstAttribute="top" secondItem="jx6-kh-Sg2" secondAttribute="bottom" constant="20" id="Uqm-9l-mIL"/>
-                            <constraint firstItem="toM-yx-fmk" firstAttribute="top" secondItem="pHV-Fi-eKI" secondAttribute="bottom" constant="43" id="axr-Kr-643"/>
+                            <constraint firstItem="toM-yx-fmk" firstAttribute="top" secondItem="pHV-Fi-eKI" secondAttribute="bottom" constant="70" id="axr-Kr-643"/>
                             <constraint firstItem="wHM-8G-l2C" firstAttribute="top" secondItem="3Pb-w9-W3k" secondAttribute="bottom" constant="20" id="wEM-ht-fDZ"/>
                         </constraints>
                     </view>
