@@ -23,6 +23,7 @@ class GameVC: UIViewController {
         currentCard = NSBundle.mainBundle().loadNibNamed("Card", owner: self, options: nil)[0] as? Card
         currentCard.center = AnimationEngine.screenCenterPosition
         self.view.addSubview(currentCard)
+        AnimationEngine.animateToPosition(currentCard, position: CGPointMake(0, UIScreen.mainScreen().bounds.height))
 
     }
 
@@ -48,6 +49,16 @@ class GameVC: UIViewController {
     
     func showNextCard() {
         
+        if let current = currentCard {
+            let cardToRemove = current
+            currentCard = nil
+        }
+        
     }
     
 }
+
+
+
+
+
