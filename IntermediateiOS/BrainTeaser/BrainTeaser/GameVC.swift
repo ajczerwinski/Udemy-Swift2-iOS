@@ -20,12 +20,15 @@ class GameVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        currentCard = NSBundle.mainBundle().loadNibNamed("Card", owner: self, options: nil)[0] as? Card
+        currentCard = createCardFromNib()
         currentCard.center = AnimationEngine.screenCenterPosition
         self.view.addSubview(currentCard)
-        AnimationEngine.animateToPosition(currentCard, position: CGPointMake(0, UIScreen.mainScreen().bounds.height))
 
     }
+    
+//    override func viewDidAppear(animated: Bool) {
+//        AnimationEngine.animateToPosition(currentCard, position: CGPointMake(150, UIScreen.mainScreen().bounds.height))
+//    }
 
     @IBAction func yesPressed(sender: UIButton) {
         if sender.titleLabel?.text == "YES" {
@@ -43,16 +46,39 @@ class GameVC: UIViewController {
         showNextCard()
     }
     
-    func checkAnswer() {
-        
-    }
-    
     func showNextCard() {
         
         if let current = currentCard {
             let cardToRemove = current
             currentCard = nil
+            
+            AnimationEngine.animateToPosition(cardToRemove, position: AnimationEngine.offScreenLeftPosition, completion: { (anim: POPAnimation!, finished: Bool) -> Void in
+                cardToRemove.removeFromSuperview()
+            })
         }
+        
+        if let next = createCardFromNib() {
+            next.center = AnimationEngine.offScreenRightPosition
+            self.view.addSubview(next)
+            currentCard = next
+            
+            if noBtn.hidden {
+                noBtn.hidden = false
+                yesBtn.setTitle("YES", forState: .Normal)
+            }
+            
+            AnimationEngine.animateToPosition(next, position: AnimationEngine.screenCenterPosition, completion: { (anim: POPAnimation!, finished: Bool) -> Void in
+                
+            })
+        }
+        
+    }
+    
+    func createCardFromNib() -> Card? {
+        return NSBundle.mainBundle().loadNibNamed("Card", owner: self, options: nil)[0] as? Card
+    }
+    
+    func checkAnswer() {
         
     }
     

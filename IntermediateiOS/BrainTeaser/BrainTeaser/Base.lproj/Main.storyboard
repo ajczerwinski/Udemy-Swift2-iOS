@@ -135,6 +135,9 @@
                                         <exclude reference="CWI-We-WOQ"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="yesPressed:" destination="fPL-gQ-Svf" eventType="touchUpInside" id="acT-57-NC1"/>
+                                </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jx6-kh-Sg2" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
                                 <rect key="frame" x="20" y="506" width="105" height="42"/>
@@ -156,6 +159,9 @@
                                         <exclude reference="Lz1-hB-Zns"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="noPressed:" destination="fPL-gQ-Svf" eventType="touchUpInside" id="EUm-4k-NT6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember this image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toM-yx-fmk">
                                 <rect key="frame" x="20" y="90" width="280" height="21"/>
@@ -179,6 +185,11 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="noBtn" destination="jx6-kh-Sg2" id="hhs-HD-LNt"/>
+                        <outlet property="titleLbl" destination="toM-yx-fmk" id="RXe-ot-chM"/>
+                        <outlet property="yesBtn" destination="3Pb-w9-W3k" id="1w1-Cc-yVh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ro-lC-LYK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
