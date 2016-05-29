@@ -173,12 +173,24 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qC-7v-A2O">
+                                <rect key="frame" x="127" y="426" width="64" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="0XN-5T-aX2"/>
+                                    <constraint firstAttribute="height" constant="32" id="H9i-1B-qGk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3Pb-w9-W3k" firstAttribute="trailing" secondItem="f26-kC-Pkt" secondAttribute="trailingMargin" id="Lla-Yb-qxU"/>
                             <constraint firstItem="jx6-kh-Sg2" firstAttribute="leading" secondItem="f26-kC-Pkt" secondAttribute="leadingMargin" id="SiC-hc-iOJ"/>
                             <constraint firstItem="toM-yx-fmk" firstAttribute="centerX" secondItem="f26-kC-Pkt" secondAttribute="centerX" id="Srz-n2-lja"/>
+                            <constraint firstItem="wHM-8G-l2C" firstAttribute="top" secondItem="1qC-7v-A2O" secondAttribute="bottom" constant="95" id="Sz5-9I-GvL"/>
+                            <constraint firstItem="1qC-7v-A2O" firstAttribute="centerX" secondItem="f26-kC-Pkt" secondAttribute="centerX" id="UHR-cT-VTG"/>
                             <constraint firstItem="wHM-8G-l2C" firstAttribute="top" secondItem="jx6-kh-Sg2" secondAttribute="bottom" constant="20" id="Uqm-9l-mIL"/>
                             <constraint firstItem="toM-yx-fmk" firstAttribute="top" secondItem="pHV-Fi-eKI" secondAttribute="bottom" constant="70" id="axr-Kr-643"/>
                             <constraint firstItem="wHM-8G-l2C" firstAttribute="top" secondItem="3Pb-w9-W3k" secondAttribute="bottom" constant="20" id="wEM-ht-fDZ"/>
@@ -187,6 +199,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="noBtn" destination="jx6-kh-Sg2" id="hhs-HD-LNt"/>
+                        <outlet property="timerCounterLbl" destination="1qC-7v-A2O" id="nMp-LJ-Lgl"/>
                         <outlet property="titleLbl" destination="toM-yx-fmk" id="RXe-ot-chM"/>
                         <outlet property="yesBtn" destination="3Pb-w9-W3k" id="1w1-Cc-yVh"/>
                     </connections>

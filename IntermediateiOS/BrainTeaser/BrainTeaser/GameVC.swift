@@ -14,8 +14,12 @@ class GameVC: UIViewController {
     @IBOutlet weak var yesBtn: CustomButton!
     @IBOutlet weak var noBtn: CustomButton!
     @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var timerCounterLbl: UILabel!
+    
     
     var currentCard: Card!
+    var timer = NSTimer()
+    var binaryCount = 0b0000
     
     override func viewDidLoad() {
         super.viewDidLoad()
