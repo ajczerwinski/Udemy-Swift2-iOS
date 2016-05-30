@@ -36,7 +36,9 @@ class GameVC: UIViewController {
 
     @IBAction func yesPressed(sender: UIButton) {
         
+        timerCounterLbl.hidden = false
         timer.invalidate()
+        counter = 60
         timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(countDown), userInfo: nil, repeats: true)
         if sender.titleLabel?.text == "YES" {
             checkAnswer()
@@ -54,7 +56,7 @@ class GameVC: UIViewController {
     }
     
     func countDown() {
-        counter += 1
+        counter -= 1
         timerCounterLbl.text = "\(counter)"
     }
     
