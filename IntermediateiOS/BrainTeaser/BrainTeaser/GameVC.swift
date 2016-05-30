@@ -19,7 +19,7 @@ class GameVC: UIViewController {
     
     var currentCard: Card!
     var timer = NSTimer()
-    var binaryCount = 0b0000
+    var counter = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +35,9 @@ class GameVC: UIViewController {
 //    }
 
     @IBAction func yesPressed(sender: UIButton) {
+        
+        timer.invalidate()
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(countDown), userInfo: nil, repeats: true)
         if sender.titleLabel?.text == "YES" {
             checkAnswer()
         } else {
@@ -48,6 +51,11 @@ class GameVC: UIViewController {
     @IBAction func noPressed(sender: AnyObject) {
         checkAnswer()
         showNextCard()
+    }
+    
+    func countDown() {
+        counter += 1
+        timerCounterLbl.text = "\(counter)"
     }
     
     func showNextCard() {
