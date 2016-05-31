@@ -183,18 +183,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="greenCheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="Hge-mf-hzg">
-                                <rect key="frame" x="187" y="308" width="80" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="5DU-gX-Ygo"/>
-                                    <constraint firstAttribute="height" constant="60" id="NH3-bo-O9N"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1qC-7v-A2O" firstAttribute="top" secondItem="Hge-mf-hzg" secondAttribute="bottom" constant="58" id="3mm-2Z-gZE"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Hge-mf-hzg" secondAttribute="trailing" constant="33" id="HRZ-v9-0GN"/>
                             <constraint firstItem="3Pb-w9-W3k" firstAttribute="trailing" secondItem="f26-kC-Pkt" secondAttribute="trailingMargin" id="Lla-Yb-qxU"/>
                             <constraint firstItem="jx6-kh-Sg2" firstAttribute="leading" secondItem="f26-kC-Pkt" secondAttribute="leadingMargin" id="SiC-hc-iOJ"/>
                             <constraint firstItem="toM-yx-fmk" firstAttribute="centerX" secondItem="f26-kC-Pkt" secondAttribute="centerX" id="Srz-n2-lja"/>
@@ -220,6 +211,5 @@
     </scenes>
     <resources>
         <image name="brain" width="1667" height="1667"/>
-        <image name="greenCheckMark" width="512" height="512"/>
     </resources>
 </document>

@@ -18,10 +18,19 @@
                         <constraint firstAttribute="width" constant="200" id="wrK-zs-9Ko"/>
                     </constraints>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenCheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="YuA-YG-225">
+                    <rect key="frame" x="145" y="165" width="80" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="dt5-gE-hJn"/>
+                        <constraint firstAttribute="height" constant="60" id="ho1-PI-xdn"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="HZE-TG-5W2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="RMM-8y-RgB"/>
+                <constraint firstItem="YuA-YG-225" firstAttribute="bottom" secondItem="HZE-TG-5W2" secondAttribute="bottom" id="ZGd-Si-d9Q"/>
+                <constraint firstItem="YuA-YG-225" firstAttribute="trailing" secondItem="HZE-TG-5W2" secondAttribute="trailing" id="aKu-mM-d6i"/>
                 <constraint firstItem="HZE-TG-5W2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="byr-hX-XVW"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -37,5 +46,6 @@
     </objects>
     <resources>
         <image name="blue_ball" width="320" height="320"/>
+        <image name="greenCheckMark" width="512" height="512"/>
     </resources>
 </document>
