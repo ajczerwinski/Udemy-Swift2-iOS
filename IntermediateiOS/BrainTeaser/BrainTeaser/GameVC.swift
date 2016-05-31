@@ -58,6 +58,10 @@ class GameVC: UIViewController {
     func countDown() {
         counter -= 1
         timerCounterLbl.text = "\(counter)"
+        if counter == 0 {
+            timer.invalidate()
+            timerCounterLbl.text = "Time's Up!"
+        }
     }
     
     func showNextCard() {
