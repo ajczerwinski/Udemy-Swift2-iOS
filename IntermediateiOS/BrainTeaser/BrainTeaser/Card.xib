@@ -18,7 +18,7 @@
                         <constraint firstAttribute="width" constant="200" id="wrK-zs-9Ko"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenCheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="YuA-YG-225">
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenCheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="YuA-YG-225">
                     <rect key="frame" x="145" y="165" width="80" height="60"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="dt5-gE-hJn"/>
@@ -41,6 +41,7 @@
             </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="shapeImage" destination="HZE-TG-5W2" id="gIt-lK-9Hz"/>
+                <outlet property="xCheckMark" destination="YuA-YG-225" id="8uA-Ke-dcX"/>
             </connections>
         </view>
     </objects>

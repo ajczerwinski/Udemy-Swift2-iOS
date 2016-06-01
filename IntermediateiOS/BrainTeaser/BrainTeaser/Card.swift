@@ -16,6 +16,7 @@ class Card: UIView {
     
     @IBOutlet weak var shapeImage: UIImageView!
     
+    @IBOutlet weak var xCheckMark: UIImageView!
     @IBInspectable var cornerRadius: CGFloat = 3.0 {
         didSet {
             setupView()
