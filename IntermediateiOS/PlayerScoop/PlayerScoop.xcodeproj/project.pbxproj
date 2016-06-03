@@ -11,6 +11,7 @@
 		BF1153A71CFFB60B0091AA2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1153A51CFFB60B0091AA2E /* Main.storyboard */; };
 		BF1153A91CFFB60C0091AA2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF1153A81CFFB60C0091AA2E /* Assets.xcassets */; };
 		BF1153AC1CFFB60C0091AA2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1153AA1CFFB60C0091AA2E /* LaunchScreen.storyboard */; };
+		BF36E9C21D0241F6002DC36D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36E9C11D0241F6002DC36D /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		BF1153A81CFFB60C0091AA2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF1153AB1CFFB60C0091AA2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF1153AD1CFFB60C0091AA2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF36E9C11D0241F6002DC36D /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				BF1153A11CFFB60B0091AA2E /* AppDelegate.swift */,
+				BF36E9C11D0241F6002DC36D /* Player.swift */,
 				BF1153A51CFFB60B0091AA2E /* Main.storyboard */,
 				BF1153A81CFFB60C0091AA2E /* Assets.xcassets */,
 				BF1153AA1CFFB60C0091AA2E /* LaunchScreen.storyboard */,
@@ -132,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF36E9C21D0241F6002DC36D /* Player.swift in Sources */,
 				BF1153A21CFFB60B0091AA2E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +288,7 @@
 				BF1153B21CFFB60C0091AA2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
