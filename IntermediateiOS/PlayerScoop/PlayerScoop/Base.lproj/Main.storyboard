@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
@@ -28,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="-700" y="284"/>
         </scene>
-        <!--View Controller-->
+        <!--Player View Controller-->
         <scene sceneID="yuJ-KA-RpR">
             <objects>
-                <viewController id="Nzc-Lf-5pJ" sceneMemberID="viewController">
+                <viewController id="Nzc-Lf-5pJ" customClass="PlayerViewController" customModule="PlayerScoop" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gcg-4m-JzI"/>
                         <viewControllerLayoutGuide type="bottom" id="zmD-Fa-1tV"/>
@@ -39,8 +40,35 @@
                     <view key="view" contentMode="scaleToFill" id="dC4-iK-Rex">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.066666666669999999" green="0.57254901960000004" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yPM-ZW-ggi">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yPM-ZW-ggi" firstAttribute="leading" secondItem="dC4-iK-Rex" secondAttribute="leading" id="2cS-Wj-aXu"/>
+                            <constraint firstItem="zmD-Fa-1tV" firstAttribute="top" secondItem="yPM-ZW-ggi" secondAttribute="bottom" id="HOL-8f-Vzr"/>
+                            <constraint firstItem="yPM-ZW-ggi" firstAttribute="leading" secondItem="dC4-iK-Rex" secondAttribute="leadingMargin" id="IOY-Un-GrB"/>
+                            <constraint firstItem="yPM-ZW-ggi" firstAttribute="top" secondItem="Gcg-4m-JzI" secondAttribute="bottom" id="Lwa-69-sTF"/>
+                            <constraint firstItem="zmD-Fa-1tV" firstAttribute="top" secondItem="yPM-ZW-ggi" secondAttribute="bottom" id="bNl-hY-6Js"/>
+                            <constraint firstItem="yPM-ZW-ggi" firstAttribute="top" secondItem="Gcg-4m-JzI" secondAttribute="bottom" id="gTV-Di-bR9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yPM-ZW-ggi" secondAttribute="trailing" id="rrc-jn-oz7"/>
+                            <constraint firstAttribute="trailing" secondItem="yPM-ZW-ggi" secondAttribute="trailing" id="z6y-3X-njd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IOY-Un-GrB"/>
+                                <exclude reference="gTV-Di-bR9"/>
+                                <exclude reference="rrc-jn-oz7"/>
+                                <exclude reference="HOL-8f-Vzr"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="yPM-ZW-ggi" id="jg0-Jh-xfA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nww-rI-7GZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
