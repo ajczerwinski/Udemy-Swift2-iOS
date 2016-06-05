@@ -35,5 +35,9 @@ class PlayerViewController: UIViewController, UITableViewDataSource, UITableView
         
         return cell
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("moveToDetailSegue", sender: nil)
+    }
 
 }
