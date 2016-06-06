@@ -13,6 +13,7 @@ class PlayerViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableView: UITableView!
     
     var players = Player.createPlayers()
+    var selectedPlayer = Player()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,14 @@ class PlayerViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let player = self.players[indexPath.row]
+        self.selectedPlayer = player
         self.performSegueWithIdentifier("moveToDetailSegue", sender: nil)
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let detailVC = segue.destinationViewController as! PlayerDetailViewController
+        detailVC.player = self.selectedPlayer
+    }
+    
 }
