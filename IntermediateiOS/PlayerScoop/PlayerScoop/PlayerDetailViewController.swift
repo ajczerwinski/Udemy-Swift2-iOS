@@ -25,7 +25,25 @@ class PlayerDetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = self.player.backgroundColor
+        self.imageView.image = self.player.image
+        self.heightLabel2.text = self.player.height
+        self.weightLabel2.text = String(self.player.weight)
         self.nameLabel.text = self.player.name
+        self.collegeLabel2.text = self.player.college
+        
+        self.nameLabel.textColor = self.player.textColor1
+        
+        self.heightLabel1.textColor = self.player.textColor1
+        self.heightLabel2.textColor = self.player.textColor2
+        
+        self.weightLabel1.textColor = self.player.textColor1
+        self.weightLabel2.textColor = self.player.textColor2
+        
+        self.collegeLabel1.textColor = self.player.textColor1
+        self.collegeLabel2.textColor = self.player.textColor2
+        
+        
     }
 
 }
