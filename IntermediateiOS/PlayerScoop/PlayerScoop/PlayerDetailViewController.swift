@@ -28,7 +28,7 @@ class PlayerDetailViewController: UIViewController {
         self.view.backgroundColor = self.player.backgroundColor
         self.imageView.image = self.player.image
         self.heightLabel2.text = self.player.height
-        self.weightLabel2.text = String(self.player.weight)
+        self.weightLabel2.text = "\(self.player.weight)"
         self.nameLabel.text = self.player.name
         self.collegeLabel2.text = self.player.college
         
