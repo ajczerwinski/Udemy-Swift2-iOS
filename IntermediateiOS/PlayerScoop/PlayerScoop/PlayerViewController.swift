@@ -21,6 +21,8 @@ class PlayerViewController: UIViewController, UITableViewDataSource, UITableView
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
+        self.splitViewController?.preferredDisplayMode = .AllVisible
+        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
