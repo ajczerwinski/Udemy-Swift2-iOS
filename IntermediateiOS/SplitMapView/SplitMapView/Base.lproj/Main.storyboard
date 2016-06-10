@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="LjN-0M-kYh">
+            <objects>
+                <viewController id="2Ld-tb-QNy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ywv-79-2iu"/>
+                        <viewControllerLayoutGuide type="bottom" id="jDW-Tb-wJ4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QBY-yT-568">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhD-3w-EtK">
+                                <rect key="frame" x="186" y="282" width="229" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xhD-3w-EtK" firstAttribute="centerY" secondItem="QBY-yT-568" secondAttribute="centerY" id="S99-tc-dhF"/>
+                            <constraint firstItem="xhD-3w-EtK" firstAttribute="centerX" secondItem="QBY-yT-568" secondAttribute="centerX" id="Yl0-bs-f1I"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vN4-md-vKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="277" y="549"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XhG-vw-dpk">
+            <objects>
+                <navigationController id="psF-u1-KB4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q3l-dT-gPf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="y1u-mf-gG1" kind="relationship" relationship="rootViewController" id="cLP-7u-C7e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RPk-qB-cxu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="277" y="-112"/>
+        </scene>
+        <!--MapVC-->
+        <scene sceneID="WaQ-06-TMT">
+            <objects>
+                <viewController id="y1u-mf-gG1" customClass="MapVC" customModule="SplitMapView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0pb-t5-eZ0"/>
+                        <viewControllerLayoutGuide type="bottom" id="s86-Gb-Vdr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZTL-e6-KWE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Uvq-rV-IaQ">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Uvq-rV-IaQ" secondAttribute="trailing" id="eOk-h3-jGK"/>
+                            <constraint firstItem="Uvq-rV-IaQ" firstAttribute="leading" secondItem="ZTL-e6-KWE" secondAttribute="leading" id="hRO-7a-qSa"/>
+                            <constraint firstItem="s86-Gb-Vdr" firstAttribute="top" secondItem="Uvq-rV-IaQ" secondAttribute="bottom" id="ywC-SZ-Zhj"/>
+                            <constraint firstItem="Uvq-rV-IaQ" firstAttribute="top" secondItem="0pb-t5-eZ0" secondAttribute="bottom" id="zQ5-dS-as8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Hk-AI-Rmo"/>
+                    <connections>
+                        <outlet property="mapView" destination="Uvq-rV-IaQ" id="wfk-Ka-QPy"/>
+                        <segue destination="0Le-9F-UEy" kind="show" identifier="moveToMapDetailSegue" id="TTA-zh-RnX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ch2-ea-8pN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1182" y="-112"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MoB-U2-h5o">
+            <objects>
+                <viewController id="0Le-9F-UEy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uX9-x7-ur0"/>
+                        <viewControllerLayoutGuide type="bottom" id="vXE-TU-nob"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Is7-vN-Y6v">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ftx-dS-VYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837" y="-112"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="OQB-te-ThL">
+            <objects>
+                <splitViewController id="N7X-EX-DPA" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="psF-u1-KB4" kind="relationship" relationship="masterViewController" id="lWp-0H-eke"/>
+                        <segue destination="2Ld-tb-QNy" kind="relationship" relationship="detailViewController" id="Bs0-FJ-cmk"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3VC-3j-oXu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-543" y="219"/>
+        </scene>
+    </scenes>
+</document>
