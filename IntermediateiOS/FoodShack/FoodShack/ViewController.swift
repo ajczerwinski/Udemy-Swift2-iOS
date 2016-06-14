@@ -23,12 +23,15 @@ class ViewController: UIViewController {
     let topThumbBtn = UIButton()
     let topTitleLbl = UILabel()
     
+    var views = Dictionary<String, AnyObject>()
+    var constraints = [NSLayoutConstraint]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor.darkGrayColor()
         self.topViewHolder.backgroundColor = UIColor.whiteColor()
-        self.mainThumbViewHolder.backgroundColor = UIColor(red: 220.0 / 255.0, green: 0.89, blue: 210.0 / 255.0, alpha: 1.0)
+        self.mainThumbViewHolder.backgroundColor = UIColor(red: 220.0 / 255.0, green: 224.0 / 255.0, blue: 210.0 / 255.0, alpha: 1.0)
         self.buttonViewHolder.backgroundColor = UIColor(red: 242.0 / 255.0, green: 241.0 / 255.0, blue: 239.0 / 255.0, alpha: 1.0)
         self.bottomViewHolder.backgroundColor = UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0)
         
@@ -36,6 +39,22 @@ class ViewController: UIViewController {
         self.view.addSubview(mainThumbViewHolder)
         self.view.addSubview(buttonViewHolder)
         self.view.addSubview(bottomViewHolder)
+        
+        self.views["topViewHolder"] = topViewHolder
+        self.views["mainThumbViewHolder"] = mainThumbViewHolder
+        self.views["buttonViewHolder"] = buttonViewHolder
+        self.views["bottomViewHolder"] = bottomViewHolder
+        
+        setConstraints()
+        
+    }
+    
+    func setConstraints() {
+        
+        /** TOP VIEW HOLDER **/
+        var topViewConstraints = "V:|-[topViewHolder(50)]"
+        
+        let topViewVerticalConstraints = NSLayoutConstraint.constraintsWithVisualFormat(topViewConstraints, options: [], metrics: nil, views: self.views)
         
     }
 
