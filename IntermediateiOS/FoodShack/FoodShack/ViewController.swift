@@ -29,6 +29,8 @@ class ViewController: UIViewController {
         self.view.backgroundColor = UIColor.darkGrayColor()
         
         self.view.addSubview(topViewHolder)
+        self.topViewHolder.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, 50)
+        self.topViewHolder.backgroundColor = UIColor.whiteColor()
     }
 
 }
