@@ -27,10 +27,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor.darkGrayColor()
+        self.topViewHolder.backgroundColor = UIColor.whiteColor()
+        self.mainThumbViewHolder.backgroundColor = UIColor(red: 220.0 / 255.0, green: 0.89, blue: 210.0 / 255.0, alpha: 1.0)
+        self.buttonViewHolder.backgroundColor = UIColor(red: 242.0 / 255.0, green: 241.0 / 255.0, blue: 239.0 / 255.0, alpha: 1.0)
+        self.bottomViewHolder.backgroundColor = UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0)
         
         self.view.addSubview(topViewHolder)
-        self.topViewHolder.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, 50)
-        self.topViewHolder.backgroundColor = UIColor.whiteColor()
+        self.view.addSubview(mainThumbViewHolder)
+        self.view.addSubview(buttonViewHolder)
+        self.view.addSubview(bottomViewHolder)
+        
     }
 
 }
