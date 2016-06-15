@@ -57,8 +57,13 @@ class ViewController: UIViewController {
     func setConstraints() {
         
         /** TOP VIEW HOLDER **/
-        addConstraint("V:|-[topViewHolder(50)]")
+        addConstraint("V:|-[topViewHolder(50)]-0-[mainThumbViewHolder]")
         addConstraint("H:|-0-[topViewHolder]-0-|")
+        
+        /** MAIN VIEW HOLDER **/
+        addConstraint("V:[mainThumbViewHolder(<=250)]")
+        addConstraint("V:[mainThumbViewHolder(>=100)]")
+        addConstraint("H:|-0-[mainThumbViewHolder(==topViewHolder)]-0-|")
         
         NSLayoutConstraint.activateConstraints(self.constraints)
         
