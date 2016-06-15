@@ -57,19 +57,18 @@ class ViewController: UIViewController {
     func setConstraints() {
         
         /** TOP VIEW HOLDER **/
-        var formatString = "V:|-[topViewHolder(50)]"
-        
-        var newConstraints = NSLayoutConstraint.constraintsWithVisualFormat(formatString, options: [], metrics: nil, views: self.views)
-        
-        self.constraints += newConstraints
-        
-        formatString = "H:|-0-[topViewHolder]-0-|"
-        
-        newConstraints = NSLayoutConstraint.constraintsWithVisualFormat(formatString, options: [], metrics: nil, views: self.views)
-        
-        self.constraints += newConstraints
+        addConstraint("V:|-[topViewHolder(50)]")
+        addConstraint("H:|-0-[topViewHolder]-0-|")
         
         NSLayoutConstraint.activateConstraints(self.constraints)
+        
+    }
+    
+    func addConstraint(format: String) {
+        
+        let newConstraints = NSLayoutConstraint.constraintsWithVisualFormat(format, options: [], metrics: nil, views: self.views)
+        
+        self.constraints += newConstraints
         
     }
 
