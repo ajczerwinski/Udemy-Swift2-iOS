@@ -63,7 +63,7 @@ class ViewController: UIViewController {
         
         self.constraints += newConstraints
         
-        formatString = "H:|-[topViewHolder]-|"
+        formatString = "H:|-0-[topViewHolder]-0-|"
         
         newConstraints = NSLayoutConstraint.constraintsWithVisualFormat(formatString, options: [], metrics: nil, views: self.views)
         
