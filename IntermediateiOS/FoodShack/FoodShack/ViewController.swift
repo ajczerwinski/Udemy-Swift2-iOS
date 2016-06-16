@@ -61,8 +61,8 @@ class ViewController: UIViewController {
         addConstraint("H:|-0-[topViewHolder]-0-|")
         
         /** MAIN VIEW HOLDER **/
-        addConstraint("V:[mainThumbViewHolder(<=250)]-0-[buttonViewHolder]")
-        addConstraint("V:[mainThumbViewHolder(>=150)]")
+        addConstraint("V:[mainThumbViewHolder(<=250@250)]-0-[buttonViewHolder]")
+        addConstraint("V:[mainThumbViewHolder(>=150@250)]")
         addConstraint("H:|-0-[mainThumbViewHolder(==topViewHolder)]-0-|")
         
         /** BUTTON VIEW HOLDER **/
