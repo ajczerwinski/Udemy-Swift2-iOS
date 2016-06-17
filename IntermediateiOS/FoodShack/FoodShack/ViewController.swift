@@ -36,12 +36,15 @@ class ViewController: UIViewController {
         self.bottomViewHolder.backgroundColor = UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0)
         
         self.topThumbBtn.setImage(UIImage(named: "burger"), forState: .Normal)
+        self.topTitleLbl.text = "FOOD SHACK"
+        self.topTitleLbl.textColor = UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0)
         
         self.topViewHolder.translatesAutoresizingMaskIntoConstraints = false
         self.mainThumbViewHolder.translatesAutoresizingMaskIntoConstraints = false
         self.buttonViewHolder.translatesAutoresizingMaskIntoConstraints = false
         self.bottomViewHolder.translatesAutoresizingMaskIntoConstraints = false
         self.topThumbBtn.translatesAutoresizingMaskIntoConstraints = false
+        self.topTitleLbl.translatesAutoresizingMaskIntoConstraints = false
         
         self.view.addSubview(topViewHolder)
         self.view.addSubview(mainThumbViewHolder)
@@ -49,12 +52,14 @@ class ViewController: UIViewController {
         self.view.addSubview(bottomViewHolder)
         
         self.topViewHolder.addSubview(self.topThumbBtn)
+        self.topViewHolder.addSubview(self.topTitleLbl)
         
         self.views["topViewHolder"] = topViewHolder
         self.views["mainThumbViewHolder"] = mainThumbViewHolder
         self.views["buttonViewHolder"] = buttonViewHolder
         self.views["bottomViewHolder"] = bottomViewHolder
         self.views["topThumbBtn"] = topThumbBtn
+        self.views["topTitleLbl"] = topTitleLbl
         
         setConstraints()
         
@@ -82,7 +87,11 @@ class ViewController: UIViewController {
         
         /** TOP THUMB BUTTON **/
         addConstraint("V:|-5-[topThumbBtn(40)]")
-        addConstraint("H:|-5-[topThumbBtn(40)]")
+        addConstraint("H:|-5-[topThumbBtn(40)]-1-[topTitleLbl]")
+        
+        /** TOP TITLE LABEL **/
+        addConstraint("V:|-15-[topTitleLbl]")
+        addConstraint("H:[topTitleLbl(>=50)]")
         
         NSLayoutConstraint.activateConstraints(self.constraints)
         
