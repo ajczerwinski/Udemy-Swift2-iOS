@@ -35,10 +35,17 @@ class ViewController: UIViewController {
         self.buttonViewHolder.backgroundColor = UIColor(red: 242.0 / 255.0, green: 241.0 / 255.0, blue: 239.0 / 255.0, alpha: 1.0)
         self.bottomViewHolder.backgroundColor = UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0)
         
+        // STYLE AND SIZING FOR TOP VIEW HOLDER AREA
         self.topThumbBtn.setImage(UIImage(named: "burger"), forState: .Normal)
         self.topTitleLbl.text = "FOOD SHACK"
         self.topTitleLbl.textColor = UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0)
         self.topTitleLbl.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
+        
+        // STYLE AND SIZING FOR BUTTON VIEW HOLDER AREA
+        self.burgerBtn.setImage(UIImage(named: "burger"), forState: .Normal)
+        self.pizzaBtn.setImage(UIImage(named: "pizza"), forState: .Normal)
+        self.sandwichBtn.setImage(UIImage(named: "sandwich"), forState: .Normal)
+        self.tacoBtn.setImage(UIImage(named: "taco"), forState: .Normal)
         
         self.topViewHolder.translatesAutoresizingMaskIntoConstraints = false
         self.mainThumbViewHolder.translatesAutoresizingMaskIntoConstraints = false
@@ -47,6 +54,10 @@ class ViewController: UIViewController {
         self.topThumbBtn.translatesAutoresizingMaskIntoConstraints = false
         self.topTitleLbl.translatesAutoresizingMaskIntoConstraints = false
         self.selectedItemThumbImg.translatesAutoresizingMaskIntoConstraints = false
+        self.burgerBtn.translatesAutoresizingMaskIntoConstraints = false
+        self.pizzaBtn.translatesAutoresizingMaskIntoConstraints = false
+        self.sandwichBtn.translatesAutoresizingMaskIntoConstraints = false
+        self.tacoBtn.translatesAutoresizingMaskIntoConstraints = false
         
         self.view.addSubview(topViewHolder)
         self.view.addSubview(mainThumbViewHolder)
@@ -58,6 +69,11 @@ class ViewController: UIViewController {
         
         self.mainThumbViewHolder.addSubview(self.selectedItemThumbImg)
         
+        self.buttonViewHolder.addSubview(self.burgerBtn)
+        self.buttonViewHolder.addSubview(self.pizzaBtn)
+        self.buttonViewHolder.addSubview(self.sandwichBtn)
+        self.buttonViewHolder.addSubview(self.tacoBtn)
+        
         self.views["topViewHolder"] = topViewHolder
         self.views["mainThumbViewHolder"] = mainThumbViewHolder
         self.views["buttonViewHolder"] = buttonViewHolder
@@ -65,6 +81,10 @@ class ViewController: UIViewController {
         self.views["topThumbBtn"] = topThumbBtn
         self.views["topTitleLbl"] = topTitleLbl
         self.views["selectedItemThumbImg"] = selectedItemThumbImg
+        self.views["burgerBtn"] = burgerBtn
+        self.views["pizzaBtn"] = pizzaBtn
+        self.views["sandwichBtn"] = sandwichBtn
+        self.views["tacoBtn"] = tacoBtn
         
         setConstraints()
         
@@ -85,6 +105,12 @@ class ViewController: UIViewController {
         addConstraint("V:[buttonViewHolder(<=200)]-0-[bottomViewHolder]")
         addConstraint("V:[buttonViewHolder(>=100)]")
         addConstraint("H:|-0-[buttonViewHolder(mainThumbViewHolder)]-0-|")
+        
+        addConstraint("V:|-20-[burgerBtn(70)]-20-[pizzaBtn(70)]")
+        addConstraint("H:|-35-[burgerBtn(70)]-100-[sandwichBtn(70)]")
+        addConstraint("V:|-20-[sandwichBtn(70)]-20-[tacoBtn(70)]")
+        addConstraint("H:|-35-[pizzaBtn(70)]-100-[tacoBtn(70)]")
+        
         
         /** BOTTOM VIEW HOLDER **/
         addConstraint("V:[bottomViewHolder(50)]-|")
