@@ -47,6 +47,15 @@ class ViewController: UIViewController {
         self.sandwichBtn.setImage(UIImage(named: "sandwich"), forState: .Normal)
         self.tacoBtn.setImage(UIImage(named: "taco"), forState: .Normal)
         
+        // STYLE AND SIZING FOR BOTTOM VIEW HOLDER AREA
+        self.orderNowBtn.backgroundColor = UIColor(red: 254.0 / 255.0, green: 213.0 / 255.0, blue: 71.0 / 255.0, alpha: 1.0)
+        self.orderNowBtn.setTitle("ORDER NOW", forState: .Normal)
+        self.orderNowBtn.setTitleColor(UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0), forState: .Normal)
+        self.orderNowBtn.titleLabel!.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
+        self.orderNowBtn.layer.cornerRadius = 5
+        self.orderNowBtn.clipsToBounds = true
+        
+        
         self.topViewHolder.translatesAutoresizingMaskIntoConstraints = false
         self.mainThumbViewHolder.translatesAutoresizingMaskIntoConstraints = false
         self.buttonViewHolder.translatesAutoresizingMaskIntoConstraints = false
@@ -58,6 +67,7 @@ class ViewController: UIViewController {
         self.pizzaBtn.translatesAutoresizingMaskIntoConstraints = false
         self.sandwichBtn.translatesAutoresizingMaskIntoConstraints = false
         self.tacoBtn.translatesAutoresizingMaskIntoConstraints = false
+        self.orderNowBtn.translatesAutoresizingMaskIntoConstraints = false
         
         self.view.addSubview(topViewHolder)
         self.view.addSubview(mainThumbViewHolder)
@@ -74,6 +84,8 @@ class ViewController: UIViewController {
         self.buttonViewHolder.addSubview(self.sandwichBtn)
         self.buttonViewHolder.addSubview(self.tacoBtn)
         
+        self.bottomViewHolder.addSubview(self.orderNowBtn)
+        
         self.views["topViewHolder"] = topViewHolder
         self.views["mainThumbViewHolder"] = mainThumbViewHolder
         self.views["buttonViewHolder"] = buttonViewHolder
@@ -85,6 +97,7 @@ class ViewController: UIViewController {
         self.views["pizzaBtn"] = pizzaBtn
         self.views["sandwichBtn"] = sandwichBtn
         self.views["tacoBtn"] = tacoBtn
+        self.views["orderNowBtn"] = orderNowBtn
         
         setConstraints()
         
@@ -115,6 +128,9 @@ class ViewController: UIViewController {
         /** BOTTOM VIEW HOLDER **/
         addConstraint("V:[bottomViewHolder(50)]-|")
         addConstraint("H:|-0-[bottomViewHolder(buttonViewHolder)]-0-|")
+        
+        addConstraint("V:|-10-[orderNowBtn(30)]")
+        addConstraint("H:[orderNowBtn(150)]-10-|")
         
         /** TOP THUMB BUTTON **/
         addConstraint("V:|-5-[topThumbBtn(40)]")
