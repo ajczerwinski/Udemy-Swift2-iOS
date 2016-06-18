@@ -38,6 +38,7 @@ class ViewController: UIViewController {
         self.topThumbBtn.setImage(UIImage(named: "burger"), forState: .Normal)
         self.topTitleLbl.text = "FOOD SHACK"
         self.topTitleLbl.textColor = UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0)
+        self.topTitleLbl.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
         
         self.topViewHolder.translatesAutoresizingMaskIntoConstraints = false
         self.mainThumbViewHolder.translatesAutoresizingMaskIntoConstraints = false
