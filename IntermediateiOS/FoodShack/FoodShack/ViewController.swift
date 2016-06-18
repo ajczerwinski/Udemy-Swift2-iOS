@@ -46,6 +46,7 @@ class ViewController: UIViewController {
         self.bottomViewHolder.translatesAutoresizingMaskIntoConstraints = false
         self.topThumbBtn.translatesAutoresizingMaskIntoConstraints = false
         self.topTitleLbl.translatesAutoresizingMaskIntoConstraints = false
+        self.selectedItemThumbImg.translatesAutoresizingMaskIntoConstraints = false
         
         self.view.addSubview(topViewHolder)
         self.view.addSubview(mainThumbViewHolder)
@@ -55,12 +56,15 @@ class ViewController: UIViewController {
         self.topViewHolder.addSubview(self.topThumbBtn)
         self.topViewHolder.addSubview(self.topTitleLbl)
         
+        self.mainThumbViewHolder.addSubview(self.selectedItemThumbImg)
+        
         self.views["topViewHolder"] = topViewHolder
         self.views["mainThumbViewHolder"] = mainThumbViewHolder
         self.views["buttonViewHolder"] = buttonViewHolder
         self.views["bottomViewHolder"] = bottomViewHolder
         self.views["topThumbBtn"] = topThumbBtn
         self.views["topTitleLbl"] = topTitleLbl
+        self.views["selectedItemThumbImg"] = selectedItemThumbImg
         
         setConstraints()
         
@@ -88,11 +92,15 @@ class ViewController: UIViewController {
         
         /** TOP THUMB BUTTON **/
         addConstraint("V:|-5-[topThumbBtn(40)]")
-        addConstraint("H:|-5-[topThumbBtn(40)]-1-[topTitleLbl]")
+        addConstraint("H:|-5-[topThumbBtn(40)]-10-[topTitleLbl]")
         
         /** TOP TITLE LABEL **/
         addConstraint("V:|-15-[topTitleLbl]")
         addConstraint("H:[topTitleLbl(>=50)]")
+        
+        /** SELECTED ITEM THUMB IMAGE **/
+        addConstraint("V:|-35-[selectedItemThumbImg(200)]")
+        addConstraint("H:|-50-[selectedItemThumbImg(200)]")
         
         NSLayoutConstraint.activateConstraints(self.constraints)
         
