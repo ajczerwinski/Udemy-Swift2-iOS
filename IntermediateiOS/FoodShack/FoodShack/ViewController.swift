@@ -120,9 +120,9 @@ class ViewController: UIViewController {
         addConstraint("H:|-0-[buttonViewHolder(mainThumbViewHolder)]-0-|")
         
         addConstraint("V:|-20-[burgerBtn(70)]-20-[pizzaBtn(70)]")
-        addConstraint("H:|-35-[burgerBtn(70)]-100-[sandwichBtn(70)]")
+        addConstraint("H:|-35-[burgerBtn(70)]-<=100-[sandwichBtn(70)]")
         addConstraint("V:|-20-[sandwichBtn(70)]-20-[tacoBtn(70)]")
-        addConstraint("H:|-35-[pizzaBtn(70)]-100-[tacoBtn(70)]")
+        addConstraint("H:|-35-[pizzaBtn(70)]-<=100-[tacoBtn(70)]")
         
         
         /** BOTTOM VIEW HOLDER **/
