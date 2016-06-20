@@ -29,75 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.darkGrayColor()
-        self.topViewHolder.backgroundColor = UIColor.whiteColor()
-        self.mainThumbViewHolder.backgroundColor = UIColor(red: 220.0 / 255.0, green: 224.0 / 255.0, blue: 210.0 / 255.0, alpha: 1.0)
-        self.buttonViewHolder.backgroundColor = UIColor(red: 242.0 / 255.0, green: 241.0 / 255.0, blue: 239.0 / 255.0, alpha: 1.0)
-        self.bottomViewHolder.backgroundColor = UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0)
-        
-        // STYLE AND SIZING FOR TOP VIEW HOLDER AREA
-        self.topThumbBtn.setImage(UIImage(named: "burger"), forState: .Normal)
-        self.topTitleLbl.text = "FOOD SHACK"
-        self.topTitleLbl.textColor = UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0)
-        self.topTitleLbl.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
-        
-        // STYLE AND SIZING FOR BUTTON VIEW HOLDER AREA
-        self.burgerBtn.setImage(UIImage(named: "burger"), forState: .Normal)
-        self.pizzaBtn.setImage(UIImage(named: "pizza"), forState: .Normal)
-        self.sandwichBtn.setImage(UIImage(named: "sandwich"), forState: .Normal)
-        self.tacoBtn.setImage(UIImage(named: "taco"), forState: .Normal)
-        
-        // STYLE AND SIZING FOR BOTTOM VIEW HOLDER AREA
-        self.orderNowBtn.backgroundColor = UIColor(red: 254.0 / 255.0, green: 213.0 / 255.0, blue: 71.0 / 255.0, alpha: 1.0)
-        self.orderNowBtn.setTitle("ORDER NOW", forState: .Normal)
-        self.orderNowBtn.setTitleColor(UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0), forState: .Normal)
-        self.orderNowBtn.titleLabel!.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
-        self.orderNowBtn.layer.cornerRadius = 3
-        self.orderNowBtn.clipsToBounds = true
-        
-        
-        self.topViewHolder.translatesAutoresizingMaskIntoConstraints = false
-        self.mainThumbViewHolder.translatesAutoresizingMaskIntoConstraints = false
-        self.buttonViewHolder.translatesAutoresizingMaskIntoConstraints = false
-        self.bottomViewHolder.translatesAutoresizingMaskIntoConstraints = false
-        self.topThumbBtn.translatesAutoresizingMaskIntoConstraints = false
-        self.topTitleLbl.translatesAutoresizingMaskIntoConstraints = false
-        self.selectedItemThumbImg.translatesAutoresizingMaskIntoConstraints = false
-        self.burgerBtn.translatesAutoresizingMaskIntoConstraints = false
-        self.pizzaBtn.translatesAutoresizingMaskIntoConstraints = false
-        self.sandwichBtn.translatesAutoresizingMaskIntoConstraints = false
-        self.tacoBtn.translatesAutoresizingMaskIntoConstraints = false
-        self.orderNowBtn.translatesAutoresizingMaskIntoConstraints = false
-        
-        self.view.addSubview(topViewHolder)
-        self.view.addSubview(mainThumbViewHolder)
-        self.view.addSubview(buttonViewHolder)
-        self.view.addSubview(bottomViewHolder)
-        
-        self.topViewHolder.addSubview(self.topThumbBtn)
-        self.topViewHolder.addSubview(self.topTitleLbl)
-        
-        self.mainThumbViewHolder.addSubview(self.selectedItemThumbImg)
-        
-        self.buttonViewHolder.addSubview(self.burgerBtn)
-        self.buttonViewHolder.addSubview(self.pizzaBtn)
-        self.buttonViewHolder.addSubview(self.sandwichBtn)
-        self.buttonViewHolder.addSubview(self.tacoBtn)
-        
-        self.bottomViewHolder.addSubview(self.orderNowBtn)
-        
-        self.views["topViewHolder"] = topViewHolder
-        self.views["mainThumbViewHolder"] = mainThumbViewHolder
-        self.views["buttonViewHolder"] = buttonViewHolder
-        self.views["bottomViewHolder"] = bottomViewHolder
-        self.views["topThumbBtn"] = topThumbBtn
-        self.views["topTitleLbl"] = topTitleLbl
-        self.views["selectedItemThumbImg"] = selectedItemThumbImg
-        self.views["burgerBtn"] = burgerBtn
-        self.views["pizzaBtn"] = pizzaBtn
-        self.views["sandwichBtn"] = sandwichBtn
-        self.views["tacoBtn"] = tacoBtn
-        self.views["orderNowBtn"] = orderNowBtn
+        styleUIElements()
         
         setConstraints()
         
@@ -155,6 +87,108 @@ class ViewController: UIViewController {
         self.constraints += newConstraints
         
     }
-
+    
+    func styleUIElements() {
+        
+        setBackgroundColors()
+        
+        // STYLE AND SIZING FOR TOP VIEW HOLDER AREA
+        self.topThumbBtn.setImage(UIImage(named: "burger"), forState: .Normal)
+        self.topTitleLbl.text = "FOOD SHACK"
+        self.topTitleLbl.textColor = UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0)
+        self.topTitleLbl.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
+        
+        // STYLE AND SIZING FOR BUTTON VIEW HOLDER AREA
+        self.burgerBtn.setImage(UIImage(named: "burger"), forState: .Normal)
+        self.pizzaBtn.setImage(UIImage(named: "pizza"), forState: .Normal)
+        self.sandwichBtn.setImage(UIImage(named: "sandwich"), forState: .Normal)
+        self.tacoBtn.setImage(UIImage(named: "taco"), forState: .Normal)
+        
+        // STYLE AND SIZING FOR BOTTOM VIEW HOLDER AREA
+        self.orderNowBtn.backgroundColor = UIColor(red: 254.0 / 255.0, green: 213.0 / 255.0, blue: 71.0 / 255.0, alpha: 1.0)
+        self.orderNowBtn.setTitle("ORDER NOW", forState: .Normal)
+        self.orderNowBtn.setTitleColor(UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0), forState: .Normal)
+        self.orderNowBtn.titleLabel!.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
+        self.orderNowBtn.layer.cornerRadius = 3
+        self.orderNowBtn.clipsToBounds = true
+        
+        setTranslatesAutoresizingMaskIntoConstraintsToFalse()
+        
+        addAllOfTheSubviews()
+        
+        populateViews()
+        
+    }
+    
+    func setTranslatesAutoresizingMaskIntoConstraintsToFalse() {
+    
+        self.topViewHolder.translatesAutoresizingMaskIntoConstraints = false
+        self.mainThumbViewHolder.translatesAutoresizingMaskIntoConstraints = false
+        self.buttonViewHolder.translatesAutoresizingMaskIntoConstraints = false
+        self.bottomViewHolder.translatesAutoresizingMaskIntoConstraints = false
+        self.topThumbBtn.translatesAutoresizingMaskIntoConstraints = false
+        self.topTitleLbl.translatesAutoresizingMaskIntoConstraints = false
+        self.selectedItemThumbImg.translatesAutoresizingMaskIntoConstraints = false
+        self.burgerBtn.translatesAutoresizingMaskIntoConstraints = false
+        self.pizzaBtn.translatesAutoresizingMaskIntoConstraints = false
+        self.sandwichBtn.translatesAutoresizingMaskIntoConstraints = false
+        self.tacoBtn.translatesAutoresizingMaskIntoConstraints = false
+        self.orderNowBtn.translatesAutoresizingMaskIntoConstraints = false
+    
+    }
+    
+    func addAllOfTheSubviews() {
+        
+        // Add Subviews to main view
+        self.view.addSubview(topViewHolder)
+        self.view.addSubview(mainThumbViewHolder)
+        self.view.addSubview(buttonViewHolder)
+        self.view.addSubview(bottomViewHolder)
+        
+        // Add elements to topViewHolder subview
+        self.topViewHolder.addSubview(self.topThumbBtn)
+        self.topViewHolder.addSubview(self.topTitleLbl)
+        
+        // Add elements to mainThumbViewHolder subview
+        self.mainThumbViewHolder.addSubview(self.selectedItemThumbImg)
+        
+        // Add elements to buttonViewHolder subview
+        self.buttonViewHolder.addSubview(self.burgerBtn)
+        self.buttonViewHolder.addSubview(self.pizzaBtn)
+        self.buttonViewHolder.addSubview(self.sandwichBtn)
+        self.buttonViewHolder.addSubview(self.tacoBtn)
+        
+        // Add elements to bottomViewHolder subview
+        self.bottomViewHolder.addSubview(self.orderNowBtn)
+        
+    }
+    
+    func populateViews() {
+        
+        self.views["topViewHolder"] = topViewHolder
+        self.views["mainThumbViewHolder"] = mainThumbViewHolder
+        self.views["buttonViewHolder"] = buttonViewHolder
+        self.views["bottomViewHolder"] = bottomViewHolder
+        self.views["topThumbBtn"] = topThumbBtn
+        self.views["topTitleLbl"] = topTitleLbl
+        self.views["selectedItemThumbImg"] = selectedItemThumbImg
+        self.views["burgerBtn"] = burgerBtn
+        self.views["pizzaBtn"] = pizzaBtn
+        self.views["sandwichBtn"] = sandwichBtn
+        self.views["tacoBtn"] = tacoBtn
+        self.views["orderNowBtn"] = orderNowBtn
+        
+    }
+    
+    func setBackgroundColors() {
+        
+        self.view.backgroundColor = UIColor.darkGrayColor()
+        self.topViewHolder.backgroundColor = UIColor.whiteColor()
+        self.mainThumbViewHolder.backgroundColor = UIColor(red: 220.0 / 255.0, green: 224.0 / 255.0, blue: 210.0 / 255.0, alpha: 1.0)
+        self.buttonViewHolder.backgroundColor = UIColor(red: 242.0 / 255.0, green: 241.0 / 255.0, blue: 239.0 / 255.0, alpha: 1.0)
+        self.bottomViewHolder.backgroundColor = UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0)
+        
+    }
+    
 }
 
