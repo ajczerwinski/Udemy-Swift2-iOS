@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         self.orderNowBtn.setTitle("ORDER NOW", forState: .Normal)
         self.orderNowBtn.setTitleColor(UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0), forState: .Normal)
         self.orderNowBtn.titleLabel!.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
-        self.orderNowBtn.layer.cornerRadius = 5
+        self.orderNowBtn.layer.cornerRadius = 3
         self.orderNowBtn.clipsToBounds = true
         
         
@@ -142,7 +142,7 @@ class ViewController: UIViewController {
         
         /** SELECTED ITEM THUMB IMAGE **/
         addConstraint("V:|-35-[selectedItemThumbImg(200)]")
-        addConstraint("H:|-50-[selectedItemThumbImg(200)]")
+        addConstraint("H:|-60-[selectedItemThumbImg(200)]")
         
         NSLayoutConstraint.activateConstraints(self.constraints)
         
