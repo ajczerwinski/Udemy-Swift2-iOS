@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        styleUIElements()
+        configureUIElements()
         
         setConstraints()
         
@@ -88,29 +88,13 @@ class ViewController: UIViewController {
         
     }
     
-    func styleUIElements() {
+    func configureUIElements() {
         
-        setBackgroundColors()
+        setViewBackgroundColors()
         
-        // STYLE AND SIZING FOR TOP VIEW HOLDER AREA
-        self.topThumbBtn.setImage(UIImage(named: "burger"), forState: .Normal)
-        self.topTitleLbl.text = "FOOD SHACK"
-        self.topTitleLbl.textColor = UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0)
-        self.topTitleLbl.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
+        configureButtons()
         
-        // STYLE AND SIZING FOR BUTTON VIEW HOLDER AREA
-        self.burgerBtn.setImage(UIImage(named: "burger"), forState: .Normal)
-        self.pizzaBtn.setImage(UIImage(named: "pizza"), forState: .Normal)
-        self.sandwichBtn.setImage(UIImage(named: "sandwich"), forState: .Normal)
-        self.tacoBtn.setImage(UIImage(named: "taco"), forState: .Normal)
-        
-        // STYLE AND SIZING FOR BOTTOM VIEW HOLDER AREA
-        self.orderNowBtn.backgroundColor = UIColor(red: 254.0 / 255.0, green: 213.0 / 255.0, blue: 71.0 / 255.0, alpha: 1.0)
-        self.orderNowBtn.setTitle("ORDER NOW", forState: .Normal)
-        self.orderNowBtn.setTitleColor(UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0), forState: .Normal)
-        self.orderNowBtn.titleLabel!.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
-        self.orderNowBtn.layer.cornerRadius = 3
-        self.orderNowBtn.clipsToBounds = true
+        configureLabels()
         
         setTranslatesAutoresizingMaskIntoConstraintsToFalse()
         
@@ -180,13 +164,43 @@ class ViewController: UIViewController {
         
     }
     
-    func setBackgroundColors() {
+    func setViewBackgroundColors() {
         
         self.view.backgroundColor = UIColor.darkGrayColor()
         self.topViewHolder.backgroundColor = UIColor.whiteColor()
         self.mainThumbViewHolder.backgroundColor = UIColor(red: 220.0 / 255.0, green: 224.0 / 255.0, blue: 210.0 / 255.0, alpha: 1.0)
         self.buttonViewHolder.backgroundColor = UIColor(red: 242.0 / 255.0, green: 241.0 / 255.0, blue: 239.0 / 255.0, alpha: 1.0)
         self.bottomViewHolder.backgroundColor = UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0)
+        
+    }
+    
+    func configureButtons() {
+        
+        // STYLE AND SIZING FOR TOP VIEW HOLDER AREA BUTTON
+        self.topThumbBtn.setImage(UIImage(named: "burger"), forState: .Normal)
+        
+        // STYLE AND SIZING FOR BUTTON VIEW HOLDER AREA BUTTONS
+        self.burgerBtn.setImage(UIImage(named: "burger"), forState: .Normal)
+        self.pizzaBtn.setImage(UIImage(named: "pizza"), forState: .Normal)
+        self.sandwichBtn.setImage(UIImage(named: "sandwich"), forState: .Normal)
+        self.tacoBtn.setImage(UIImage(named: "taco"), forState: .Normal)
+        
+        // STYLE AND SIZING FOR BOTTOM VIEW HOLDER AREA BUTTONS
+        self.orderNowBtn.backgroundColor = UIColor(red: 254.0 / 255.0, green: 213.0 / 255.0, blue: 71.0 / 255.0, alpha: 1.0)
+        self.orderNowBtn.setTitle("ORDER NOW", forState: .Normal)
+        self.orderNowBtn.setTitleColor(UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0), forState: .Normal)
+        self.orderNowBtn.titleLabel!.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
+        self.orderNowBtn.layer.cornerRadius = 3
+        self.orderNowBtn.clipsToBounds = true
+        
+    }
+    
+    func configureLabels() {
+        
+        // STYLE AND SIZING FOR TOP VIEW HOLDER AREA LABEL
+        self.topTitleLbl.text = "FOOD SHACK"
+        self.topTitleLbl.textColor = UIColor(red: 39.0 / 255.0, green: 61.0 / 255.0, blue: 72.0 / 255.0, alpha: 1.0)
+        self.topTitleLbl.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
         
     }
     
