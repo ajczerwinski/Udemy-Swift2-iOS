@@ -28,9 +28,73 @@
                                     <segment title="Second"/>
                                 </segments>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AVF-Lu-hiP">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AVF-Lu-hiP">
                                 <rect key="frame" x="20" y="108" width="560" height="492"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="71s-zL-RCY">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="71s-zL-RCY" id="Ma2-Dk-JR4">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="149"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QCO-OW-hoR">
+                                                    <rect key="frame" x="8" y="8" width="544" height="117"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pzf-MG-YZP">
+                                                            <rect key="frame" x="8" y="9" width="100" height="100"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="100" id="Z7F-85-4bR"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="LEGO Star Wars Set" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpN-Yy-FiK">
+                                                            <rect key="frame" x="116" y="9" width="420" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="Yyl-qy-e4e"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$49.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeH-Fn-5yt">
+                                                            <rect key="frame" x="116" y="38" width="420" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="Jv7-Tf-Vmc"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="I really like this new LEGO Star Wars set because it is awesome" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPB-tN-E9i">
+                                                            <rect key="frame" x="116" y="67" width="420" height="42"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="sPB-tN-E9i" firstAttribute="top" secondItem="ZeH-Fn-5yt" secondAttribute="bottom" constant="8" id="98P-6u-1k2"/>
+                                                        <constraint firstAttribute="bottom" secondItem="pzf-MG-YZP" secondAttribute="bottom" constant="8" id="SHg-HQ-kie"/>
+                                                        <constraint firstItem="sPB-tN-E9i" firstAttribute="leading" secondItem="pzf-MG-YZP" secondAttribute="trailing" constant="8" id="SbV-Qu-UG6"/>
+                                                        <constraint firstAttribute="trailing" secondItem="jpN-Yy-FiK" secondAttribute="trailing" constant="8" id="VTz-gN-6al"/>
+                                                        <constraint firstItem="pzf-MG-YZP" firstAttribute="top" secondItem="QCO-OW-hoR" secondAttribute="top" constant="9" id="WSw-9g-T1x"/>
+                                                        <constraint firstItem="ZeH-Fn-5yt" firstAttribute="top" secondItem="jpN-Yy-FiK" secondAttribute="bottom" constant="8" id="flU-1R-HBY"/>
+                                                        <constraint firstItem="jpN-Yy-FiK" firstAttribute="leading" secondItem="pzf-MG-YZP" secondAttribute="trailing" constant="8" id="hOD-7F-e7g"/>
+                                                        <constraint firstItem="ZeH-Fn-5yt" firstAttribute="leading" secondItem="pzf-MG-YZP" secondAttribute="trailing" constant="8" id="mhr-2U-A9i"/>
+                                                        <constraint firstAttribute="bottom" secondItem="sPB-tN-E9i" secondAttribute="bottom" constant="8" id="oc6-lD-ngY"/>
+                                                        <constraint firstItem="pzf-MG-YZP" firstAttribute="leading" secondItem="QCO-OW-hoR" secondAttribute="leading" constant="8" id="pI2-HX-dN3"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ZeH-Fn-5yt" secondAttribute="trailing" constant="8" id="u4D-lB-dXi"/>
+                                                        <constraint firstItem="jpN-Yy-FiK" firstAttribute="top" secondItem="QCO-OW-hoR" secondAttribute="top" constant="8" id="uxt-lx-3H4"/>
+                                                        <constraint firstAttribute="trailing" secondItem="sPB-tN-E9i" secondAttribute="trailing" constant="8" id="xQ2-ua-yQ8"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
