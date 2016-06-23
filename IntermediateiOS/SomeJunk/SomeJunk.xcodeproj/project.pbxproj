@@ -21,6 +21,7 @@
 		BFA174001D1B69BD00A4F878 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA173F81D1B69BD00A4F878 /* Image.swift */; };
 		BFA174011D1B69BD00A4F878 /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA173F91D1B69BD00A4F878 /* ItemType+CoreDataProperties.swift */; };
 		BFA174021D1B69BD00A4F878 /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA173FA1D1B69BD00A4F878 /* ItemType.swift */; };
+		BFA174081D1C708200A4F878 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA174071D1C708200A4F878 /* MaterialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		BFA173F81D1B69BD00A4F878 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		BFA173F91D1B69BD00A4F878 /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BFA173FA1D1B69BD00A4F878 /* ItemType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
+		BFA174071D1C708200A4F878 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		BFA173DD1D1B558D00A4F878 /* SomeJunk */ = {
 			isa = PBXGroup;
 			children = (
+				BFA174061D1C704500A4F878 /* View */,
 				BFA174051D1B792A00A4F878 /* Controller */,
 				BFA174031D1B69D800A4F878 /* Model */,
 				BFA173DE1D1B558D00A4F878 /* AppDelegate.swift */,
@@ -113,6 +116,14 @@
 				BFA173E01D1B558D00A4F878 /* MainVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		BFA174061D1C704500A4F878 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BFA174071D1C708200A4F878 /* MaterialView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 				BFA173FE1D1B69BD00A4F878 /* Store.swift in Sources */,
 				BFA174001D1B69BD00A4F878 /* Image.swift in Sources */,
 				BFA173FC1D1B69BD00A4F878 /* Item.swift in Sources */,
+				BFA174081D1C708200A4F878 /* MaterialView.swift in Sources */,
 				BFA173FD1D1B69BD00A4F878 /* Store+CoreDataProperties.swift in Sources */,
 				BFA173E11D1B558D00A4F878 /* MainVC.swift in Sources */,
 				BFA173E71D1B558D00A4F878 /* SomeJunk.xcdatamodeld in Sources */,

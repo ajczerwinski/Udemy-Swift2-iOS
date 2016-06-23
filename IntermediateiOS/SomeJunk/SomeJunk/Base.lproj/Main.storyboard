@@ -89,6 +89,9 @@
                                                         <constraint firstItem="jpN-Yy-FiK" firstAttribute="top" secondItem="QCO-OW-hoR" secondAttribute="top" constant="8" id="uxt-lx-3H4"/>
                                                         <constraint firstAttribute="trailing" secondItem="sPB-tN-E9i" secondAttribute="trailing" constant="8" id="xQ2-ua-yQ8"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
                                         </tableViewCellContentView>
