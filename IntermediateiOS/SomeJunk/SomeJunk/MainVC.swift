@@ -38,6 +38,13 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFe
     
     func attemptFetch() {
         setFetchedResults()
+        
+        do {
+            try self.fetchedResultsController.performFetch()
+        } catch {
+            let error = error as NSError
+            print("\(error), \(error.userInfo)")
+        }
     }
     
     func setFetchedResults() {
@@ -48,7 +55,23 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFe
         let sortDescriptor = NSSortDescriptor(key: "created", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
         
-        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: <#T##NSManagedObjectContext#>, sectionNameKeyPath: section, cacheName: nil)
+        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: ad!.managedObjectContext, sectionNameKeyPath: section, cacheName: nil)
+        
+        controller.delegate = self
+        
+        fetchedResultsController = controller
+    }
+    
+    func controllerWillChangeContent(controller: NSFetchedResultsController) {
+        tableView.beginUpdates()
+    }
+    
+    func controllerDidChangeContent(controller: NSFetchedResultsController) {
+        tableView.endUpdates()
+    }
+    
+    func controller(controller: NSFetchedResultsController, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
+        <#code#>
     }
 
 }
