@@ -25,15 +25,37 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFe
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        if let sections = fetchedResultsController.sections {
+            return sections.count
+        }
+        
         return 0
+        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let sections = fetchedResultsController.sections {
+            let sectionInfo = sections[section]
+            return sectionInfo.numberOfObjects
+        }
+        
         return 0
+        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCellWithIdentifier("ItemCell", forIndexPath: indexPath) as! ItemCell
+        configureCell(cell, indexPath: indexPath)
+        
+        return cell
+        
+    }
+    
+    func configureCell(cell: ItemCell, indexPath: NSIndexPath) {
+        if let record = fetchedResultsController.objectAtIndexPath(indexPath) as? Item {
+            // update data
+            
+        }
     }
     
     func attemptFetch() {
