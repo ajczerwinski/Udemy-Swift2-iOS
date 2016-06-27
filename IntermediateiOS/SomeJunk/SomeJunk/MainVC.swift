@@ -22,6 +22,7 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFe
         tableView.dataSource = self
         tableView.delegate = self
         
+        generateTestData()
         attemptFetch()
         
     }
@@ -83,7 +84,7 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFe
         let sortDescriptor = NSSortDescriptor(key: "created", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
         
-        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: ad!.managedObjectContext, sectionNameKeyPath: section, cacheName: nil)
+        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: ad.managedObjectContext, sectionNameKeyPath: section, cacheName: nil)
         
         controller.delegate = self
         
@@ -126,6 +127,30 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFe
             }
             break
         }
+    }
+    
+    func generateTestData() {
+        
+        let item = NSEntityDescription.insertNewObjectForEntityForName("Item", inManagedObjectContext: ad.managedObjectContext) as! Item
+        
+        item.title = "Smash Brothers N64"
+        item.price = 49.99
+        item.details = "One of the best games of all time hands down!"
+        
+        let item2 = NSEntityDescription.insertNewObjectForEntityForName("Item", inManagedObjectContext: ad.managedObjectContext) as! Item
+        
+        item2.title = "Cool LEGO Set"
+        item2.price = 45.99
+        item2.details = "This is a super cool Star Wars LEGO set with 1000 pieces"
+        
+        let item3 = NSEntityDescription.insertNewObjectForEntityForName("Item", inManagedObjectContext: ad.managedObjectContext) as! Item
+        
+        item3.title = "He-Man vs Skeletor"
+        item3.price = 99.99
+        item3.details = "Skeletor is the man (almost) but He-Man is cooler"
+
+        ad.saveContext()
+        
     }
 
 }
