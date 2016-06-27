@@ -22,6 +22,8 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFe
         tableView.dataSource = self
         tableView.delegate = self
         
+        attemptFetch()
+        
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -111,7 +113,7 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFe
         case .Update:
             if let indexPath = indexPath {
                 let cell = tableView.cellForRowAtIndexPath(indexPath) as! ItemCell
-                // Update cell data
+                configureCell(cell, indexPath: indexPath)
             }
             break
         case .Move:
