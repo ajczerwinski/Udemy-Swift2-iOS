@@ -43,6 +43,10 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFe
         
     }
     
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 132
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ItemCell", forIndexPath: indexPath) as! ItemCell
         configureCell(cell, indexPath: indexPath)
@@ -52,9 +56,9 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFe
     }
     
     func configureCell(cell: ItemCell, indexPath: NSIndexPath) {
-        if let record = fetchedResultsController.objectAtIndexPath(indexPath) as? Item {
+        if let item = fetchedResultsController.objectAtIndexPath(indexPath) as? Item {
             // update data
-            
+            cell.configureCell(item)
         }
     }
     
