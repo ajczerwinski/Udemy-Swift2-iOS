@@ -39,34 +39,35 @@
                                             <rect key="frame" x="0.0" y="0.0" width="560" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QCO-OW-hoR" userLabel="Container">
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QCO-OW-hoR" userLabel="Container">
                                                     <rect key="frame" x="8" y="8" width="544" height="117"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="awesomeFiller" translatesAutoresizingMaskIntoConstraints="NO" id="pzf-MG-YZP">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="awesomeFiller" translatesAutoresizingMaskIntoConstraints="NO" id="pzf-MG-YZP">
                                                             <rect key="frame" x="8" y="9" width="100" height="100"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="100" id="Z7F-85-4bR"/>
+                                                                <constraint firstAttribute="height" constant="100" id="KPh-lb-nZv"/>
+                                                                <constraint firstAttribute="width" constant="100" id="P8O-Yb-nXE"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="LEGO Star Wars Set" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpN-Yy-FiK">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="LEGO Star Wars Set" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpN-Yy-FiK">
                                                             <rect key="frame" x="116" y="9" width="420" height="21"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="21" id="Yyl-qy-e4e"/>
+                                                                <constraint firstAttribute="height" constant="21" id="xj9-7T-tLN"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$49.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeH-Fn-5yt">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$49.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeH-Fn-5yt">
                                                             <rect key="frame" x="116" y="38" width="420" height="21"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="21" id="Jv7-Tf-Vmc"/>
+                                                                <constraint firstAttribute="height" constant="21" id="MDs-dn-CEV"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="I really like this new LEGO Star Wars set because it is awesome" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPB-tN-E9i">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I really like this new LEGO Star Wars set because it is awesome" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPB-tN-E9i">
                                                             <rect key="frame" x="116" y="67" width="420" height="42"/>
                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -75,25 +76,30 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstItem="sPB-tN-E9i" firstAttribute="top" secondItem="ZeH-Fn-5yt" secondAttribute="bottom" constant="8" id="98P-6u-1k2"/>
-                                                        <constraint firstAttribute="bottom" secondItem="pzf-MG-YZP" secondAttribute="bottom" constant="8" id="SHg-HQ-kie"/>
-                                                        <constraint firstItem="sPB-tN-E9i" firstAttribute="leading" secondItem="pzf-MG-YZP" secondAttribute="trailing" constant="8" id="SbV-Qu-UG6"/>
-                                                        <constraint firstAttribute="trailing" secondItem="jpN-Yy-FiK" secondAttribute="trailing" constant="8" id="VTz-gN-6al"/>
-                                                        <constraint firstItem="pzf-MG-YZP" firstAttribute="top" secondItem="QCO-OW-hoR" secondAttribute="top" constant="9" id="WSw-9g-T1x"/>
-                                                        <constraint firstItem="ZeH-Fn-5yt" firstAttribute="top" secondItem="jpN-Yy-FiK" secondAttribute="bottom" constant="8" id="flU-1R-HBY"/>
-                                                        <constraint firstItem="jpN-Yy-FiK" firstAttribute="leading" secondItem="pzf-MG-YZP" secondAttribute="trailing" constant="8" id="hOD-7F-e7g"/>
-                                                        <constraint firstItem="ZeH-Fn-5yt" firstAttribute="leading" secondItem="pzf-MG-YZP" secondAttribute="trailing" constant="8" id="mhr-2U-A9i"/>
-                                                        <constraint firstAttribute="bottom" secondItem="sPB-tN-E9i" secondAttribute="bottom" constant="8" id="oc6-lD-ngY"/>
-                                                        <constraint firstItem="pzf-MG-YZP" firstAttribute="leading" secondItem="QCO-OW-hoR" secondAttribute="leading" constant="8" id="pI2-HX-dN3"/>
-                                                        <constraint firstAttribute="trailing" secondItem="ZeH-Fn-5yt" secondAttribute="trailing" constant="8" id="u4D-lB-dXi"/>
-                                                        <constraint firstItem="jpN-Yy-FiK" firstAttribute="top" secondItem="QCO-OW-hoR" secondAttribute="top" constant="8" id="uxt-lx-3H4"/>
-                                                        <constraint firstAttribute="trailing" secondItem="sPB-tN-E9i" secondAttribute="trailing" constant="8" id="xQ2-ua-yQ8"/>
+                                                        <constraint firstItem="jpN-Yy-FiK" firstAttribute="top" secondItem="QCO-OW-hoR" secondAttribute="top" constant="8" id="3p9-dq-TVS"/>
+                                                        <constraint firstItem="pzf-MG-YZP" firstAttribute="top" secondItem="QCO-OW-hoR" secondAttribute="top" constant="8" id="9HL-JR-eKN"/>
+                                                        <constraint firstItem="jpN-Yy-FiK" firstAttribute="leading" secondItem="pzf-MG-YZP" secondAttribute="trailing" constant="8" id="ECf-ss-EW7"/>
+                                                        <constraint firstItem="sPB-tN-E9i" firstAttribute="top" secondItem="ZeH-Fn-5yt" secondAttribute="bottom" constant="8" id="NJ9-TZ-YgH"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ZeH-Fn-5yt" secondAttribute="trailing" constant="8" id="SUc-4e-B3d"/>
+                                                        <constraint firstAttribute="trailing" secondItem="sPB-tN-E9i" secondAttribute="trailing" constant="8" id="TYZ-Ur-lZy"/>
+                                                        <constraint firstAttribute="bottom" secondItem="sPB-tN-E9i" secondAttribute="bottom" constant="8" id="kv2-bK-kf5"/>
+                                                        <constraint firstAttribute="trailing" secondItem="jpN-Yy-FiK" secondAttribute="trailing" constant="8" id="ljH-dN-ZyF"/>
+                                                        <constraint firstItem="pzf-MG-YZP" firstAttribute="leading" secondItem="QCO-OW-hoR" secondAttribute="leading" constant="8" id="oPv-eV-CHW"/>
+                                                        <constraint firstItem="ZeH-Fn-5yt" firstAttribute="leading" secondItem="pzf-MG-YZP" secondAttribute="trailing" constant="8" id="uNr-IZ-cjH"/>
+                                                        <constraint firstItem="ZeH-Fn-5yt" firstAttribute="top" secondItem="jpN-Yy-FiK" secondAttribute="bottom" constant="8" id="vgL-ch-lEm"/>
+                                                        <constraint firstItem="sPB-tN-E9i" firstAttribute="leading" secondItem="pzf-MG-YZP" secondAttribute="trailing" constant="8" id="xcr-TA-Oo8"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="QCO-OW-hoR" firstAttribute="leading" secondItem="Ma2-Dk-JR4" secondAttribute="leadingMargin" id="7qC-tz-9MH"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="QCO-OW-hoR" secondAttribute="bottom" id="Ay8-XT-OAf"/>
+                                                <constraint firstItem="QCO-OW-hoR" firstAttribute="top" secondItem="Ma2-Dk-JR4" secondAttribute="topMargin" id="PlA-Ba-KzR"/>
+                                                <constraint firstItem="QCO-OW-hoR" firstAttribute="trailing" secondItem="Ma2-Dk-JR4" secondAttribute="trailingMargin" id="yg9-vT-2HA"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
