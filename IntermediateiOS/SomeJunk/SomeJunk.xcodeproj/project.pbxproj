@@ -23,6 +23,8 @@
 		BFA174021D1B69BD00A4F878 /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA173FA1D1B69BD00A4F878 /* ItemType.swift */; };
 		BFA174081D1C708200A4F878 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA174071D1C708200A4F878 /* MaterialView.swift */; };
 		BFA1740A1D1C7C5700A4F878 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA174091D1C7C5700A4F878 /* ItemCell.swift */; };
+		BFA1740C1D23424000A4F878 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA1740B1D23424000A4F878 /* ItemDetailsVC.swift */; };
+		BFA1740E1D2349E400A4F878 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA1740D1D2349E400A4F878 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		BFA173FA1D1B69BD00A4F878 /* ItemType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
 		BFA174071D1C708200A4F878 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		BFA174091D1C7C5700A4F878 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		BFA1740B1D23424000A4F878 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
+		BFA1740D1D2349E400A4F878 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				BFA173E01D1B558D00A4F878 /* MainVC.swift */,
+				BFA1740B1D23424000A4F878 /* ItemDetailsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			children = (
 				BFA174071D1C708200A4F878 /* MaterialView.swift */,
 				BFA174091D1C7C5700A4F878 /* ItemCell.swift */,
+				BFA1740D1D2349E400A4F878 /* CustomTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -208,11 +214,13 @@
 				BFA1740A1D1C7C5700A4F878 /* ItemCell.swift in Sources */,
 				BFA173E11D1B558D00A4F878 /* MainVC.swift in Sources */,
 				BFA173E71D1B558D00A4F878 /* SomeJunk.xcdatamodeld in Sources */,
+				BFA1740C1D23424000A4F878 /* ItemDetailsVC.swift in Sources */,
 				BFA174021D1B69BD00A4F878 /* ItemType.swift in Sources */,
 				BFA174011D1B69BD00A4F878 /* ItemType+CoreDataProperties.swift in Sources */,
 				BFA173FB1D1B69BD00A4F878 /* Item+CoreDataProperties.swift in Sources */,
 				BFA173DF1D1B558D00A4F878 /* AppDelegate.swift in Sources */,
 				BFA173FF1D1B69BD00A4F878 /* Image+CoreDataProperties.swift in Sources */,
+				BFA1740E1D2349E400A4F878 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +372,7 @@
 				BFA173F21D1B558D00A4F878 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

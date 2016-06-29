@@ -124,16 +124,59 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5gX-jv-cfh">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="h4g-Zw-oua"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="h4g-Zw-oua">
+                            <connections>
+                                <segue destination="O6y-l6-aq1" kind="show" identifier="ItemDetailsVCNew" id="IY9-fJ-Huk"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="segment" destination="wF1-fI-RxM" id="PVh-ND-EKa"/>
                         <outlet property="tableView" destination="AVF-Lu-hiP" id="Rj4-j2-t7a"/>
+                        <segue destination="O6y-l6-aq1" kind="show" identifier="ItemDetailsVC" id="Pn3-GB-zWk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1104" y="-528"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wsZ-YK-Jpx">
+            <objects>
+                <viewController id="O6y-l6-aq1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vb8-Xz-IXw"/>
+                        <viewControllerLayoutGuide type="bottom" id="2N9-bN-lDf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="siQ-qn-QX2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZH3-cv-pOf">
+                                <rect key="frame" x="20" y="72" width="103" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="4tx-qh-cva"/>
+                                    <constraint firstAttribute="height" constant="93" id="vOK-3Y-Gsc"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="place"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vu2-HS-t4U" customClass="CustomTextField" customModule="SomeJunk" customModuleProvider="target">
+                                <rect key="frame" x="131" y="72" width="449" height="40"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZH3-cv-pOf" firstAttribute="top" secondItem="vb8-Xz-IXw" secondAttribute="bottom" constant="8" id="eUl-QT-iWO"/>
+                            <constraint firstItem="ZH3-cv-pOf" firstAttribute="leading" secondItem="siQ-qn-QX2" secondAttribute="leadingMargin" id="qek-NQ-D0C"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nsa-8O-mVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1843" y="-528"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SjZ-kq-NMh">
@@ -156,5 +199,9 @@
     </scenes>
     <resources>
         <image name="awesomeFiller" width="414" height="305"/>
+        <image name="place" width="448" height="384"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Pn3-GB-zWk"/>
+    </inferredMetricsTieBreakers>
 </document>
