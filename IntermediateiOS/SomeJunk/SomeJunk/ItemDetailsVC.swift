@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
@@ -15,14 +16,50 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     @IBOutlet weak var priceField: CustomTextField!
     @IBOutlet weak var detailsField: CustomTextField!
     
-    let stores = [Store]()
+    var stores = [Store]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         storePicker.delegate = self
         storePicker.dataSource = self
-
+        
+//        let store1 = NSEntityDescription.insertNewObjectForEntityForName("Store", inManagedObjectContext: ad.managedObjectContext) as! Store
+//        store1.name = "Amazon"
+//        
+//        let store2 = NSEntityDescription.insertNewObjectForEntityForName("Store", inManagedObjectContext: ad.managedObjectContext) as! Store
+//        store2.name = "Walmart"
+//        
+//        let store3 = NSEntityDescription.insertNewObjectForEntityForName("Store", inManagedObjectContext: ad.managedObjectContext) as! Store
+//        store3.name = "Scary Goth Club"
+//        
+//        let store4 = NSEntityDescription.insertNewObjectForEntityForName("Store", inManagedObjectContext: ad.managedObjectContext) as! Store
+//        store4.name = "Best Buy"
+//        
+//        let store5 = NSEntityDescription.insertNewObjectForEntityForName("Store", inManagedObjectContext: ad.managedObjectContext) as! Store
+//        store5.name = "Steve's Fish & Chips"
+//        
+//        let store6 = NSEntityDescription.insertNewObjectForEntityForName("Store", inManagedObjectContext: ad.managedObjectContext) as! Store
+//        store6.name = "Aussie Panel Beater"
+//        
+//        ad.saveContext()
+        
+        getStores()
+        
+    }
+    
+    func getStores() {
+        
+        let fetchRequest = NSFetchRequest(entityName: "Store")
+        
+        do {
+            
+            self.stores = try ad.managedObjectContext.executeFetchRequest(fetchRequest) as! [Store]
+            self.storePicker.reloadAllComponents()
+            
+        } catch {
+            // Handle error
+        }
     }
 
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
@@ -39,7 +76,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     }
 
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
+        print(stores[row].name)
     }
     
 }

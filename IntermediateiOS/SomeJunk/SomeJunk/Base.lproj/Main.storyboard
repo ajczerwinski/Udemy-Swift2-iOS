@@ -140,10 +140,10 @@
             </objects>
             <point key="canvasLocation" x="1104" y="-528"/>
         </scene>
-        <!--View Controller-->
+        <!--Item DetailsVC-->
         <scene sceneID="wsZ-YK-Jpx">
             <objects>
-                <viewController id="O6y-l6-aq1" sceneMemberID="viewController">
+                <viewController id="O6y-l6-aq1" customClass="ItemDetailsVC" customModule="SomeJunk" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vb8-Xz-IXw"/>
                         <viewControllerLayoutGuide type="bottom" id="2N9-bN-lDf"/>
@@ -201,6 +201,7 @@
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RuY-dV-JTa">
                                 <rect key="frame" x="20" y="274" width="560" height="244"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
                                 </userDefinedRuntimeAttributes>
@@ -252,6 +253,12 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="detailsField" destination="trr-LQ-XW1" id="n8U-lj-SkS"/>
+                        <outlet property="priceField" destination="EK5-lH-7LJ" id="fef-vq-bXG"/>
+                        <outlet property="storePicker" destination="RuY-dV-JTa" id="IQ9-Ge-acB"/>
+                        <outlet property="titleField" destination="Vu2-HS-t4U" id="bSW-uj-2zM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nsa-8O-mVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
