@@ -17,6 +17,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     @IBOutlet weak var detailsField: CustomTextField!
     
     var stores = [Store]()
+    var itemToEdit: Item?
 
     override func viewDidLoad() {
         super.viewDidLoad()
