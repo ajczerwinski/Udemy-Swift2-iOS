@@ -47,6 +47,34 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         
         getStores()
         
+        if itemToEdit != nil {
+            loadItemData()
+        }
+        
+    }
+    
+    func loadItemData() {
+        
+        if let item = itemToEdit {
+            titleField.text = item.title
+            priceField.text = "\(item.price)"
+            detailsField.text = item.details
+            
+            if let store = item.store {
+                
+                var index = 0
+                repeat {
+                    let s = stores[index]
+                    
+                    if s.name == store.name {
+                        storePicker.selectRow(index, inComponent: 0, animated: false)
+                        break
+                    }
+                    index += 1
+                } while (index < stores.count)
+            }
+        }
+        
     }
     
     func getStores() {
