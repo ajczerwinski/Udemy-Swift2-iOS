@@ -56,9 +56,18 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     func loadItemData() {
         
         if let item = itemToEdit {
-            titleField.text = item.title
-            priceField.text = "\(item.price)"
-            detailsField.text = item.details
+            
+            if let title = item.title {
+                titleField.text = title
+            }
+            
+            if let price = item.price {
+                priceField.text = "\(price)"
+            }
+            
+            if let details = item.details {
+                detailsField.text = details
+            }
             
             if let store = item.store {
                 
@@ -110,7 +119,14 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     
     @IBAction func savePressed(sender: AnyObject) {
         
-        let item = NSEntityDescription.insertNewObjectForEntityForName("Item", inManagedObjectContext: ad.managedObjectContext) as! Item
+        var item: Item!
+        
+        if itemToEdit == nil {
+            item = NSEntityDescription.insertNewObjectForEntityForName("Item", inManagedObjectContext: ad.managedObjectContext) as! Item
+        } else {
+            item = itemToEdit
+        }
+        
         
         if let title = titleField.text {
             item.title = title
