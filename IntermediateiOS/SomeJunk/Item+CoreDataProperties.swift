@@ -2,7 +2,7 @@
 //  Item+CoreDataProperties.swift
 //  SomeJunk
 //
-//  Created by Allen Czerwinski on 6/22/16.
+//  Created by Allen Czerwinski on 6/30/16.
 //  Copyright © 2016 Allen Czerwinski. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -14,12 +14,12 @@ import CoreData
 
 extension Item {
 
-    @NSManaged var title: String?
+    @NSManaged var created: NSDate?
     @NSManaged var details: String?
     @NSManaged var price: NSNumber?
-    @NSManaged var created: NSDate?
-    @NSManaged var store: NSManagedObject?
-    @NSManaged var image: NSManagedObject?
-    @NSManaged var itemType: NSManagedObject?
+    @NSManaged var title: String?
+    @NSManaged var image: Image?
+    @NSManaged var itemType: ItemType?
+    @NSManaged var store: Store?
 
 }

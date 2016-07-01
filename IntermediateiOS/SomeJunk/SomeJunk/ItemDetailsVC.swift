@@ -76,7 +76,35 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     }
 
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print(stores[row].name)
+        print(stores[row].name!)
     }
+    
+    @IBAction func savePressed(sender: AnyObject) {
+        
+        let item = NSEntityDescription.insertNewObjectForEntityForName("Item", inManagedObjectContext: ad.managedObjectContext) as! Item
+        
+        if let title = titleField.text {
+            item.title = title
+        }
+        
+        if let price = priceField.text {
+            let priceStr = NSString(string: price)
+            let priceDbl = priceStr.doubleValue
+            item.price = NSNumber(double: priceDbl)
+        }
+        
+        if let details = detailsField.text {
+            item.details = details
+        }
+        
+        item.store = stores[storePicker.selectedRowInComponent(0)]
+        print((item.store?.name!)!)
+        
+        ad.saveContext()
+        
+        self.navigationController?.popViewControllerAnimated(true)
+        
+    }
+    
     
 }

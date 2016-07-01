@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF04E0D71D25E642003BC5B1 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04E0D51D25E642003BC5B1 /* Item+CoreDataProperties.swift */; };
 		BFA173DF1D1B558D00A4F878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA173DE1D1B558D00A4F878 /* AppDelegate.swift */; };
 		BFA173E11D1B558D00A4F878 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA173E01D1B558D00A4F878 /* MainVC.swift */; };
 		BFA173E41D1B558D00A4F878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA173E21D1B558D00A4F878 /* Main.storyboard */; };
 		BFA173E71D1B558D00A4F878 /* SomeJunk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFA173E51D1B558D00A4F878 /* SomeJunk.xcdatamodeld */; };
 		BFA173E91D1B558D00A4F878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFA173E81D1B558D00A4F878 /* Assets.xcassets */; };
 		BFA173EC1D1B558D00A4F878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA173EA1D1B558D00A4F878 /* LaunchScreen.storyboard */; };
-		BFA173FB1D1B69BD00A4F878 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA173F31D1B69BD00A4F878 /* Item+CoreDataProperties.swift */; };
 		BFA173FC1D1B69BD00A4F878 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA173F41D1B69BD00A4F878 /* Item.swift */; };
 		BFA173FD1D1B69BD00A4F878 /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA173F51D1B69BD00A4F878 /* Store+CoreDataProperties.swift */; };
 		BFA173FE1D1B69BD00A4F878 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA173F61D1B69BD00A4F878 /* Store.swift */; };
@@ -28,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF04E0D51D25E642003BC5B1 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Item+CoreDataProperties.swift"; path = "../Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BFA173DB1D1B558D00A4F878 /* SomeJunk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomeJunk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA173DE1D1B558D00A4F878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFA173E01D1B558D00A4F878 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -36,7 +37,6 @@
 		BFA173E81D1B558D00A4F878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFA173EB1D1B558D00A4F878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFA173ED1D1B558D00A4F878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFA173F31D1B69BD00A4F878 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BFA173F41D1B69BD00A4F878 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		BFA173F51D1B69BD00A4F878 /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BFA173F61D1B69BD00A4F878 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		BFA174041D1B69E200A4F878 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				BFA173F31D1B69BD00A4F878 /* Item+CoreDataProperties.swift */,
+				BF04E0D51D25E642003BC5B1 /* Item+CoreDataProperties.swift */,
 				BFA173F51D1B69BD00A4F878 /* Store+CoreDataProperties.swift */,
 				BFA173F71D1B69BD00A4F878 /* Image+CoreDataProperties.swift */,
 				BFA173F91D1B69BD00A4F878 /* ItemType+CoreDataProperties.swift */,
@@ -215,9 +215,9 @@
 				BFA173E11D1B558D00A4F878 /* MainVC.swift in Sources */,
 				BFA173E71D1B558D00A4F878 /* SomeJunk.xcdatamodeld in Sources */,
 				BFA1740C1D23424000A4F878 /* ItemDetailsVC.swift in Sources */,
+				BF04E0D71D25E642003BC5B1 /* Item+CoreDataProperties.swift in Sources */,
 				BFA174021D1B69BD00A4F878 /* ItemType.swift in Sources */,
 				BFA174011D1B69BD00A4F878 /* ItemType+CoreDataProperties.swift in Sources */,
-				BFA173FB1D1B69BD00A4F878 /* Item+CoreDataProperties.swift in Sources */,
 				BFA173DF1D1B558D00A4F878 /* AppDelegate.swift in Sources */,
 				BFA173FF1D1B69BD00A4F878 /* Image+CoreDataProperties.swift in Sources */,
 				BFA1740E1D2349E400A4F878 /* CustomTextField.swift in Sources */,
