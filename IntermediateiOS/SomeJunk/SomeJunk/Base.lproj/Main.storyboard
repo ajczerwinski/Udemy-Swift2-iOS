@@ -140,7 +140,7 @@
             </objects>
             <point key="canvasLocation" x="1104" y="-528"/>
         </scene>
-        <!--Item DetailsVC-->
+        <!--Item-->
         <scene sceneID="wsZ-YK-Jpx">
             <objects>
                 <viewController id="O6y-l6-aq1" customClass="ItemDetailsVC" customModule="SomeJunk" customModuleProvider="target" sceneMemberID="viewController">
@@ -256,6 +256,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Item" id="BZY-Nd-Vic">
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="trash" id="4J2-7E-Pq6"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="detailsField" destination="trr-LQ-XW1" id="n8U-lj-SkS"/>
                         <outlet property="priceField" destination="EK5-lH-7LJ" id="fef-vq-bXG"/>
