@@ -117,6 +117,18 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         print(stores[row].name!)
     }
     
+    @IBAction func deletedPressed(sender: AnyObject) {
+        if itemToEdit != nil {
+            ad.managedObjectContext.deleteObject(itemToEdit!)
+            ad.saveContext()
+            
+            }
+            
+        self.navigationController?.popViewControllerAnimated(true)
+        
+    }
+    
+    
     @IBAction func savePressed(sender: AnyObject) {
         
         var item: Item!

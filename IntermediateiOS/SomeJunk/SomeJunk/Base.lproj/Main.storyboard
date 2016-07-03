@@ -257,7 +257,12 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Item" id="BZY-Nd-Vic">
-                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="trash" id="4J2-7E-Pq6"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="trash" id="4J2-7E-Pq6">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="deletedPressed:" destination="O6y-l6-aq1" id="9GM-dJ-4Js"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="detailsField" destination="trr-LQ-XW1" id="n8U-lj-SkS"/>
