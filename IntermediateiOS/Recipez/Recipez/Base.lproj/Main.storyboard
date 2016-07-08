@@ -97,7 +97,44 @@
                     <view key="view" contentMode="scaleToFill" id="lgA-YW-Aym">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Recipe title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aaL-iL-67H">
+                                <rect key="frame" x="20" y="96" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Recipe ingredients" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B3D-md-pYU">
+                                <rect key="frame" x="20" y="140" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Recipe steps" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jaQ-Hb-KWv">
+                                <rect key="frame" x="20" y="184" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LNe-3e-SLb">
+                                <rect key="frame" x="213" y="257" width="175" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="pYG-5h-tFl"/>
+                                    <constraint firstAttribute="height" constant="175" id="weZ-Vo-EDM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aaL-iL-67H" firstAttribute="trailing" secondItem="lgA-YW-Aym" secondAttribute="trailingMargin" id="0EK-ge-qQC"/>
+                            <constraint firstItem="jaQ-Hb-KWv" firstAttribute="leading" secondItem="lgA-YW-Aym" secondAttribute="leadingMargin" id="2Yl-az-Tox"/>
+                            <constraint firstItem="jaQ-Hb-KWv" firstAttribute="top" secondItem="B3D-md-pYU" secondAttribute="bottom" constant="14" id="3im-xn-PkO"/>
+                            <constraint firstItem="aaL-iL-67H" firstAttribute="top" secondItem="exb-sr-udG" secondAttribute="bottom" constant="32" id="IOP-uq-g3b"/>
+                            <constraint firstItem="jaQ-Hb-KWv" firstAttribute="trailing" secondItem="lgA-YW-Aym" secondAttribute="trailingMargin" id="LxH-nk-2d2"/>
+                            <constraint firstItem="aaL-iL-67H" firstAttribute="leading" secondItem="lgA-YW-Aym" secondAttribute="leadingMargin" id="P36-ub-1fC"/>
+                            <constraint firstItem="B3D-md-pYU" firstAttribute="top" secondItem="aaL-iL-67H" secondAttribute="bottom" constant="14" id="daA-MF-gOP"/>
+                            <constraint firstItem="B3D-md-pYU" firstAttribute="leading" secondItem="lgA-YW-Aym" secondAttribute="leadingMargin" id="kMy-Ij-OUf"/>
+                            <constraint firstItem="LNe-3e-SLb" firstAttribute="top" secondItem="jaQ-Hb-KWv" secondAttribute="bottom" constant="43" id="p0L-QN-goS"/>
+                            <constraint firstItem="LNe-3e-SLb" firstAttribute="centerX" secondItem="lgA-YW-Aym" secondAttribute="centerX" id="qkd-97-VnR"/>
+                            <constraint firstItem="B3D-md-pYU" firstAttribute="trailing" secondItem="lgA-YW-Aym" secondAttribute="trailingMargin" id="s0B-Va-3HL"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pe3-FQ-xmX" userLabel="First Responder" sceneMemberID="firstResponder"/>
