@@ -41,7 +41,7 @@
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="22"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
-                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <size key="shadowOffset" width="1" height="1"/>
                                                     <variation key="default">
                                                         <mask key="constraints">
@@ -120,17 +120,37 @@
                                     <constraint firstAttribute="height" constant="175" id="weZ-Vo-EDM"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IvA-gY-Xii">
+                                <rect key="frame" x="213" y="257" width="175" height="175"/>
+                                <state key="normal" title="ADD IMAGE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVO-Im-cro">
+                                <rect key="frame" x="252" y="471" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="ZNR-gZ-68t"/>
+                                    <constraint firstAttribute="height" constant="30" id="iWg-MZ-zUa"/>
+                                </constraints>
+                                <state key="normal" title="Create Recipe"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aaL-iL-67H" firstAttribute="trailing" secondItem="lgA-YW-Aym" secondAttribute="trailingMargin" id="0EK-ge-qQC"/>
                             <constraint firstItem="jaQ-Hb-KWv" firstAttribute="leading" secondItem="lgA-YW-Aym" secondAttribute="leadingMargin" id="2Yl-az-Tox"/>
                             <constraint firstItem="jaQ-Hb-KWv" firstAttribute="top" secondItem="B3D-md-pYU" secondAttribute="bottom" constant="14" id="3im-xn-PkO"/>
+                            <constraint firstItem="WVO-Im-cro" firstAttribute="centerX" secondItem="lgA-YW-Aym" secondAttribute="centerX" id="6en-d1-kWt"/>
+                            <constraint firstItem="IvA-gY-Xii" firstAttribute="centerY" secondItem="LNe-3e-SLb" secondAttribute="centerY" id="7Ci-NJ-Npy"/>
+                            <constraint firstItem="IvA-gY-Xii" firstAttribute="centerX" secondItem="LNe-3e-SLb" secondAttribute="centerX" id="9S8-CQ-zX7"/>
+                            <constraint firstItem="WVO-Im-cro" firstAttribute="top" secondItem="IvA-gY-Xii" secondAttribute="bottom" constant="39" id="DSD-Fx-mIj"/>
                             <constraint firstItem="aaL-iL-67H" firstAttribute="top" secondItem="exb-sr-udG" secondAttribute="bottom" constant="32" id="IOP-uq-g3b"/>
                             <constraint firstItem="jaQ-Hb-KWv" firstAttribute="trailing" secondItem="lgA-YW-Aym" secondAttribute="trailingMargin" id="LxH-nk-2d2"/>
                             <constraint firstItem="aaL-iL-67H" firstAttribute="leading" secondItem="lgA-YW-Aym" secondAttribute="leadingMargin" id="P36-ub-1fC"/>
+                            <constraint firstItem="IvA-gY-Xii" firstAttribute="height" secondItem="LNe-3e-SLb" secondAttribute="height" id="PP1-e2-xNj"/>
                             <constraint firstItem="B3D-md-pYU" firstAttribute="top" secondItem="aaL-iL-67H" secondAttribute="bottom" constant="14" id="daA-MF-gOP"/>
                             <constraint firstItem="B3D-md-pYU" firstAttribute="leading" secondItem="lgA-YW-Aym" secondAttribute="leadingMargin" id="kMy-Ij-OUf"/>
+                            <constraint firstItem="IvA-gY-Xii" firstAttribute="width" secondItem="LNe-3e-SLb" secondAttribute="width" id="nyZ-o0-Q8Q"/>
                             <constraint firstItem="LNe-3e-SLb" firstAttribute="top" secondItem="jaQ-Hb-KWv" secondAttribute="bottom" constant="43" id="p0L-QN-goS"/>
                             <constraint firstItem="LNe-3e-SLb" firstAttribute="centerX" secondItem="lgA-YW-Aym" secondAttribute="centerX" id="qkd-97-VnR"/>
                             <constraint firstItem="B3D-md-pYU" firstAttribute="trailing" secondItem="lgA-YW-Aym" secondAttribute="trailingMargin" id="s0B-Va-3HL"/>
