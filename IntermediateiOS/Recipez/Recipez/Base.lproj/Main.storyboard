@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="1108" y="-390"/>
         </scene>
-        <!--View Controller-->
+        <!--Create RecipeVC-->
         <scene sceneID="4TI-qc-UMw">
             <objects>
-                <viewController id="TnP-ez-xZu" sceneMemberID="viewController">
+                <viewController id="TnP-ez-xZu" customClass="CreateRecipeVC" customModule="Recipez" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="exb-sr-udG"/>
                         <viewControllerLayoutGuide type="bottom" id="FMI-9v-mad"/>
@@ -120,7 +120,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LNe-3e-SLb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger" translatesAutoresizingMaskIntoConstraints="NO" id="LNe-3e-SLb">
                                 <rect key="frame" x="213" y="257" width="175" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175" id="pYG-5h-tFl"/>
@@ -132,6 +132,9 @@
                                 <state key="normal" title="ADD IMAGE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addImage:" destination="TnP-ez-xZu" eventType="touchUpInside" id="QyJ-BQ-p9W"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVO-Im-cro">
                                 <rect key="frame" x="252" y="471" width="97" height="30"/>
@@ -140,6 +143,9 @@
                                     <constraint firstAttribute="height" constant="30" id="iWg-MZ-zUa"/>
                                 </constraints>
                                 <state key="normal" title="Create Recipe"/>
+                                <connections>
+                                    <action selector="createRecipe:" destination="TnP-ez-xZu" eventType="touchUpInside" id="UDH-lP-AVr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -163,6 +169,12 @@
                             <constraint firstItem="B3D-md-pYU" firstAttribute="trailing" secondItem="lgA-YW-Aym" secondAttribute="trailingMargin" id="s0B-Va-3HL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="recipeImg" destination="LNe-3e-SLb" id="yBS-x6-2Mi"/>
+                        <outlet property="recipeIngredients" destination="B3D-md-pYU" id="c4w-MB-dge"/>
+                        <outlet property="recipeSteps" destination="jaQ-Hb-KWv" id="9NT-5c-e32"/>
+                        <outlet property="recipeTitle" destination="aaL-iL-67H" id="Q7J-8d-905"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pe3-FQ-xmX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -188,4 +200,7 @@
             <point key="canvasLocation" x="274" y="-390"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="burger" width="850" height="565"/>
+    </resources>
 </document>
