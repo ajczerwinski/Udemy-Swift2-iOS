@@ -62,7 +62,7 @@ class CreateRecipeVC: UIViewController, UIImagePickerControllerDelegate, UINavig
                 print("Could not save recipe!")
             }
             
-            dismissViewControllerAnimated(true, completion: nil)
+            self.navigationController?.popViewControllerAnimated(true)
             
         }
     }
