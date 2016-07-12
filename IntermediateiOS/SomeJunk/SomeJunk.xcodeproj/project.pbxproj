@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BF04E0D71D25E642003BC5B1 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04E0D51D25E642003BC5B1 /* Item+CoreDataProperties.swift */; };
+		BF17FFEF1D35688600BC25D8 /* NewStoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF17FFEE1D35688600BC25D8 /* NewStoreVC.swift */; };
 		BFA173DF1D1B558D00A4F878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA173DE1D1B558D00A4F878 /* AppDelegate.swift */; };
 		BFA173E11D1B558D00A4F878 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA173E01D1B558D00A4F878 /* MainVC.swift */; };
 		BFA173E41D1B558D00A4F878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA173E21D1B558D00A4F878 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		BF04E0D51D25E642003BC5B1 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Item+CoreDataProperties.swift"; path = "../Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BF17FFEE1D35688600BC25D8 /* NewStoreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewStoreVC.swift; sourceTree = "<group>"; };
 		BFA173DB1D1B558D00A4F878 /* SomeJunk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomeJunk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA173DE1D1B558D00A4F878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFA173E01D1B558D00A4F878 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			children = (
 				BFA173E01D1B558D00A4F878 /* MainVC.swift */,
 				BFA1740B1D23424000A4F878 /* ItemDetailsVC.swift */,
+				BF17FFEE1D35688600BC25D8 /* NewStoreVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				BFA1740C1D23424000A4F878 /* ItemDetailsVC.swift in Sources */,
 				BF04E0D71D25E642003BC5B1 /* Item+CoreDataProperties.swift in Sources */,
 				BFA174021D1B69BD00A4F878 /* ItemType.swift in Sources */,
+				BF17FFEF1D35688600BC25D8 /* NewStoreVC.swift in Sources */,
 				BFA174011D1B69BD00A4F878 /* ItemType+CoreDataProperties.swift in Sources */,
 				BFA173DF1D1B558D00A4F878 /* AppDelegate.swift in Sources */,
 				BFA173FF1D1B69BD00A4F878 /* Image+CoreDataProperties.swift in Sources */,
