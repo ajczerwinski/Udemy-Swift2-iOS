@@ -257,6 +257,11 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Item" id="BZY-Nd-Vic">
+                        <barButtonItem key="leftBarButtonItem" title="ADD STORE" id="wYs-iC-4Jf">
+                            <connections>
+                                <segue destination="QvK-PQ-w8R" kind="show" identifier="NewStoreVC" id="5Mj-r9-AUh"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" systemItem="trash" id="4J2-7E-Pq6">
                             <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -275,10 +280,10 @@
             </objects>
             <point key="canvasLocation" x="1843" y="-528"/>
         </scene>
-        <!--View Controller-->
+        <!--New StoreVC-->
         <scene sceneID="T7i-aw-hDQ">
             <objects>
-                <viewController id="QvK-PQ-w8R" sceneMemberID="viewController">
+                <viewController id="QvK-PQ-w8R" customClass="NewStoreVC" customModule="SomeJunk" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="T1l-lA-fhZ"/>
                         <viewControllerLayoutGuide type="bottom" id="W6F-L5-DXD"/>
@@ -286,12 +291,72 @@
                     <view key="view" contentMode="scaleToFill" id="jkL-ov-h9u">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter Store Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pa0-ai-3zo">
+                                <rect key="frame" x="228" y="138" width="144" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="D9C-D2-YN3"/>
+                                    <constraint firstAttribute="height" constant="21" id="jQe-hW-XKI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Store name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DEW-Zv-r0m" customClass="CustomTextField" customModule="SomeJunk" customModuleProvider="target">
+                                <rect key="frame" x="117" y="285" width="366" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="366" id="Z9K-I3-iQB"/>
+                                    <constraint firstAttribute="height" constant="30" id="nmS-1x-wgW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Z9K-I3-iQB"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMT-FF-UGi">
+                                <rect key="frame" x="259" y="458" width="83" height="30"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.57254901960000004" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="1d5-Bh-Qgo"/>
+                                    <constraint firstAttribute="width" constant="83" id="CbO-cM-62D"/>
+                                    <constraint firstAttribute="height" constant="30" id="Mrc-xj-pdF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="ADD STORE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CbO-cM-62D"/>
+                                        <exclude reference="Mrc-xj-pdF"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pa0-ai-3zo" firstAttribute="centerX" secondItem="jkL-ov-h9u" secondAttribute="centerX" id="1Po-qm-g4N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DEW-Zv-r0m" secondAttribute="trailing" id="2yd-Pe-88d"/>
+                            <constraint firstItem="DEW-Zv-r0m" firstAttribute="centerX" secondItem="jkL-ov-h9u" secondAttribute="centerX" id="6uQ-Vx-e4h"/>
+                            <constraint firstItem="yMT-FF-UGi" firstAttribute="top" secondItem="DEW-Zv-r0m" secondAttribute="bottom" constant="125" id="BRu-Sj-4ii"/>
+                            <constraint firstItem="DEW-Zv-r0m" firstAttribute="leading" secondItem="jkL-ov-h9u" secondAttribute="leadingMargin" id="DQM-Kj-umk"/>
+                            <constraint firstItem="yMT-FF-UGi" firstAttribute="centerX" secondItem="jkL-ov-h9u" secondAttribute="centerX" id="VOQ-ha-P3F"/>
+                            <constraint firstItem="yMT-FF-UGi" firstAttribute="leading" secondItem="jkL-ov-h9u" secondAttribute="leadingMargin" id="cLe-m5-6V0"/>
+                            <constraint firstItem="DEW-Zv-r0m" firstAttribute="centerY" secondItem="jkL-ov-h9u" secondAttribute="centerY" id="ldO-IW-YDM"/>
+                            <constraint firstItem="Pa0-ai-3zo" firstAttribute="top" secondItem="T1l-lA-fhZ" secondAttribute="bottom" constant="75" id="yPp-Pw-oIy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yMT-FF-UGi" secondAttribute="trailing" id="zeD-o0-RNM"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TAv-J0-apo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2595" y="-528"/>
+            <point key="canvasLocation" x="2564" y="-528"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SjZ-kq-NMh">
@@ -317,6 +382,6 @@
         <image name="place" width="448" height="384"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Pn3-GB-zWk"/>
+        <segue reference="IY9-fJ-Huk"/>
     </inferredMetricsTieBreakers>
 </document>
