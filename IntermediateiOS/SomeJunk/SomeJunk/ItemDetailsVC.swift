@@ -45,12 +45,16 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
 //        
 //        ad.saveContext()
         
+        
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
         getStores()
         
         if itemToEdit != nil {
             loadItemData()
         }
-        
     }
     
     func loadItemData() {
