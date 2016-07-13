@@ -292,8 +292,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter Store Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pa0-ai-3zo">
-                                <rect key="frame" x="228" y="138" width="144" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Store Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pa0-ai-3zo">
+                                <rect key="frame" x="228" y="139" width="144" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="144" id="D9C-D2-YN3"/>
                                     <constraint firstAttribute="height" constant="21" id="jQe-hW-XKI"/>
@@ -302,8 +302,8 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Store name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DEW-Zv-r0m" customClass="CustomTextField" customModule="SomeJunk" customModuleProvider="target">
-                                <rect key="frame" x="117" y="285" width="366" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Store name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DEW-Zv-r0m" customClass="CustomTextField" customModule="SomeJunk" customModuleProvider="target">
+                                <rect key="frame" x="20" y="285" width="560" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="366" id="Z9K-I3-iQB"/>
                                     <constraint firstAttribute="height" constant="30" id="nmS-1x-wgW"/>
@@ -316,8 +316,8 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMT-FF-UGi">
-                                <rect key="frame" x="259" y="458" width="83" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMT-FF-UGi">
+                                <rect key="frame" x="20" y="440" width="560" height="41"/>
                                 <color key="backgroundColor" red="0.066666666669999999" green="0.57254901960000004" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="1d5-Bh-Qgo"/>
@@ -337,6 +337,9 @@
                                         <exclude reference="Mrc-xj-pdF"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="addStoreBtnPressed:" destination="QvK-PQ-w8R" eventType="touchUpInside" id="elc-Kd-vzP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -353,6 +356,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="yMT-FF-UGi" secondAttribute="trailing" id="zeD-o0-RNM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="storeTitle" destination="DEW-Zv-r0m" id="v2H-YO-09o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TAv-J0-apo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
