@@ -9,6 +9,7 @@
         <attribute name="created" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="thumbImg" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="image" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Image" inverseName="item" inverseEntity="Image" syncable="YES"/>
         <relationship name="itemType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ItemType" inverseName="item" inverseEntity="ItemType" syncable="YES"/>
@@ -24,9 +25,9 @@
         <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="store" inverseEntity="Item" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Item" positionX="-261" positionY="-132" width="128" height="148"/>
-        <element name="Store" positionX="-218" positionY="107" width="128" height="88"/>
         <element name="Image" positionX="-36" positionY="27" width="128" height="88"/>
+        <element name="Item" positionX="-261" positionY="-132" width="128" height="163"/>
         <element name="ItemType" positionX="-65" positionY="-171" width="128" height="73"/>
+        <element name="Store" positionX="-218" positionY="107" width="128" height="88"/>
     </elements>
 </model>

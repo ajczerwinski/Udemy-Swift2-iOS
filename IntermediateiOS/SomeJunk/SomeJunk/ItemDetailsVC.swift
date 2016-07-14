@@ -79,6 +79,10 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
                 detailsField.text = details
             }
             
+            if let image = thumbImg.image {
+                item.setItemImage(image)
+            }
+            
             if let store = item.store {
                 
                 var index = 0
