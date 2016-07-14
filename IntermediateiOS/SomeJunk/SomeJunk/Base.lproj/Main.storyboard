@@ -159,6 +159,9 @@
                                     <constraint firstAttribute="height" constant="93" id="vOK-3Y-Gsc"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="place"/>
+                                <connections>
+                                    <action selector="imageBtnPressed:" destination="O6y-l6-aq1" eventType="touchUpInside" id="YqH-S7-9B3"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vu2-HS-t4U" customClass="CustomTextField" customModule="SomeJunk" customModuleProvider="target">
                                 <rect key="frame" x="131" y="72" width="449" height="36"/>

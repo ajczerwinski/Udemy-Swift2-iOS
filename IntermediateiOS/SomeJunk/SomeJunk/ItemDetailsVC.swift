@@ -167,5 +167,12 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         
     }
     
+    @IBAction func imageBtnPressed(sender: AnyObject) {
+        
+        var image: Image!
+        
+        
+        
+    }
     
 }
