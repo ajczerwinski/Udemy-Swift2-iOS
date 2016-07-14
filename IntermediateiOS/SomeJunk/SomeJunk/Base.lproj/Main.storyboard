@@ -226,19 +226,25 @@
                                     <action selector="savePressed:" destination="O6y-l6-aq1" eventType="touchUpInside" id="7Wt-fU-njc"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wj0-GE-9ug">
+                                <rect key="frame" x="20" y="72" width="103" height="93"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="o2M-xB-dRC" firstAttribute="width" secondItem="wj0-GE-9ug" secondAttribute="width" id="5Ae-sb-WzZ"/>
                             <constraint firstItem="2N9-bN-lDf" firstAttribute="top" secondItem="trr-LQ-XW1" secondAttribute="bottom" constant="383" id="5Ka-Nv-9if"/>
                             <constraint firstItem="BZa-12-blY" firstAttribute="trailing" secondItem="trr-LQ-XW1" secondAttribute="trailing" id="6UP-b0-fdM"/>
                             <constraint firstItem="trr-LQ-XW1" firstAttribute="top" secondItem="EK5-lH-7LJ" secondAttribute="bottom" constant="16" id="7RI-lZ-jkR"/>
                             <constraint firstItem="EK5-lH-7LJ" firstAttribute="trailing" secondItem="Vu2-HS-t4U" secondAttribute="trailing" id="B8t-jx-fCZ"/>
                             <constraint firstItem="EK5-lH-7LJ" firstAttribute="top" secondItem="Vu2-HS-t4U" secondAttribute="bottom" constant="21" id="EE0-bk-VxK"/>
                             <constraint firstItem="EK5-lH-7LJ" firstAttribute="leading" secondItem="Vu2-HS-t4U" secondAttribute="leading" id="EJs-W7-2db"/>
+                            <constraint firstItem="o2M-xB-dRC" firstAttribute="height" secondItem="wj0-GE-9ug" secondAttribute="height" id="F6T-Ib-E3x"/>
                             <constraint firstItem="2N9-bN-lDf" firstAttribute="top" secondItem="o2M-xB-dRC" secondAttribute="bottom" constant="20" id="JMu-9H-aTC"/>
                             <constraint firstItem="RuY-dV-JTa" firstAttribute="leading" secondItem="BZa-12-blY" secondAttribute="leading" id="KQ4-wO-2Hn"/>
                             <constraint firstItem="trr-LQ-XW1" firstAttribute="trailing" secondItem="EK5-lH-7LJ" secondAttribute="trailing" id="Kt9-b0-foc"/>
                             <constraint firstItem="Vu2-HS-t4U" firstAttribute="trailing" secondItem="siQ-qn-QX2" secondAttribute="trailingMargin" id="MNA-qp-ojI"/>
+                            <constraint firstItem="o2M-xB-dRC" firstAttribute="centerY" secondItem="wj0-GE-9ug" secondAttribute="centerY" id="YYz-OL-WJD"/>
                             <constraint firstItem="BZa-12-blY" firstAttribute="top" secondItem="trr-LQ-XW1" secondAttribute="bottom" constant="19" id="Yt6-bq-i7T"/>
                             <constraint firstItem="trr-LQ-XW1" firstAttribute="leading" secondItem="ZH3-cv-pOf" secondAttribute="leading" id="Zh5-4J-Mme"/>
                             <constraint firstItem="RuY-dV-JTa" firstAttribute="trailing" secondItem="BZa-12-blY" secondAttribute="trailing" id="bLS-qC-NdE"/>
@@ -246,6 +252,7 @@
                             <constraint firstItem="o2M-xB-dRC" firstAttribute="top" secondItem="RuY-dV-JTa" secondAttribute="bottom" constant="21" id="e1D-jh-zOm"/>
                             <constraint firstItem="ZH3-cv-pOf" firstAttribute="top" secondItem="vb8-Xz-IXw" secondAttribute="bottom" constant="8" id="eUl-QT-iWO"/>
                             <constraint firstItem="Vu2-HS-t4U" firstAttribute="leading" secondItem="ZH3-cv-pOf" secondAttribute="trailing" constant="8" id="hLi-DW-SGh"/>
+                            <constraint firstItem="o2M-xB-dRC" firstAttribute="centerX" secondItem="wj0-GE-9ug" secondAttribute="centerX" id="iu0-Au-GWS"/>
                             <constraint firstItem="BZa-12-blY" firstAttribute="leading" secondItem="trr-LQ-XW1" secondAttribute="leading" id="l6o-I7-eCu"/>
                             <constraint firstItem="ZH3-cv-pOf" firstAttribute="leading" secondItem="siQ-qn-QX2" secondAttribute="leadingMargin" id="qek-NQ-D0C"/>
                             <constraint firstItem="o2M-xB-dRC" firstAttribute="leading" secondItem="siQ-qn-QX2" secondAttribute="leadingMargin" id="s7Q-nz-Sh4"/>
@@ -276,6 +283,7 @@
                         <outlet property="detailsField" destination="trr-LQ-XW1" id="n8U-lj-SkS"/>
                         <outlet property="priceField" destination="EK5-lH-7LJ" id="fef-vq-bXG"/>
                         <outlet property="storePicker" destination="RuY-dV-JTa" id="IQ9-Ge-acB"/>
+                        <outlet property="thumbImg" destination="wj0-GE-9ug" id="taL-Ol-jN8"/>
                         <outlet property="titleField" destination="Vu2-HS-t4U" id="bSW-uj-2zM"/>
                     </connections>
                 </viewController>

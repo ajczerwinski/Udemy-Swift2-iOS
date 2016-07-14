@@ -9,12 +9,15 @@
 import UIKit
 import CoreData
 
-class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var storePicker: UIPickerView!
     @IBOutlet weak var titleField: CustomTextField!
     @IBOutlet weak var priceField: CustomTextField!
     @IBOutlet weak var detailsField: CustomTextField!
+    @IBOutlet weak var thumbImg: UIImageView!
+    
+    var imagePicker: UIImagePickerController!
     
     var stores = [Store]()
     var itemToEdit: Item?
@@ -24,6 +27,9 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         
         storePicker.delegate = self
         storePicker.dataSource = self
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
         
 //        let store1 = NSEntityDescription.insertNewObjectForEntityForName("Store", inManagedObjectContext: ad.managedObjectContext) as! Store
 //        store1.name = "Amazon"
@@ -166,12 +172,17 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         self.navigationController?.popViewControllerAnimated(true)
         
     }
+
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        
+        imagePicker.dismissViewControllerAnimated(true, completion: nil)
+        thumbImg.image = image
+        
+    }
     
     @IBAction func imageBtnPressed(sender: AnyObject) {
         
-        var image: Image!
-        
-        
+        presentViewController(imagePicker, animated: true, completion: nil)
         
     }
     
