@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF1700051D3AFBE900BC25D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1700041D3AFBE900BC25D8 /* AppDelegate.swift */; };
+		BF1700071D3AFBE900BC25D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1700061D3AFBE900BC25D8 /* ViewController.swift */; };
+		BF17000A1D3AFBE900BC25D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1700081D3AFBE900BC25D8 /* Main.storyboard */; };
+		BF17000D1D3AFBE900BC25D8 /* SillyValley.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF17000B1D3AFBE900BC25D8 /* SillyValley.xcdatamodeld */; };
+		BF17000F1D3AFBE900BC25D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF17000E1D3AFBE900BC25D8 /* Assets.xcassets */; };
+		BF1700121D3AFBE900BC25D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1700101D3AFBE900BC25D8 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF1700011D3AFBE800BC25D8 /* SillyValley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SillyValley.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1700041D3AFBE900BC25D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF1700061D3AFBE900BC25D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF1700091D3AFBE900BC25D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF17000C1D3AFBE900BC25D8 /* SillyValley.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SillyValley.xcdatamodel; sourceTree = "<group>"; };
+		BF17000E1D3AFBE900BC25D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF1700111D3AFBE900BC25D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF1700131D3AFBE900BC25D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF17FFFE1D3AFBE800BC25D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF1700021D3AFBE800BC25D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF1700011D3AFBE800BC25D8 /* SillyValley.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF1700031D3AFBE900BC25D8 /* SillyValley */ = {
+			isa = PBXGroup;
+			children = (
+				BF1700041D3AFBE900BC25D8 /* AppDelegate.swift */,
+				BF1700061D3AFBE900BC25D8 /* ViewController.swift */,
+				BF1700081D3AFBE900BC25D8 /* Main.storyboard */,
+				BF17000E1D3AFBE900BC25D8 /* Assets.xcassets */,
+				BF1700101D3AFBE900BC25D8 /* LaunchScreen.storyboard */,
+				BF1700131D3AFBE900BC25D8 /* Info.plist */,
+				BF17000B1D3AFBE900BC25D8 /* SillyValley.xcdatamodeld */,
+			);
+			path = SillyValley;
+			sourceTree = "<group>";
+		};
+		BF17FFF81D3AFBE800BC25D8 = {
+			isa = PBXGroup;
+			children = (
+				BF1700031D3AFBE900BC25D8 /* SillyValley */,
+				BF1700021D3AFBE800BC25D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF1700001D3AFBE800BC25D8 /* SillyValley */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF1700161D3AFBE900BC25D8 /* Build configuration list for PBXNativeTarget "SillyValley" */;
+			buildPhases = (
+				BF17FFFD1D3AFBE800BC25D8 /* Sources */,
+				BF17FFFE1D3AFBE800BC25D8 /* Frameworks */,
+				BF17FFFF1D3AFBE800BC25D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SillyValley;
+			productName = SillyValley;
+			productReference = BF1700011D3AFBE800BC25D8 /* SillyValley.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF17FFF91D3AFBE800BC25D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Allen Czerwinski";
+				TargetAttributes = {
+					BF1700001D3AFBE800BC25D8 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = BF17FFFC1D3AFBE800BC25D8 /* Build configuration list for PBXProject "SillyValley" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF17FFF81D3AFBE800BC25D8;
+			productRefGroup = BF1700021D3AFBE800BC25D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF1700001D3AFBE800BC25D8 /* SillyValley */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF17FFFF1D3AFBE800BC25D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1700121D3AFBE900BC25D8 /* LaunchScreen.storyboard in Resources */,
+				BF17000F1D3AFBE900BC25D8 /* Assets.xcassets in Resources */,
+				BF17000A1D3AFBE900BC25D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF17FFFD1D3AFBE800BC25D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1700071D3AFBE900BC25D8 /* ViewController.swift in Sources */,
+				BF1700051D3AFBE900BC25D8 /* AppDelegate.swift in Sources */,
+				BF17000D1D3AFBE900BC25D8 /* SillyValley.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF1700081D3AFBE900BC25D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF1700091D3AFBE900BC25D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF1700101D3AFBE900BC25D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF1700111D3AFBE900BC25D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF1700141D3AFBE900BC25D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF1700151D3AFBE900BC25D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF1700171D3AFBE900BC25D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SillyValley/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.allen.czerwinski.SillyValley;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF1700181D3AFBE900BC25D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SillyValley/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.allen.czerwinski.SillyValley;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF1700161D3AFBE900BC25D8 /* Build configuration list for PBXNativeTarget "SillyValley" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1700171D3AFBE900BC25D8 /* Debug */,
+				BF1700181D3AFBE900BC25D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BF17FFFC1D3AFBE800BC25D8 /* Build configuration list for PBXProject "SillyValley" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1700141D3AFBE900BC25D8 /* Debug */,
+				BF1700151D3AFBE900BC25D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BF17000B1D3AFBE900BC25D8 /* SillyValley.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BF17000C1D3AFBE900BC25D8 /* SillyValley.xcdatamodel */,
+			);
+			currentVersion = BF17000C1D3AFBE900BC25D8 /* SillyValley.xcdatamodel */;
+			path = SillyValley.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BF17FFF91D3AFBE800BC25D8 /* Project object */;
+}
