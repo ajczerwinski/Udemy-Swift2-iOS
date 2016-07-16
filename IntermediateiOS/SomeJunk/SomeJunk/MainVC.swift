@@ -23,8 +23,12 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFe
         tableView.delegate = self
         
 //        generateTestData()
-        attemptFetch()
+//        attemptFetch()
         
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        attemptFetch()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -89,6 +93,7 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFe
         controller.delegate = self
         
         fetchedResultsController = controller
+        
     }
     
     func controllerWillChangeContent(controller: NSFetchedResultsController) {
