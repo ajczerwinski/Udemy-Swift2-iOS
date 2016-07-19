@@ -13,6 +13,7 @@
 		BF17000D1D3AFBE900BC25D8 /* SillyValley.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF17000B1D3AFBE900BC25D8 /* SillyValley.xcdatamodeld */; };
 		BF17000F1D3AFBE900BC25D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF17000E1D3AFBE900BC25D8 /* Assets.xcassets */; };
 		BF1700121D3AFBE900BC25D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1700101D3AFBE900BC25D8 /* LaunchScreen.storyboard */; };
+		BF17001A1D3ED94400BC25D8 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1700191D3ED94400BC25D8 /* PlayerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BF17000E1D3AFBE900BC25D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF1700111D3AFBE900BC25D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF1700131D3AFBE900BC25D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF1700191D3ED94400BC25D8 /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,9 @@
 		BF1700031D3AFBE900BC25D8 /* SillyValley */ = {
 			isa = PBXGroup;
 			children = (
+				BF17001D1D3ED9B800BC25D8 /* Model */,
+				BF17001C1D3ED9AE00BC25D8 /* View */,
+				BF17001B1D3ED9A800BC25D8 /* Controller */,
 				BF1700041D3AFBE900BC25D8 /* AppDelegate.swift */,
 				BF1700061D3AFBE900BC25D8 /* ViewController.swift */,
 				BF1700081D3AFBE900BC25D8 /* Main.storyboard */,
@@ -57,6 +62,28 @@
 				BF17000B1D3AFBE900BC25D8 /* SillyValley.xcdatamodeld */,
 			);
 			path = SillyValley;
+			sourceTree = "<group>";
+		};
+		BF17001B1D3ED9A800BC25D8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BF17001C1D3ED9AE00BC25D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF1700191D3ED94400BC25D8 /* PlayerCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BF17001D1D3ED9B800BC25D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		BF17FFF81D3AFBE800BC25D8 = {
@@ -138,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF17001A1D3ED94400BC25D8 /* PlayerCell.swift in Sources */,
 				BF1700071D3AFBE900BC25D8 /* ViewController.swift in Sources */,
 				BF1700051D3AFBE900BC25D8 /* AppDelegate.swift in Sources */,
 				BF17000D1D3AFBE900BC25D8 /* SillyValley.xcdatamodeld in Sources */,
