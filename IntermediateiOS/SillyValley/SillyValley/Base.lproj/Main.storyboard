@@ -67,6 +67,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="playerDesc" destination="Cxb-E4-ThF" id="7Cl-9K-AzH"/>
                                             <outlet property="playerImage" destination="70f-SJ-4Us" id="Stp-89-QQT"/>
