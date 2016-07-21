@@ -29,7 +29,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="91"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="70f-SJ-4Us">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger" translatesAutoresizingMaskIntoConstraints="NO" id="70f-SJ-4Us">
                                                     <rect key="frame" x="8" y="10" width="119" height="70"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="119" id="ZNl-xj-QCp"/>
@@ -112,4 +112,7 @@
             <point key="canvasLocation" x="88" y="-390"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="burger" width="850" height="565"/>
+    </resources>
 </document>

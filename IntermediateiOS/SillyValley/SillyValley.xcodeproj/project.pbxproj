@@ -15,6 +15,8 @@
 		BF1700121D3AFBE900BC25D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1700101D3AFBE900BC25D8 /* LaunchScreen.storyboard */; };
 		BF17001A1D3ED94400BC25D8 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1700191D3ED94400BC25D8 /* PlayerCell.swift */; };
 		BF17001F1D3FF4D900BC25D8 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF17001E1D3FF4D900BC25D8 /* MaterialView.swift */; };
+		BF1BFC321D4185CB00C9E7D8 /* Player+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1BFC301D4185CB00C9E7D8 /* Player+CoreDataProperties.swift */; };
+		BF1BFC331D4185CB00C9E7D8 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1BFC311D4185CB00C9E7D8 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		BF1700131D3AFBE900BC25D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF1700191D3ED94400BC25D8 /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		BF17001E1D3FF4D900BC25D8 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		BF1BFC301D4185CB00C9E7D8 /* Player+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Player+CoreDataProperties.swift"; path = "../Player+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BF1BFC311D4185CB00C9E7D8 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = ../Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 		BF17001D1D3ED9B800BC25D8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BF1BFC301D4185CB00C9E7D8 /* Player+CoreDataProperties.swift */,
+				BF1BFC311D4185CB00C9E7D8 /* Player.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -170,7 +176,9 @@
 			files = (
 				BF17001A1D3ED94400BC25D8 /* PlayerCell.swift in Sources */,
 				BF1700071D3AFBE900BC25D8 /* ViewController.swift in Sources */,
+				BF1BFC321D4185CB00C9E7D8 /* Player+CoreDataProperties.swift in Sources */,
 				BF17001F1D3FF4D900BC25D8 /* MaterialView.swift in Sources */,
+				BF1BFC331D4185CB00C9E7D8 /* Player.swift in Sources */,
 				BF1700051D3AFBE900BC25D8 /* AppDelegate.swift in Sources */,
 				BF17000D1D3AFBE900BC25D8 /* SillyValley.xcdatamodeld in Sources */,
 			);
@@ -315,6 +323,7 @@
 				BF1700181D3AFBE900BC25D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF17FFFC1D3AFBE800BC25D8 /* Build configuration list for PBXProject "SillyValley" */ = {
 			isa = XCConfigurationList;
